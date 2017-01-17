@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*border: black solid 1px;*/
+    font-family: Raleway, sans-serif;
+}
+
+body {
+    /*background-image: url("background.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+}
+
+h3 {
+    color: black;
+    font-size: 80px;
+    font-weight: 100;
+    font-family: Sacramento, cursive;
+    text-align: left;
+    padding-left: 50px;
+}
+
+h5 {
+    color: black;
+    font-size: 25px;
+    font-family: "Cherry Swash", cursive;
+    text-align: left;
+    padding-left: 110px;
+}
+
+.link {
+    color: grey;
+    padding-left: 25px;
+
+}
