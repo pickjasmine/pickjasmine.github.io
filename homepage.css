@@ -13,7 +13,7 @@ body {
 }
 
 h3 {
-    color: rgb(58, 25, 23);
+    color: #3a1917;
     font-size: 80px;
     font-weight: 100;
     font-family: Sacramento, cursive;
@@ -22,7 +22,7 @@ h3 {
 }
 
 h5 {
-    color: rgb(122, 58, 55);
+    color: #893430;
     font-size: 25px;
     font-family: "Cherry Swash", cursive;
     text-align: left;
@@ -33,7 +33,7 @@ h5 {
 }
 
 a {
-    color: rgb(122, 58, 55);
+    color: #893430;
     padding-left: 105px;
 }
 /*.link {*/
