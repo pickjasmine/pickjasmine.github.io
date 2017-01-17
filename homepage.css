@@ -6,13 +6,14 @@
 }
 
 body {
+    background-color: lightcyan;
     /*background-image: url("background.jpg");*/
     /*background-repeat: no-repeat;*/
     /*background-position: center center;*/
 }
 
 h3 {
-    color: black;
+    color: darkslateblue;
     font-size: 80px;
     font-weight: 100;
     font-family: Sacramento, cursive;
@@ -21,15 +22,22 @@ h3 {
 }
 
 h5 {
-    color: black;
+    color: darkslateblue;
     font-size: 25px;
     font-family: "Cherry Swash", cursive;
     text-align: left;
-    padding-left: 110px;
+    height: auto;
+    width: 200px;
+    padding: 25px 110px;
+    /*background-color: lightcyan;*/
 }
 
-.link {
-    color: grey;
+a {
+    color: darkslateblue;
     padding-left: 25px;
-
 }
+/*.link {*/
+    /*color: grey;*/
+    /*padding-left: 25px;*/
+
+/*}*/
