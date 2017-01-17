@@ -6,14 +6,14 @@
 }
 
 body {
-    background-color: lightcyan;
+    background-color: blanchedalmond;
     /*background-image: url("background.jpg");*/
     /*background-repeat: no-repeat;*/
     /*background-position: center center;*/
 }
 
 h3 {
-    color: darkslateblue;
+    color: rgb(58, 25, 23);
     font-size: 80px;
     font-weight: 100;
     font-family: Sacramento, cursive;
@@ -22,19 +22,19 @@ h3 {
 }
 
 h5 {
-    color: darkslateblue;
+    color: rgb(122, 58, 55);
     font-size: 25px;
     font-family: "Cherry Swash", cursive;
     text-align: left;
     height: auto;
     width: 200px;
-    padding: 25px 110px;
+    padding: 25px 110px 0px 110px;
     /*background-color: lightcyan;*/
 }
 
 a {
-    color: darkslateblue;
-    padding-left: 25px;
+    color: rgb(122, 58, 55);
+    padding-left: 105px;
 }
 /*.link {*/
     /*color: grey;*/
