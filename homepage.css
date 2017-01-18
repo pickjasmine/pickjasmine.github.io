@@ -6,38 +6,43 @@
 }
 
 body {
-    background-color: blanchedalmond;
+    background: url("siteimages/subtle_dots.png");
+    background-repeat: repeat;
     /*background-image: url("background.jpg");*/
     /*background-repeat: no-repeat;*/
     /*background-position: center center;*/
 }
 
+.banner {
+    background: url("siteimages/banner.jpg");
+    background-size: cover;
+    background-position: left;
+}
 h3 {
-    color: #3a1917;
-    font-size: 80px;
+    color: rgba(246, 87, 13, 0.9);
+    font-size: 90px;
     font-weight: 100;
+    font-style: italic;
     font-family: Sacramento, cursive;
+    line-height: 50%;
     text-align: left;
-    padding-left: 50px;
+    padding: 40px 0px 10px 45px;
+    z-index: 1;
 }
 
-h5 {
-    color: #893430;
-    font-size: 25px;
-    font-family: "Cherry Swash", cursive;
+.secondary {
+    color: rgba(35, 35, 35, 0.8);
+    line-height: 60%;
+    font-size: 75px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: Sacramento, cursive;
     text-align: left;
-    height: auto;
-    width: 200px;
-    padding: 25px 110px 0px 110px;
-    /*background-color: lightcyan;*/
+    padding-left: 0px;
+    padding-bottom: 20px;
 }
 
 a {
-    color: #893430;
+    color: #594847;
     padding-left: 105px;
 }
-/*.link {*/
-    /*color: grey;*/
-    /*padding-left: 25px;*/
-
-/*}*/
