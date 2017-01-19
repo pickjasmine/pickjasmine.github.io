@@ -25,7 +25,13 @@ h5 {
     padding-top: 15px;
     padding-left: 25px;
 }
-
+h4 {
+    color: #893430;
+    font-family: "Cherry Swash", cursive;
+    font-size: 30px;
+    font-weight: 100;
+    padding-left: 25px;
+}
 a {
     color: #893430;
 }
