@@ -18,8 +18,10 @@ body {
     background-size: cover;
     background-position: left;
 }
+
 h3 {
     color: rgba(246, 87, 13, 0.9);
+    color: rgb(246, 87, 13);
     font-size: 90px;
     font-weight: 100;
     font-style: italic;
@@ -32,6 +34,7 @@ h3 {
 
 .secondary {
     color: rgba(35, 35, 35, 0.8);
+    color: rgb(35, 35, 35);
     line-height: 60%;
     font-size: 75px;
     font-weight: 100;

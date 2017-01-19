@@ -1,20 +1,38 @@
 * {
     margin: 0px;
     padding: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 body {
-    background-color: blanchedalmond;
+    background: url("../siteimages/subtle_dots.png");
     color: #3a1917;
 }
 
+.banner {
+    background: url("../siteimages/banner.jpg");
+    background-size: cover;
+    background-position: left;
+}
+
 h5 {
-    color: #893430;
-    font-size: 24px;
+    color: rgba(246, 87, 13, 0.9);
+    color: rgb(246, 87, 13);
+    font-family: Sacramento, cursive;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 100;
+    padding-top: 15px;
     padding-left: 25px;
 }
 
 a {
     color: #893430;
+}
+
+.link {
+    color: #893430;
+    font-family: Raleway, sans-serif;
     padding-left: 25px;
+    line-height: 80%;
 }
