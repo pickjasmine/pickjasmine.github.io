@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    /*border: 1px solid rgba(0, 0, 0, 0.3);*/
 }
 
 body {
@@ -33,6 +33,7 @@ a {
 .link {
     color: #893430;
     font-family: Raleway, sans-serif;
-    padding-left: 25px;
+    padding-top: 15px;
+    padding-left: 45px;
     line-height: 80%;
 }
