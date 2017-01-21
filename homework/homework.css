@@ -6,7 +6,6 @@
 
 body {
     background: url("../siteimages/subtle_dots.png");
-    color: #3a1917;
 }
 
 .banner {
@@ -28,12 +27,21 @@ h5 {
     padding-top: 15px;
     padding-left: 25px;
 }
-.tutorial {
+.tutorial1 {
     color: #893430;
-    font-family: "Cherry Swash", cursive;
+    font-family: Raleway, sans-serif;
     font-size: 30px;
     font-weight: 100;
     padding-top: 125px;
+    padding-left: 25px;
+}
+
+.tutorial {
+    color: #893430;
+    font-family: Raleway, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    padding-top: 25px;
     padding-left: 25px;
 }
 
@@ -42,7 +50,7 @@ a {
     color: rgb(69, 56, 55);
 }
 
-a.hover {
+a:hover {
     color: rgba(246, 87, 13, 1);
     color: rgb(246, 87, 13);
 }
@@ -55,9 +63,4 @@ a.hover {
     padding-top: 15px;
     padding-left: 45px;
     line-height: 150%;
-}
-
-.link.hover {
-    color: rgba(246, 87, 13, 1);
-    color: rgb(246, 87, 13);
 }
