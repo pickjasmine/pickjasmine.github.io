@@ -2,65 +2,54 @@
     margin: 0px;
     padding: 0px;
     /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.9);
+    font-family: Roboto, sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 body {
     background: url("../siteimages/subtle_dots.png");
+    overflow: scroll;
+    display: block;
 }
 
 .banner {
-    background: url("../siteimages/banner.jpg");
-    background-size: cover;
-    /*background-position: left;*/
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-    position: fixed;
+    background: url("../siteimages/subtle_dots.png");
     width: 100%;
+    font-size: 85px;
+    color: rgb(0, 66, 167);
+    color: rgba(0, 66, 167, 0.9);
+    border-top: 5px solid rgb(0, 66, 167);
+    border-top: 5px solid rgba(0, 66, 167, 0.9);
+    position: fixed;
+    bottom: 0px;
+    display: block;
 }
 
-h5 {
-    color: rgba(246, 87, 13, 0.9);
-    color: rgb(246, 87, 13);
-    font-family: Sacramento, cursive;
-    font-size: 60px;
-    font-style: italic;
-    font-weight: 100;
-    padding-top: 15px;
-    padding-left: 25px;
+.banner:hover {
+    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.9);
 }
-.tutorial1 {
-    color: #893430;
-    font-family: Raleway, sans-serif;
+
+a, .tutorial {
+    padding-left: 15px;
+}
+
+a.link {
+    display: block;
     font-size: 30px;
-    font-weight: 100;
-    padding-top: 125px;
-    padding-left: 25px;
+    padding-left: 50px;
+    line-height: 110%;
 }
 
-.tutorial {
-    color: #893430;
-    font-family: Raleway, sans-serif;
-    font-size: 30px;
-    font-weight: 100;
-    padding-top: 25px;
-    padding-left: 25px;
+.link:hover {
+    color: rgb(0, 66, 167);
+    color: rgba(0, 66, 167, 0.9);
 }
 
-a {
-    color: rgba(69, 56, 55, 0.8);
-    color: rgb(69, 56, 55);
-}
-
-a:hover {
-    color: rgba(246, 87, 13, 1);
-    color: rgb(246, 87, 13);
-}
-
-.link {
-    /*color: #893430;*/
-    color: rgba(69, 56, 55, 0.8);
-    color: rgb(69, 56, 55);
-    font-family: Raleway, sans-serif;
-    padding-top: 15px;
-    padding-left: 45px;
-    line-height: 150%;
+.main {
+    padding-bottom: 100px;
 }
