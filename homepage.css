@@ -2,60 +2,72 @@
     margin: 0;
     padding: 0;
     /*border: black solid 1px;*/
-    font-family: Raleway, sans-serif;
+    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.9);
+    font-family: Roboto, sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 120%;
+    text-decoration: none;
 }
 
 body {
     background: url("siteimages/subtle_dots.png");
-    background-repeat: repeat;
-    /*background-image: url("background.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center center;*/
-}
-
-.banner {
-    background: url("siteimages/banner.jpg");
-    background-size: cover;
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-    /*background-position: left;*/
-    position: fixed;
-    width: 100%
-}
-
-h3 {
-    color: rgba(246, 87, 13, 1);
-    color: rgb(246, 87, 13);
-    font-size: 90px;
-    font-weight: 100;
-    font-style: italic;
-    font-family: Sacramento, cursive;
-    line-height: 50%;
-    text-align: left;
-    padding: 40px 0px 10px 45px;
-}
-
-.secondary {
-    color: rgba(69, 56, 55, 0.8);
-    color: rgb(69, 56, 55);
-    line-height: 60%;
-    font-size: 75px;
-    font-weight: 100;
-    font-style: italic;
-    font-family: Sacramento, cursive;
-    text-align: left;
-    padding-left: 0px;
-    padding-bottom: 20px;
+    overflow: scroll;
+    display: block;
 }
 
 a {
-    color: #594847;
-    /*padding-top: 250px;*/
-    padding-left: 105px;
-}
-a:hover {
-    color: rgb(246, 87, 13);
+    padding-left: 15px;
+    display: block;
+    width: fit-content;
+
 }
 
-.link {
-    padding-top: 156px;
+.main {
+    padding-bottom: 100px;
 }
+
+.banner {
+    background: url("siteimages/subtle_dots.png");
+    width: 100%;
+    font-size: 85px;
+    color: rgb(255, 0, 169);
+    color: rgba(255, 0, 169, 0.8);
+    border-top: 5px solid rgb(255, 0, 169);
+    border-top: 5px solid rgba(255, 0, 169, 0.9);
+    position: fixed;
+    bottom: 0px;
+    display: block;
+}
+
+.banner:hover {
+    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.about:hover {
+    color: rgb(255, 131, 0);
+    color: rgba(255, 131, 0, 0.9);
+}
+
+.resume:hover {
+    color: rgb(255, 221, 0);
+    color: rgba(255, 221, 0, 0.9);
+}
+
+.contact:hover {
+    color: rgb(0, 142, 35);
+    color: rgba(0, 142, 35, 0.9);
+}
+
+.hw:hover {
+    color: rgb(0, 66, 167);
+    color: rgba(0, 66, 167, 0.9);
+}
+
+.final:hover {
+    color: rgb(111, 2, 158);
+    color: rgba(111, 2, 158, 0.9);
+}
+
