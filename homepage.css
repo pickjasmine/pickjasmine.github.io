@@ -56,18 +56,18 @@ a {
     color: rgba(255, 221, 0, 0.9);
 }
 
-.contact:hover {
+.hw:hover {
     color: rgb(0, 142, 35);
     color: rgba(0, 142, 35, 0.9);
 }
 
-.hw:hover {
+.final:hover {
     color: rgb(0, 66, 167);
     color: rgba(0, 66, 167, 0.9);
 }
 
-.final:hover {
-    color: rgb(111, 2, 158);
-    color: rgba(111, 2, 158, 0.9);
-}
+/*.final:hover {*/
+    /*color: rgb(111, 2, 158);*/
+    /*color: rgba(111, 2, 158, 0.9);*/
+/*}*/
 
