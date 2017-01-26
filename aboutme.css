@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     /*border: 1px solid rgba(0, 0, 0, 0.3);*/
     color: rgb(0, 0, 0);
     color: rgba(0, 0, 0, 0.9);
@@ -11,13 +11,13 @@
 }
 
 body {
-    background: url("../siteimages/subtle_dots.png");
+    background: url("siteimages/subtle_dots.png");
     overflow: scroll;
     display: block;
 }
 
 .banner {
-    background: url("../siteimages/subtle_dots.png");
+    background: url("siteimages/subtle_dots.png");
     width: 100%;
     font-size: 85px;
     color: rgb(255, 131, 0);
@@ -25,7 +25,7 @@ body {
     border-top: 5px solid rgb(255, 131, 0);
     border-top: 5px solid rgba(255, 131, 0, 0.9);
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     display: block;
 }
 
