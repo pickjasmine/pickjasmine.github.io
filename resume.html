@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="resume.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
@@ -12,15 +13,25 @@
 
 <body>
 
-<h1><i class="female icon"></i>Summary</h1>
-<p>Student web developer looking for internships.  Creatively inclined and passionate about learning new languages and skills.
+<div class="main">
+<h1 id="sum"><i class="female icon"></i>Summary</h1>
+<p class="summary">Student web developer looking for internships.  Creatively inclined and passionate about learning new languages and skills.
 Experience in project management, always thinking about the team.  Quick learner, hard worker, and wanting to prove myself.</p>
 
-<h1><i class="student icon"></i>Education</h1>
-<p>A.A.S. in Web Development from Des Moines Area Community College, expected graduation May 2018</p>
-<p>B.S. in Business Economics from Iowa State University, graduated December 2016, cumulative GPA: 3.82</p>
+<h1 id="edu"><i class="student icon"></i>Education</h1>
+    <dl>
+        <dt>A.A.S. Web Development</dt>
+            <dd class="location">Des Moines Area Community College</dd>
+            <dd class="dates">Expected Graduation May 2018</dd>
 
-<h1><i class="line chart icon"></i>Work Experience</h1>
+        <dt>B.S. Business Economics</dt>
+            <dd class="location">Iowa State University</dd>
+            <dd class="dates">December 2016</dd>
+            <dd class="gpa">Cumulative GPA: 3.82</dd>
+    </dl>
+
+
+<h1 id="work"><i class="line chart icon"></i>Work Experience</h1>
 <dl>
     <dt>Research Assistant</dt>
         <dd class="location">Iowa State University</dd>
@@ -55,7 +66,7 @@ Experience in project management, always thinking about the team.  Quick learner
         <dd>Assisted 7 project managers with data entry and various research projects</dd>
 </dl>
 
-<h1><i class="checkmark box icon"></i>Skills and Abilities</h1>
+<h1 id="skills"><i class="checkmark box icon"></i>Skills and Abilities</h1>
 <dl>
     <dt>Progamming Languages</dt>
         <dd>Java</dd>
@@ -83,6 +94,9 @@ Experience in project management, always thinking about the team.  Quick learner
 
 
 </dl>
+</div>
+
+<a class="banner" href="index.html">Jasmine Francois<i class="home icon"></i></a>
 
 </body>
 </html>

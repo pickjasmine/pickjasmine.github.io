@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.9);
+    /*font-size: 25px;*/
+    text-decoration: none;
+    line-height: 110%;
+}
+
+body {
+    background: url("siteimages/subtle_dots.png");
+    overflow: scroll;
+    display: block;
+}
+
+.main {
+    padding-bottom: 110px;
+    padding-left: 5px;
+}
+
+.banner {
+    background: url("siteimages/subtle_dots.png");
+    width: 100%;
+    font-size: 85px;
+    color: rgb(255, 0, 169);
+    color: rgba(255, 0, 169, 0.9);
+    border-top: 5px solid rgb(255, 0, 169);
+    border-top: 5px solid rgba(255, 0, 169, 0.9);
+    position: fixed;
+    bottom: 0;
+    display: block;
+}
+
+.banner:hover {
+    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+a, h1, dl, dt, dd {
+    padding-left: 15px;
+
+}
+
+p, dd {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    padding-left: 55px;
+}
+
+h1, dt {
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#sum, #edu, #work, #skills {
+    font-size: 30px;
+    /*color: rgb(255, 0, 169);*/
+}
+
+i {
+    color: rgb(255, 0, 169);
+    padding-right: 3px;
+}
+
+.home.icon {
+    color: rgb(0, 0, 0);
+}
+
+.dates {
+    font-style: italic;
+}
+
+.location {
+    font-weight: bold;
+}
+
+.summary {
+    font-size: 22px;
+}
+
