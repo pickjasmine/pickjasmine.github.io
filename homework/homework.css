@@ -53,3 +53,8 @@ a.link {
 .main {
     padding-bottom: 100px;
 }
+
+a.tutorial:hover {
+    color: rgb(0, 142, 35);
+    color: rgba(0, 142, 35, 0.9);
+}
