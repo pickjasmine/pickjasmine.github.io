@@ -53,3 +53,13 @@ a {
     font-size: 65px;
     line-height: 120%;
 }
+
+a.contact {
+    color: rgb(0, 0,0);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+a.contact:hover {
+    color: rgb(255, 131, 0);
+    color: rgba(255, 131, 0, 0.9);
+}
