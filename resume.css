@@ -16,6 +16,7 @@ body {
 }
 
 .main {
+    padding-top: 2px;
     padding-bottom: 110px;
     padding-left: 5px;
 }
@@ -41,23 +42,25 @@ body {
 a, h1, dl, dt, dd {
     padding-left: 15px;
     width: fit-content;
-
 }
 
 p, dd {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 15px;
     padding-left: 55px;
-    line-height: 120%;
+    line-height: 130%;
     width: fit-content;
 }
 
-h1, dt {
+h1, dt{
     font-family: Roboto, sans-serif;
-    font-size: 20px;
     font-weight: bold;
     width: fit-content;
     text-transform: uppercase;
+}
+
+dt {
+    font-size: 21px;
 }
 
 #sum, #edu, #work, #skills {
@@ -85,7 +88,7 @@ i {
     padding-left: 75px;
 }
 
-.location {
+.location, .gpa {
     font-weight: bold;
     font-size: 18px;
     padding-left: 75px;
