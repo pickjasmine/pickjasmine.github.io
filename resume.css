@@ -47,7 +47,7 @@ a, h1, dl, dt, dd {
 p, dd {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 15px;
-    padding-left: 55px;
+    padding-left: 45px;
     line-height: 130%;
     width: fit-content;
 }
