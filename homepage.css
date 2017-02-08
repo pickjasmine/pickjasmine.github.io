@@ -7,7 +7,7 @@
     font-family: Roboto, sans-serif;
     font-size: 35px;
     font-weight: bold;
-    line-height: 120%;
+    line-height: 110%;
     text-decoration: none;
 }
 
@@ -18,13 +18,16 @@ body {
 
 .banner {
     background: url("siteimages/subtle_dots.png");
+    height: 95px;
     width: 100%;
     font-size: 85px;
     color: rgb(0, 0, 0);
     border-top: 5px solid rgb(255, 0, 169);
     position: fixed;
     bottom: 0;
+    padding-left: 5px;
     display: block;
+    vertical-align: middle;
 }
 
 a {

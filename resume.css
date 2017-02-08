@@ -3,10 +3,7 @@
     padding: 0;
     /*border: 1px solid rgba(0, 0, 0, 0.3);*/
     color: rgb(0, 0, 0);
-    color: rgba(0, 0, 0, 0.9);
-    /*font-size: 25px;*/
     text-decoration: none;
-    line-height: 110%;
 }
 
 body {
@@ -24,20 +21,29 @@ body {
 .banner {
     background: url("siteimages/subtle_dots.png");
     width: 100%;
+    height: 95px;
     font-size: 85px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
     color: rgb(0, 0, 0);
     border-top: 5px solid rgb(255, 0, 169);
     position: fixed;
     bottom: 0;
     display: block;
+    vertical-align: middle;
 }
 
 .banner:hover {
     color: rgb(255, 0, 169);
 }
 
-a, h1, dl, dt, dd {
-    padding-left: 15px;
+a {
+    padding-left: 5px;
+    line-height: 110%;
+}
+
+h1, dl, dt, dd {
+    padding-left: 5px;
     width: fit-content;
 }
 
@@ -54,6 +60,10 @@ h1, dt{
     font-weight: bold;
     width: fit-content;
     text-transform: uppercase;
+}
+
+h1 {
+    color: rgb(255, 0, 169);
 }
 
 dt {
@@ -95,3 +105,6 @@ i {
     font-size: 22px;
 }
 
+.highlight {
+    color: rgb(255, 0, 169);
+}

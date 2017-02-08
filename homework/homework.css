@@ -20,18 +20,15 @@ body {
     background: url("../siteimages/subtle_dots.png");
     width: 100%;
     font-size: 85px;
-    color: rgb(0, 142, 35);
-    color: rgba(0, 142, 35, 0.9);
-    border-top: 5px solid rgb(0, 142, 35);
-    border-top: 5px solid rgba(0, 142, 35, 0.9);
+    color: rgb(0, 0, 0);
+    border-top: 5px solid rgb(255, 0, 169);
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     display: block;
 }
 
 .banner:hover {
-    color: rgb(0, 0, 0);
-    color: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 0, 169);
 }
 
 a, .tutorial {
@@ -46,8 +43,7 @@ a.link {
 }
 
 .link:hover {
-    color: rgb(0, 142, 35);
-    color: rgba(0, 142, 35, 0.9);
+    color: rgb(255, 0, 169);
 }
 
 .main {
@@ -55,8 +51,7 @@ a.link {
 }
 
 a.tutorial:hover {
-    color: rgb(0, 142, 35);
-    color: rgba(0, 142, 35, 0.9);
+    color: rgb(255, 0, 169);
 }
 
 .home.icon {
