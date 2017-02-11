@@ -1,23 +1,21 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     /*border: 1px solid rgba(0, 0, 0, 0.3);*/
     color: rgb(0, 0, 0);
-    color: rgba(0, 0, 0, 0.9);
     font-family: Roboto, sans-serif;
-    font-size: 65px;
     font-weight: bold;
     text-decoration: none;
+    background: url("../siteimages/subtle_dots.png");
 }
 
 body {
-    background: url("../siteimages/subtle_dots.png");
     overflow: scroll;
     display: block;
+    text-align: center;
 }
-
+    /*BOTTOM BANNER*/
 .banner {
-    background: url("../siteimages/subtle_dots.png");
     width: 100%;
     font-size: 85px;
     color: rgb(0, 0, 0);
@@ -31,31 +29,18 @@ body {
     color: rgb(255, 0, 169);
 }
 
-a, .tutorial {
-    padding-left: 15px;
+    /*PAGE CONTENT*/
+.main {
+    padding-top: 25px;
+    padding-bottom: 120px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 a.link {
     display: block;
     font-size: 30px;
-    padding-left: 50px;
     line-height: 110%;
-}
-
-.link:hover {
-    color: rgb(255, 0, 169);
-}
-
-.main {
-    padding-bottom: 120px;
-}
-
-a.tutorial:hover {
-    color: rgb(255, 0, 169);
-}
-
-.home.icon {
-    color: rgb(0, 0, 0);
 }
 
 a:hover {
@@ -64,10 +49,14 @@ a:hover {
 
 nav a {
     font-size: 35px;
-    text-align: center;
+    padding-left: 25px;
+    line-height: 110%;
 }
 
-nav {
-    margin-left: 150px;
-    margin-right: 150px;
+.tutorial {
+    font-size: 65px;
+}
+
+#here {
+    color: rgb(255, 0, 169);
 }

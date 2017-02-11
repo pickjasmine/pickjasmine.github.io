@@ -12,13 +12,10 @@
 }
 
 body {
-    background: url("siteimages/subtle_dots.png") repeat right top;
     overflow: scroll;
-    display: block;
 }
-
+    /*BOTTOM BANNER*/
 .banner {
-    background: url("siteimages/subtle_dots.png") repeat right top;
     width: 100%;
     height: 95px;
     font-size: 85px;
@@ -27,24 +24,13 @@ body {
     position: fixed;
     bottom: 0;
     display: block;
-    z-index: 999;
     text-align: center;
 }
 
 .banner:hover {
     color: rgb(255, 0, 169);
 }
-
-li, p {
-    padding-left: 5px;
-    line-height: 180%;
-}
-
-a:hover {
-    color: rgb(255, 0, 169);
-}
-
-
+    /*PAGE CONTENT*/
 .main {
     padding-top: 25px;
     padding-bottom: 150px;
@@ -53,6 +39,14 @@ a:hover {
     margin-left: 150px;
     margin-right: 150px;
 
+}
+
+li, p {
+    line-height: 180%;
+}
+
+a:hover {
+    color: rgb(255, 0, 169);
 }
 
 ul li {
@@ -64,28 +58,22 @@ ul li {
     font-size: 50px;
 }
 
-.contact:hover {
-    color: rgb(255, 0, 169);
-}
-
 a {
-    font-family: Roboto, sans-serif;
     font-size: 35px;
     line-height: 110%;
     font-weight: bold;
     display: inline-block;
     width: fit-content;
-    color: rgb(0, 0, 0);
-    padding-left: 25px;
     text-align: center;
 
 
 }
 
-/*#here {*/
-    /*color: rgb(255, 0, 169);*/
-/*}*/
+#here {
+    color: rgb(255, 0, 169);
+}
 
 nav a{
     padding-bottom: 25px;
+    padding-left: 25px;
 }

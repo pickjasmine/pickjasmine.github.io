@@ -4,24 +4,24 @@
     /*border: 1px solid rgba(0, 0, 0, 0.3);*/
     color: rgb(0, 0, 0);
     text-decoration: none;
+    text-align: center;
 }
 
 body {
-    background: url("siteimages/subtle_dots.png");
     overflow: scroll;
     display: block;
+    background: url("siteimages/subtle_dots.png");
 }
 
 .main {
     padding-top: 25px;
     padding-bottom: 110px;
-    padding-left: 5px;
     margin-left: 150px;
     margin-right: 150px;
+    background: url("siteimages/subtle_dots.png");
 }
 
 .banner {
-    background: url("siteimages/subtle_dots.png");
     width: 100%;
     height: 95px;
     font-size: 85px;
@@ -33,6 +33,7 @@ body {
     bottom: 0;
     display: block;
     text-align: center;
+    background: url("siteimages/subtle_dots.png");
 }
 
 .banner:hover {
@@ -45,21 +46,19 @@ a {
     line-height: 110%;
     font-weight: bold;
     display: inline-block;
-    width: fit-content;
     color: rgb(0, 0, 0);
-    padding-left: 25px;
-    text-align: center;
-
-
 }
 
 a:hover {
     color: rgb(255, 0, 169);
 }
 
+nav a {
+    padding-left: 25px;
+}
 
 h2, dl, dt, dd {
-    padding-left: 5px;
+    /*padding-left: 5px;*/
     width: fit-content;
 }
 
@@ -94,8 +93,6 @@ dt {
     font-size: 28px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    /*color: rgb(255, 0, 169);*/
 }
 
 i {
@@ -117,17 +114,11 @@ i {
 
 .summary {
     font-size: 22px;
-    /*margin-left: 250px;*/
+    text-align: left;
 }
 
 .highlight {
     color: rgb(255, 0, 169);
-}
-
-h1 {
-    font-family: Roboto, sans-serif;
-    font-size: 48px;
-    text-align: center;
 }
 
 #here {
