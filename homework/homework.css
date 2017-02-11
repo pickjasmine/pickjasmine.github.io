@@ -57,3 +57,17 @@ a.tutorial:hover {
 .home.icon {
     color: rgb(0, 0, 0);
 }
+
+a:hover {
+    color: rgb(255, 0, 169);
+}
+
+nav a {
+    font-size: 35px;
+    text-align: center;
+}
+
+nav {
+    margin-left: 150px;
+    margin-right: 150px;
+}

@@ -28,38 +28,64 @@ body {
     bottom: 0;
     display: block;
     z-index: 999;
+    text-align: center;
 }
 
 .banner:hover {
     color: rgb(255, 0, 169);
 }
 
-li, p, a.banner {
+li, p {
     padding-left: 5px;
+    line-height: 180%;
 }
 
 a:hover {
     color: rgb(255, 0, 169);
 }
 
+
 .main {
+    padding-top: 25px;
     padding-bottom: 150px;
     background: url("siteimages/subtle_dots.png") repeat right top;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
 
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.contact {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+.contact:hover {
+    color: rgb(255, 0, 169);
 }
 
 a {
+    font-family: Roboto, sans-serif;
+    font-size: 35px;
+    line-height: 110%;
+    font-weight: bold;
     display: inline-block;
-    font-size: 45px;
-    line-height: 120%;
-    padding-left: 5px;
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    padding-left: 25px;
+    text-align: center;
+
+
 }
 
-a.contact {
-    color: rgb(0, 0,0);
-    color: rgba(0, 0, 0, 0.9);
-}
+/*#here {*/
+    /*color: rgb(255, 0, 169);*/
+/*}*/
 
-a.contact:hover {
-    color: rgb(255, 0, 169);
+nav a{
+    padding-bottom: 25px;
 }
