@@ -1,40 +1,44 @@
 * {
     padding: 0;
     margin: 0;
+    margin-top: 20px;
 }
 
 body {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 200px 20px;
+    /*margin-left: 150px;*/
+    /*margin-right: 150px;*/
     font-size: 20px;
-    font-family: "Open Sans", sans-serif;
+    font-family: Roboto, sans-serif;
     padding: 3px;
 }
 
 .header {
-    display: table;
+    display: block;
     /*text-align: center;*/
     /*margin-left: auto;*/
     /*margin-right: auto;*/
-    font-size: 60px;
-    font-family: "Abril Fatface", cursive;
+    /*font-size: 86px;*/
+    /*font-family: "Abril Fatface", cursive;*/
 }
 
 div.header {
-    display: table-cell;
+    display: block;
     vertical-align: middle;
 }
 
-span.header {
-    display: table-cell;
-    vertical-align: middle;
-}
+/*span.header {*/
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+/*}*/
 
 img {
     display: block;
+    /*vertical-align: middle;*/
     margin-left: auto;
     margin-right: auto;
 }
+
 
 nav li{
     display: inline;
@@ -43,8 +47,8 @@ nav li{
 }
 
 li a {
-    font-family: "Abril Fatface", cursive;
-    font-weight: lighter;
+    font-family: Roboto, sans-serif;
+    /*font-weight: lighter;*/
     color: white;
     text-decoration: none;
     padding-left: 5px;
@@ -53,7 +57,7 @@ li a {
 }
 
 li a:hover {
-    background-color: rgb(82, 10, 91);
+    background-color: rgb(107, 186, 210);
     color: white;
     text-decoration: underline;
 }
@@ -63,20 +67,21 @@ nav {
 }
 
 h1 {
-    color: olive;
+    color: rgb(107, 186, 210);
     text-align: center;
 }
 
 h2 {
     color: rgb(99, 19, 23);
-    font-family: "Abril Fatface", cursive;
-    font-weight: lighter;
+    font-family: Roboto, sans-serif;
+    /*font-weight: lighter;*/
 }
 
 h3 {
-    color: rgb(53, 99, 122);
-    font-family: "Abril Fatface", cursive;
-    font-weight: lighter;
+    color: rgb(107, 186, 210);
+    font-size: 28px;
+    font-family: Roboto, sans-serif;
+    /*font-weight: lighter;*/
 }
 
 h4 {
@@ -84,11 +89,13 @@ h4 {
 }
 
 h5 {
-    font-size: 28px;
+    font-size: 24px;
+    font-weight: light;
 }
 
 .center {
     text-align: center;
+    color: rgb(27, 132, 19);
 }
 
 p.center {
@@ -114,7 +121,8 @@ footer h2 {
 }
 
 li {
-    list-style-image: url(Images/tiny_tree.png);
+    list-style-image: url(Images/leafthumb.png);
+    vertical-align: middle;
 }
 
 #top a {
@@ -122,11 +130,15 @@ li {
 }
 
 a {
-    color: rgb(82, 10, 91);
+    color: rgb(107, 186, 210);
     text-decoration: none;
 }
 
 a:hover {
     color: rgb(99, 19, 23);
     text-decoration: underline;
+}
+
+.nomarg, li {
+    margin-top: 0;
 }
