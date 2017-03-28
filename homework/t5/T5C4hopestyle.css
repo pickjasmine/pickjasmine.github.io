@@ -1,0 +1,37 @@
+/*
+Jasmine Francois
+03-28-17
+ */
+
+body {
+    font-size: 20px;
+    font-family: "Times New Roman", serif;
+    color: rgb(50, 50, 50);
+    background-image: url(../../hwimages/asteroids.jpg);
+    margin: 0 7em 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: rgb(55, 95, 50);
+    font-family: Arial, sans-serif;
+    padding: 3px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    border-bottom: inset rgb(50, 50, 50) 5px;
+}
+
+p {
+    padding: 0 25px 0;
+}
+
+.middle {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+}
