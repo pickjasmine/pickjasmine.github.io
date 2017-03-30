@@ -42,10 +42,19 @@ p {
 }
 
 img {
-    padding-left: 15px;
+    padding-left: 5px;
 }
 
 .right {
     display: flex;
     float: right;
+}
+
+.left {
+    display: flex;
+    float: left;
+}
+
+.leftimg {
+    margin-right: 15px;
 }
