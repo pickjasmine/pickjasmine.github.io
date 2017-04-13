@@ -1,20 +1,21 @@
 * {
-    margin: 0;
+    margin: 5px;
     padding: 0;
 }
 
 body {
     font-size: 16px;
     font-family: Georgia, serif;
-    color: white;
-    background-color: white;
+    color: black;
+    background-color: rgb(15, 32, 67);
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(255, 255, 255);
     width: 900px;
     margin-right: auto;
     margin-left: auto;
+    overflow: hidden;
 }
 header {
     text-align: center;
@@ -29,6 +30,7 @@ aside {
 }
 
 h3 {
+    font-family: Georgia, serif;
     text-align: center;
     font-weight: bold;
     font-size: 22px;
@@ -38,7 +40,7 @@ aside p {
     margin-left: 5px;
     padding: 5px;
     color: white;
-    background-color: rgb(25, 75, 85);
+    background-color: maroon;
 }
 
 p {
@@ -46,12 +48,18 @@ p {
 }
 #main {
     float: left;
-    width: 575px;
+    width: 555px;
 }
 
 footer {
     clear: both;
     text-align: center;
+    margin-top: 25em;
+    margin-bottom: 3em;
     font-size: 22px;
-    color: rgb(25, 65, 65);
+    color: rgb(15, 32, 67);
+}
+
+footer p {
+    font-size: 16px;
 }
