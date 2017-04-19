@@ -4,8 +4,8 @@
 
   <!--
     Tutorial 8, Case 2
-    Your Name:
-    Today's Date:
+    Your Name: Jasmine Francois
+    Today's Date: 04-18-17
   -->
 
   <script src="../t2/T2modernizr.js"></script>
@@ -44,7 +44,39 @@
     }
 
     /* enter table styles below */
+    table {
+      width: 40%;
+      margin-left: 5%;
+      border-collapse: collapse;
+      float: right;
+    }
 
+    td {
+      border-bottom: dotted 2px navy;
+      padding: 10px;
+      color: black;
+      background-color: #deefce;
+      font-weight: bold;
+    }
+
+    th {
+      color: teal;
+      background-color: white;
+    }
+
+    td.year {
+      color: white;
+      background-color: black;
+    }
+
+    caption {
+      padding: 0.5em;
+      color: white;
+      background-color: teal;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 1.2em;
+    }
 
 
   </style>
@@ -53,10 +85,55 @@
 
 <body>
 
-  <p><img src="../../../../2017%20Spring/WDV%20101/Book%20References/New%20Perspectives/NP%20on%20Blended%20HTML%20and%20CSS%203e/Data%20Files/tutorial8/case2/images/berstlogo.jpg" alt="Best Used Cars logo image" /></p>
+  <p><img src="../../hwimages/berstlogo.jpg" alt="Best Used Cars logo image" /></p>
 
   <!-- enter the code for the data table below -->
+  <table>
+    <caption>Berst Used Cars Best Deals</caption>
+    <tr>
+      <th>Brand</th>
+      <th>Mileage</th>
+      <th>Cyl.</th>
+      <th>Condition/Remarks</th>
+    </tr>
 
+    <tr>
+      <td class="year" colspan="4">1 year old</td>
+    </tr>
+    <tr>
+      <td>Ford Fusion</td>
+      <td>12,000</td>
+      <td>6</td>
+      <td>Mint condition and single owner.</td>
+    </tr>
+    <tr>
+      <td>Chevy Malibu</td>
+      <td>4,000</td>
+      <td>4</td>
+      <td>Hardly driven. GPS system included.</td>
+    </tr>
+    <tr>
+      <td class="year" colspan="4">2 years old</td>
+    </tr>
+    <tr>
+      <td>Honda Accord</td>
+      <td>22,000</td>
+      <td>4</td>
+      <td>Like new. Comes with hybrid engine.</td>
+    </tr>
+    <tr>
+      <td>Toyota Camry</td>
+      <td>9,000</td>
+      <td>6</td>
+      <td>Factory fresh with plenty of extras included.</td>
+    </tr>
+    <tr>
+      <td>Hyundai Sonata</td>
+      <td>28,000</td>
+      <td>4</td>
+      <td>Electronic stability control included.</td>
+    </tr>
+  </table>
 
   <h2>It's Better at Berst</h2>
   <p>If you are shopping for a pampered used car, you've come to the right place. Berst Used Cars only deals with late-model, low-mileage cars that are single-owner vehicles. All of our cars are guaranteed from bumper to bumper for the first 12,000 miles or one year (whichever comes first). At Berst, we sell the best used cars at the best prices. We specialize in selling fleet rental vehicles.</p>
