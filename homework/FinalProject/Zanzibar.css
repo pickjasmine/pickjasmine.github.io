@@ -4,15 +4,42 @@
 }
 
 body {
-    background: url(images/annie-spratt-76930.jpg);
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 28px;
+    background: url(images/Logomakr_3WAYo0.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-attachment: fixed;
-    background-color: #c5d7d7;
+    background-color: #ffffff;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 5px;
+}
+
+nav {
+    text-align: center;
+    background-color: rgba(131, 189, 239, 0.95);
+}
+
+li {
+    font-weight: bold;
+    display: inline;
+    padding: 2px 15px;
+    margin: 2px;
+}
+
+p {
+    font-family: Roboto, sans-serif;
 }
 
 footer {
-
+    clear: both;
     position: fixed;
-    margin-bottom: 3px;
 }

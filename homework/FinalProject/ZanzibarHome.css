@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    /*padding-top: 100px;*/
+    /*display: block;*/
+    /*margin: 0 auto;*/
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: "Julius Sans One", sans-serif;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 15px;
+}
+
+li {
+    display: inline;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 2px 15px;
+}
