@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(images/annie-spratt-76930.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+    background-color: #c5d7d7;
+}
+
+footer {
+
+    position: fixed;
+    margin-bottom: 3px;
+}
