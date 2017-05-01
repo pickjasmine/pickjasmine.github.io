@@ -1,45 +1,66 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 body {
-    font-family: "Magrim", sans-serif;
-    font-size: 28px;
-    background: url(images/Logomakr_3WAYo0.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-attachment: fixed;
-    background-color: #ffffff;
+    font-family: Roboto, sans-serif;
 }
 
-.container{
-    width: 75%;
+img {
+    padding-top: 5px;
+    display: block;
     margin: 0 auto;
-}
+   }
 
-header {
+h1 {
+    font-size: 80px;
+    font-family: Megrim, sans-serif;
     text-align: center;
-    padding: 5px;
 }
 
 nav {
     text-align: center;
-    background-color: rgba(131, 189, 239, 0.95);
+    margin-top: 25px;
 }
 
 li {
-    font-weight: bold;
     display: inline;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    /*font-weight: bold;*/
     padding: 2px 15px;
-    margin: 2px;
 }
 
 p {
-    font-family: Roboto, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    padding-top: 15px;
 }
 
 footer {
-    clear: both;
+    display: block;
+    width: 100%;
     position: fixed;
+    bottom: 5px;
+    text-align: center;
 }
+
+.credit {
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+a.credit {
+    color: inherit;
+}
+
+h2, h3 {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-family: Roboto, sans-serif;
+    font-weight: lighter;
+}
+
