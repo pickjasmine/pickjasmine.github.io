@@ -8,7 +8,7 @@ body {
 }
 
 img {
-    padding-top: 75px;
+    padding-top: 5px;
     display: block;
     margin: 0 auto;
    }
@@ -26,7 +26,7 @@ nav {
 
 li {
     display: inline;
-    font-family: "Julius Sans One", sans-serif;
+    font-family: "Megrim", sans-serif;
     font-size: 24px;
     font-weight: bold;
     padding: 2px 15px;
@@ -36,6 +36,7 @@ p {
     text-align: center;
     font-size: 24px;
     color: rgb(0, 0, 0);
+    padding-top: 15px;
 }
 
 footer {
