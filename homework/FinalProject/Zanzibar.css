@@ -5,6 +5,14 @@
 
 body {
     font-family: Roboto, sans-serif;
+    background-image: url("images/Logomakr_5Ih2qv.png");
+    background-attachment: fixed;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: auto;
 }
 
 img {
@@ -39,28 +47,24 @@ p {
     /*padding-top: 15px;*/
 }
 
-.main {
-    margin-bottom: 55px;
-    padding-bottom: 55px;
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
 }
 
-footer {
-    background-color: rgb(255, 255, 255);
-    display: block;
-    width: 100%;
-    position: fixed;
-    bottom: 1px;
-    text-align: center;
-}
 
 footer p {
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(9, 133, 56);
-    line-height: 80%;
+    /*line-height: 80%;*/
 }
 
 .credit {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: lighter;
 }
 
@@ -68,26 +72,45 @@ a.credit {
     color: inherit;
 }
 
-h2, h3 {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    font-family: Roboto, sans-serif;
-    font-weight: lighter;
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 12.5%;
+    z-index: -1;
+    width: 75%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    /*overflow: hidden;*/
 }
 
 .container {
-    margin: 10px auto 50px auto;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 12.5%;*/
+    margin: 0 auto;
     width: 75%;
+    /*height: 100%;*/
+    /*background-color: rgba(255, 255, 255, 0.95);*/
+    /*overflow: hidden;*/
+}
+
+.main {
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 10%;
+    padding: 0 25px;
 }
 
 .left {
     width: 70%;
     float: left;
+    text-align: center;
 }
 
 .right {
     float: right;
+    width: 29%;
+    text-align: center;
 }
 
 .clear {
