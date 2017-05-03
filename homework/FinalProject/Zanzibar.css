@@ -5,7 +5,7 @@
 
 body {
     font-family: Roboto, sans-serif;
-    background-image: url("images/Logomakr_5Ih2qv.png");
+    background-image: url("images/Logomakr_0kt6JO.png");
     background-attachment: fixed;
 }
 
@@ -27,31 +27,48 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: rgb(12, 176, 74);
+    font: bold 40px Megrim, sans-serif;
+}
+
+h3 {
+    color: rgb(54, 102, 149);
+}
+
 nav {
     text-align: center;
     margin-top: 25px;
 }
 
+
 li {
     display: inline;
-    font-family: Roboto, sans-serif;
-    font-size: 24px;
-    /*font-weight: bold;*/
     padding: 2px 15px;
 }
+
+li a {
+    color: #fbb713;
+    text-decoration: none;
+    font: 24px Roboto, sans-serif;
+}
+
+li a:hover {
+    color: rgb(54, 102, 149);
+    text-decoration: underline;
+}
+
 
 p {
     text-align: center;
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(54, 102, 149);
     /*padding-top: 15px;*/
 }
 
 footer {
     border-top: rgb(251, 183, 19) ridge 3px;
-    border-right: rgb(42, 79, 116) solid 1px;
-    border-left: rgb(42, 79, 116) solid 1px;
-    background-color: rgb(54, 102, 149);
+    background-color: rgba(208, 213, 217, 0.9);
     position: fixed;
     bottom: 0;
     width: 75%;
@@ -64,18 +81,22 @@ footer {
 
 footer p {
     font-size: 16px;
-    color: rgb(255, 255, 255);
+    color: rgb(54, 102, 149);
     /*line-height: 80%;*/
 }
 
 .credit {
-    color: white;
+    color: rgb(54, 102, 149);
     font-size: 12px;
     font-weight: lighter;
 }
 
 a.credit {
     color: inherit;
+}
+.highlight {
+    color: rgb(192, 44, 35);
+    font-weight: bold;
 }
 
 .overlay {
@@ -102,21 +123,44 @@ a.credit {
 }
 
 .hours {
-    color: white;
+    color: rgb(54, 102, 149);
 }
 
-.left {
-    width: 70%;
+.aboutleft {
+    width: 600px;
     float: left;
     text-align: center;
 }
 
-.right {
+.aboutright {
     float: right;
-    width: 29%;
+    width: 285px;
     text-align: center;
 }
 
 .clear {
     clear: both;
+}
+
+.menuleft {
+    width: 65%;
+    float: left;
+}
+
+.menuright {
+    width: 33%;
+    float: right;
+    text-align: right;
+}
+
+.left {
+    width: 65%;
+    float: left;
+    text-align: center;
+}
+
+.right {
+    width: 33%;
+    float: right;
+    text-align: center;
 }

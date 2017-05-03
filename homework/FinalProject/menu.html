@@ -5,12 +5,49 @@
     <title>Our Menu</title>
     <link href="Zanzibar.css" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Megrim|Roboto" rel="stylesheet">
+
+    <style type="text/css">
+
+        .menu {
+            display: block;
+            padding-left: 25px;
+        }
+
+        #food {
+            margin-bottom: 65px;
+        }
+
+        ul.menu, ul.prices {
+            font-size: 36px;
+        }
+
+        ul.menu:before {
+            content: url("images/Logomakr_6uBtMr.png");
+        }
+
+        ul.prices:after {
+            content: url("images/Logomakr_6uBtMr.png")
+        }
+
+        li.menu {
+            text-indent: 4em;
+        }
+
+        .prices {
+            display: block;
+            padding-right: 25px;
+        }
+
+
+    </style>
 </head>
 <body>
-
+<div class="overlay"></div>
 <div class="container">
 
-    <img src="images/Logomakr_68xBZL.png" alt="Zanzibar's Coffee Cups" title="Zanzibar's Coffee House"/>
+    <header>
+        <img src="images/Logomakr_9YWfH1.png" alt="Zanzibar's Coffee Cups" title="Zanzibar's Coffee House"/>
+    </header>
 
     <nav>
         <ul>
@@ -23,18 +60,107 @@
     </nav>
 
     <section class="main">
-        <p>Zanzibar's is a locally owned and operated coffee house and roastery in St. Paul, MN.</p>
+        <br>
 
+        <a href="#drinks">Drink Menu</a>
+        <a href="#food">Food Menu</a>
+
+        <p>At Zanzibar's, we roast our coffee in house to create unique and tantalizing flavors. </p>
+        <p>We typically make our products with organic whole milk, but if you need soy milk, almond milk,
+            or lactose-free milk we are happy to do so!</p>
+        <div id="drinks">
+            <div class="menuleft">
+                <ul class="menu">Coffees</ul>
+                <li class="menu">Sonny (medium roast)</li>
+                <li class="menu">Trumble (dark roast)</li>
+                <li class="menu">Whipper (light roast)</li>
+
+                <ul class="menu">Lattes</ul>
+                <li class="menu">Vanilla</li>
+                <li class="menu">Caramel</li>
+                <li class="menu">Hazelnut</li>
+
+                <ul class="menu">Americano</ul>
+                <li class="menu">Full-Caf</li>
+                <li class="menu">Half-Caf</li>
+                <li class="menu">Decaf</li>
+
+                <ul class="menu">Espresso</ul>
+                <li class="menu">&nbsp;</li>
+
+                <ul class="menu">Mochas</ul>
+                <li class="menu">White Chocolate</li>
+                <li class="menu">Milk Chocolate</li>
+                <li class="menu">Dark Chocolate</li>
+
+                <ul class="menu">Macchiatos: Hot and Iced</ul>
+                <li class="menu">Caramel</li>
+                <li class="menu">Vanilla</li>
+                <li class="menu">Hazelnut</li>
+            </div> <!--menu left-->
+
+        <div class="menuright">
+            <ul class="prices">Coffees</ul>
+            <li class="prices">Large: $3.50</li>
+            <li class="prices">Medium: $2.75</li>
+            <li class="prices">Small: $2.50</li>
+
+            <ul class="prices">Lattes</ul>
+            <li class="prices">Large: $4.50</li>
+            <li class="prices">Medium: $3.50</li>
+            <li class="prices">Small: $2.50</li>
+
+            <ul class="prices">Americano</ul>
+            <li class="prices">Large: $5.00</li>
+            <li class="prices">Medium: $4.00</li>
+            <li class="prices">Small: $3.00</li>
+
+            <ul class="prices">Espresso</ul>
+            <li class="prices">$1.25 per shot</li>
+
+            <ul class="prices">Mochas</ul>
+            <li class="prices">Large: $4.50</li>
+            <li class="prices">Medium: $4.00</li>
+            <li class="prices">Small: $3.50</li>
+
+            <ul class="prices">Macchiatos</ul>
+            <li class="prices">Large: $4.50</li>
+            <li class="prices">Medium: $4.00</li>
+            <li class="prices">Small: $3.00</li>
+
+
+        </div> <!--menu right-->
+
+        </div> <!--drinks div-->
+
+        <div id="food">
+
+
+        </div>
 
     </section>
-</div>
-    <footer>
-        <p>Located at 604 24th Street, St. Paul, MN.  Call us at(702)971.1154</p>
-        <div class="credit">Technology graphic by <a class="credit" href="http://www.flaticon.com/authors/baianat">Baianat</a>
-            from <a class="credit" href="http://www.flaticon.com/">Flaticon</a> is licensed under
-            <a class="credit" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>.
-            Made with <a class="credit" href="http://logomakr.com" title="Logo Maker">Logo Maker</a></div>
-    </footer>
 
+    <footer>
+        <div class="left">
+            <p>Located at 604 24th Street, St. Paul, MN.</p>
+            <p>Call us at(702)971.1154</p>
+
+
+            <div class="credit">
+                All graphics by <a class="credit" href="http://www.flaticon.com/authors/baianat">Baianat</a>
+                from <a class="credit" href="http://www.flaticon.com/">Flaticon</a> are licensed under
+                <a class="credit" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>.
+                Made with <a class="credit" href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
+            </div>
+        </div> <!--left div-->
+
+        <div class="right">
+            <h3>Hours</h3>
+            <h5 class="hours">Monday through Friday 6AM to 10PM</h5>
+            <h5 class="hours">Saturday and Sunday 6AM to 12PM</h5>
+        </div> <!--right div-->
+
+    </footer>
+</div> <!--container div-->
 </body>
 </html>
