@@ -5,7 +5,7 @@
 
 body {
     font-family: Roboto, sans-serif;
-    background-image: url("images/Logomakr_0kt6JO.png");
+    background-image: url("../images/Logomakr_0kt6JO.png");
     background-attachment: fixed;
 }
 
@@ -29,10 +29,11 @@ h1 {
 
 h2 {
     color: rgb(12, 176, 74);
-    font: bold 40px Megrim, sans-serif;
+    font: bold 50px Megrim, sans-serif;
+    border-bottom: dotted 3px rgb(251, 183, 19);
 }
 
-h3 {
+h3, h4 {
     color: rgb(54, 102, 149);
 }
 
@@ -48,7 +49,7 @@ li {
 }
 
 li a {
-    color: #fbb713;
+    color: #ff3a2f;
     text-decoration: none;
     font: 24px Roboto, sans-serif;
 }
@@ -142,16 +143,6 @@ a.credit {
     clear: both;
 }
 
-.menuleft {
-    width: 65%;
-    float: left;
-}
-
-.menuright {
-    width: 33%;
-    float: right;
-    text-align: right;
-}
 
 .left {
     width: 65%;
@@ -163,4 +154,30 @@ a.credit {
     width: 33%;
     float: right;
     text-align: center;
+}
+
+.dropdownmenu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropcontent {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropcontent a {
+    color: rgb(255, 58, 47);
+    padding: 3px 5px;
+    display: block;
+    text-decoration: none;
+}
+
+
+.dropdownmenu:hover .dropcontent {
+    display: block;
 }

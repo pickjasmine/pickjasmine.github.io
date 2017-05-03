@@ -3,8 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Events Calender</title>
-    <link href="Zanzibar.css" type="text/css" rel="stylesheet"/>
+    <link href="files/Zanzibar.css" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Megrim|Roboto" rel="stylesheet">
+
+    <style type="text/css">
+
+        p {
+            color: rgb(12, 176, 74);
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        legend {
+            text-align: center;
+            color: rgb(54, 102, 149);
+        }
+
+        td {
+            color: rgb(54, 102, 149);
+            width: 10%;
+            min-height: 5%;
+        }
+
+        td a {
+            color: rgb(192, 44, 35);
+            text-decoration: none;
+        }
+
+        td a:hover {
+            color: rgb(251, 183, 19);
+        }
+
+        th {
+            font-size: 26px;
+        }
+
+        table, th, td, tr {
+            color: rgb(54, 102, 149);
+            border: 1px solid rgb(54, 102, 149);
+        }
+    </style>
 </head>
 <body>
 
@@ -19,7 +59,15 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="menu.html">Our Menu</a></li>
+            <li>
+                <div class="dropdownmenu">
+                    <a class="dropdown" href="menu.html">Our Menu</a>
+                    <ul class="dropcontent">
+                        <li><a href="menu.html#drinks">Drink Menu</a></li>
+                        <li><a href="menu.html#food">Food Menu</a></li>
+                    </ul>
+                </div>
+            </li>
             <li><a href="events.html">Upcoming Events</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -27,17 +75,76 @@
 
     <section class="main">
         <br>
+        <p>Click on the band name to go to their website.</p>
 
-        <p>Zanzibar's mission is to bring fresh and delicious coffee to the people.
-            Our coffee is roasted in house, giving it a unique and refreshing flavor that will delight your tastebuds.</p>
-        <p>We also make and serve fresh sandwiches, salads, soups, and a variety of baked goods that feature seasonal flavors.</p>
-
-        <p>At Zanzibar's, we believe in supporting our community.</p>
-
-        <p>We host live performances every Saturday night, featuring prominent bands and performers from around the
-            St.Paul and Minneapolis area.</p>
-
-        <p>We buy ingredients for our soups, sandwiches, and other delicacies from local farmers and producers.</p>
+        <table>
+            <th colspan="7">June</th>
+            <tr>
+                <td>Sunday</td>
+                <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td>Saturday</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2<br>
+                Book Reading and Signing with Cindy Roads @ 6:00 PM</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5<br>
+                <a href="https://www.google.com">Google Band</a> @ 7:00PM
+                <br>
+                <a href="https://www.dmacc.edu">DMACC Group</a> @ 9:00PM</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10<br>
+                Open Mic Night</td>
+                <td>11</td>
+                <td>12<br>
+                <a href="https://www.yahoo.com">Yahoo Girls</a> @ 8:30PM</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14<br>
+                Slam Poetry Readings @ 7:00PM</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19<br>
+                <a href="https://www.w3schools.com/html/">HTML5</a> @ 9:30PM</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24<br>
+                Open Mic Night</td>
+                <td>25</td>
+                <td>26<br>
+                <a href="https://github.com">The GitHubs</a> @ 8:30PM</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td>1 July</td>
+                <td>2<br>
+                <a href="https://www.codecademy.com">Code Academy Players</a> @ 9:00PM</td>
+            </tr>
+        </table>
 
     </section>
 
@@ -56,7 +163,7 @@
         </div> <!--left div-->
 
         <div class="right">
-            <h3>Hours</h3>
+            <h4>Hours</h4>
             <h5 class="hours">Monday through Friday 6AM to 10PM</h5>
             <h5 class="hours">Saturday and Sunday 6AM to 12PM</h5>
         </div> <!--right div-->
