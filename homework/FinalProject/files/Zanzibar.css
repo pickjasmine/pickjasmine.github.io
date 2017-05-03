@@ -68,7 +68,7 @@ p {
 }
 
 footer {
-    border-top: rgb(251, 183, 19) ridge 3px;
+    border-top: rgb(251, 183, 19) dotted 3px;
     background-color: rgba(208, 213, 217, 0.9);
     position: fixed;
     bottom: 0;
@@ -84,6 +84,15 @@ footer p {
     font-size: 16px;
     color: rgb(54, 102, 149);
     /*line-height: 80%;*/
+}
+
+form {
+    margin-bottom: 65px;
+    border: dotted 3px rgb(251, 183, 19);
+}
+
+label {
+    color: rgb(54, 102, 149);
 }
 
 .credit {
@@ -142,7 +151,6 @@ a.credit {
 .clear {
     clear: both;
 }
-
 
 .left {
     width: 65%;
