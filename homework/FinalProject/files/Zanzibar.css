@@ -49,8 +49,8 @@ h5 {
 nav {
     text-align: center;
     margin-top: 25px;
+    background-color: rgba(251, 183, 19, 0.8);
 }
-
 
 li {
     display: inline;
@@ -60,7 +60,7 @@ li {
 li a {
     color: #c02c23;
     text-decoration: none;
-    font: 24px Roboto, sans-serif;
+    font: bold 24px Roboto, sans-serif;
 }
 
 li a:hover {
@@ -90,7 +90,7 @@ footer {
 
 
 footer p {
-    font-size: 16px;
+    font-size: 18px;
     color: rgb(54, 102, 149);
     /*line-height: 80%;*/
 }
@@ -216,13 +216,18 @@ h3.front {
     float: right;
 }
 
+.leftpic {
+    width: 48%;
+    float: left;
+}
 a.rightpic, a.leftpic {
     margin-bottom: 65px;
     text-align: center;
     font-size: 65px;
 }
 
-.leftpic {
-    width: 48%;
-    float: left;
+a.rightpic:hover, a.leftpic:hover {
+    color: rgb(54, 102, 149);
+    text-decoration: underline;
 }
+
