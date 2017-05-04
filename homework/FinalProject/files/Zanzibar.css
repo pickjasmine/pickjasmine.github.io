@@ -21,10 +21,14 @@ a {
 }
 
 img {
-    padding-top: 5px;
+    padding: 5px;
     display: block;
     margin: 0 auto;
    }
+
+header.img {
+    padding: 0 10px;
+}
 
 h1 {
     font-size: 40px;
