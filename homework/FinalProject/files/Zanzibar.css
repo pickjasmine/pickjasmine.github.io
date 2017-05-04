@@ -15,6 +15,11 @@ header {
     left: auto;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(12, 176, 74);
+}
+
 img {
     padding-top: 5px;
     display: block;
@@ -37,6 +42,10 @@ h3, h4 {
     color: rgb(54, 102, 149);
 }
 
+h5 {
+    font-size: 16px;
+}
+
 nav {
     text-align: center;
     margin-top: 25px;
@@ -49,7 +58,7 @@ li {
 }
 
 li a {
-    color: #ff3a2f;
+    color: #c02c23;
     text-decoration: none;
     font: 24px Roboto, sans-serif;
 }
@@ -69,7 +78,7 @@ p {
 
 footer {
     border-top: rgb(251, 183, 19) dotted 3px;
-    background-color: rgba(208, 213, 217, 0.9);
+    background-color: rgb(208, 213, 217);
     position: fixed;
     bottom: 0;
     width: 75%;
@@ -109,6 +118,19 @@ a.credit {
     font-weight: bold;
 }
 
+.front {
+    padding: 0 75px;
+    border: dotted 3px rgb(251, 183, 19);
+}
+
+h3.front {
+    font-weight: lighter;
+    color: rgb(12, 176, 74);
+    border: none;
+    font-size: 40px;
+    text-align: center;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -133,7 +155,7 @@ a.credit {
 }
 
 .hours {
-    color: rgb(54, 102, 149);
+    color: rgb(192, 44, 35);
 }
 
 .aboutleft {
@@ -185,7 +207,22 @@ a.credit {
     text-decoration: none;
 }
 
-
 .dropdownmenu:hover .dropcontent {
     display: block;
+}
+
+.rightpic {
+    width: 48%;
+    float: right;
+}
+
+a.rightpic, a.leftpic {
+    margin-bottom: 65px;
+    text-align: center;
+    font-size: 65px;
+}
+
+.leftpic {
+    width: 48%;
+    float: left;
 }
