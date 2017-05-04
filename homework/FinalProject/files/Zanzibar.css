@@ -180,6 +180,12 @@ h3.front {
     padding: 0;
 }
 
+.contactleft {
+    width: 63%;
+    float: left;
+    text-align: center;
+}
+
 .left {
     width: 45%;
     float: left;
