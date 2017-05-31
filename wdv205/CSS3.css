@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("205images/Logomakr_3Jeomc.png"), url("205images/white-wood.jpg");
+    background-attachment: fixed;
+    background-position: right, top left;
+    background-repeat: repeat-x, repeat;
+    font-family: Roboto, sans-serif;
+}
+
+.main {
+    width: 65%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 45px;
+}
+
+h1 {
+    margin: 10px auto;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    text-align: center;
+    text-shadow: 4px 3px #f5bfc5;
+}
+dl {
+    padding: 25px;
+}
+
+dt {
+    font-size: 24px;
+    text-shadow: 2px 2px #f5bfc5;
+    text-align: center;
+}
+
+dd {
+    font-size: 18px;
+    padding: 2px 5px;
+    text-indent: 2em;
+}
