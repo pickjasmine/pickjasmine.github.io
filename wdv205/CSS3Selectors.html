@@ -3,8 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS3Selectors</title>
-    <link href="CSS3.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+
+        .main {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2, h3 {
+            font-size: 20px;
+        }
+
+        h3~p {
+            color: #ff6a87;
+        }
+
+        p {
+            font-weight: 300;
+        }
+
+        :not(p) {
+            font-weight: bold;
+        }
+
+        input {
+            display: block;
+            margin: 0 auto;
+            box-shadow: 3px 3px rgb(0, 0, 0);
+        }
+
+        input:in-range {
+            border: 1px solid black;
+            background-color: rgb(45, 255, 66);
+        }
+
+        input:out-of-range {
+            color: white;
+            background-color: rgb(230, 45, 45);
+        }
+    </style>
 </head>
 <body>
+<div class="main">
+<h1>CSS3 Selectors</h1>
+
+    <div><h3>1. element1~element2:</h3>
+        <p>This selector might be used on a webpage with lots of content that is divided into sections.  For example, in a list
+    article that has headers(h2) and subheadings(h3), you may want to include a comment(p) after some subheadings. You
+    could use this selector to make those comments a unique style without affecting the other p tags. Keep in mind, you
+        must separate your page into divs in order for this to be effective. <br>
+    This is demonstrated on this webpage in the odd numbered list items. Odd numbered list items use h3 tags, and even
+    number items use h2 tags. I use p~h3 to select all p tags that are preceded by h3s, so only odd numbered paragraphs
+    are affected by the style rule.
+        </p>
+    </div>
+
+    <div>
+    <h2>2. element[attribute^=value]</h2>
+        <p>This selector will select only the given elements with an attribute equal to the given value.  This might be
+    useful when you are trying to select images with specific height values or specific titles.  This can also work
+    to select attributes that begin with the same value. The example given on W3Cschools is a[href^="https"], meaning
+    ever a tag that has a href beginning with https will be affected by the styles rules you apply.</p>
+    </div>
+
+    <div>
+    <h3>3. element[attribute$=value]</h3>
+    <p>Similar to #2, this selector will select all elements whose attribute ends with the given value.  This is used when
+    you want to apply specific styles to .pdf files and .zip files, without the need for classes. An example of the code
+    for this example: a[href$=".jpg"].  This will select all links that are .jpg files and apply rules to those links
+    only.
+    </p>
+    </div>
+
+    <div>
+    <h2>4. element[attribute*=value]</h2>
+    <p>Again, similar to the two listed above, this selector will select all elements whose attribute contains the
+    given value.  This is extremely useful if you want to highlight only specific links on your page. Say, for example,
+    you have a deal with the Washington Post to make any of their links on your site a flashy color.  Instead of
+    creating a class only for this, you can use this selector to accomplish your task.</p>
+    </div>
+
+    <div>
+    <h3>5. element: first-of-type</h3>
+    <p>This selector will apply style rules only to the first element of its parent. You might use this if you have a
+    bunch of lists, and you want the first list item(li) on each to stand out. You would utilize this by declaring
+    li:first-of-type. </p>
+    </div>
+
+    <div>
+    <h2>6. :not(selector)</h2>
+    <p>This selector is very straightforward; it selects all elements that is not the one you specified.  If you want to
+     select everything that is not an h1-tag, you would type :not(h1).  If you're having troubles with the not(selector)
+        make sure that you specify a style for the undesired element, as that element might be inheriting a style from
+        another element, which cancels out the effect.  This selector is demonstrated on this page; all non-p
+        elements have been bolded.</p>
+    </div>
+
+    <div>
+    <h3>7. :in-range</h3>
+    <p>This selector will affect elements with a value within the given range.  This can only be applied to elements
+    that have specific ranges. An easy example to relate to (shown below) is a box that takes input numbers. When the
+    number entered is between a specified range (in this case, between 5 and 10), the box will have a different style
+    than when an out-of-range number is entered.</p>
+    </div>
+
+    <input type="number" height="2" width="4" min="5" max="10" value="4">
+
+    <div>
+    <h2>8. :out-of-range</h2>
+    <p>Similar to in-range, this selector can only be applied to elements with specific ranges. It will select elements
+    that are out of the given range for those elements.  In the same example as above, you will see that when a number is
+    entered outside of the given range (5 to 10), the box turns from green to red.</p>
+    </div>
+
+    <div>
+    <h3>9. :last-child</h3>
+    <p>This selector will select every specified element that is the last child of its parent. Say you have a webpage
+    with multiple sections. Each section(div) has multiple paragraphs(p). You want to apply a border at the bottom of
+        each section, and you can do so using p:last-child. This will select that last p tag in each div to apply
+        a border to.</p>
+    </div>
+
+    <div>
+    <h2>10. :nth-child(n)</h2>
+    <p>This selector is similar to last-child, but it specifies which numbered child you want to affect.  An example:
+        You are a wedding photographer trying to set up your website. You have a page that shows previews from each
+        wedding(each wedding has its own div), but the third picture you have displayed is always a picture of the
+        couple kissing. You want to apply a special style to the kissing picture (the third picture)in each set. You
+        will use the code img:nthchild(3) to select only the third image under each div.</p>
+    </div>
+</div>
+
+
+
+
+
 </body>
 </html>
