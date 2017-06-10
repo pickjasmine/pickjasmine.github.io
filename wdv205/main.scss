@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+$primaryColor: #f5bfc5;
+
+$secondaryColor: #454545;
+
+
+@import 'gradientMixin';	/* looks for a file call gradient.scss */
+
+
+.applyGradient { @include verticalGradient($primaryColor, $secondaryColor) }
+
+.scssDisplay	{
+	color:white;
+	font-size:24px;	
+}
