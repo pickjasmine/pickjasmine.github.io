@@ -2,15 +2,15 @@
 /* CSS Document */
 /* looks for a file call gradient.scss */
 .applyGradient {
-  background: #f5bfc5;
+  background: #61bad2;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#f5bfc5, #454545);
+  background: -webkit-linear-gradient(#61bad2, #454545);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#f5bfc5, #454545);
+  background: -o-linear-gradient(#61bad2, #454545);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#f5bfc5, #454545);
+  background: -moz-linear-gradient(#61bad2, #454545);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#f5bfc5, #454545);
+  background: linear-gradient(#61bad2, #454545);
   /* Standard syntax (must be last) */ }
 
 .scssDisplay {

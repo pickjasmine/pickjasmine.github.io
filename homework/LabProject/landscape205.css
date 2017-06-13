@@ -1,3 +1,22 @@
+/* CSS Document */
+/* CSS Document */
+/* looks for a file call gradient.scss */
+.applyGradient {
+  background: #61bad2;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#61bad2, #454545);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#61bad2, #454545);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#61bad2, #454545);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#61bad2, #454545);
+  /* Standard syntax (must be last) */ }
+
+.scssDisplay {
+  color: white;
+  font-size: 24px; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -32,11 +51,14 @@ nav {
 
 h1 {
   color: #7bcc2e;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 2px 2px black; }
 
 h2 {
+  font-size: 36px;
   padding: 5px;
-  color: #f5bfc5; }
+  color: #f5bfc5;
+  text-shadow: 1px 1px black; }
 
 h4 {
   font-weight: lighter; }
@@ -60,8 +82,7 @@ footer h2 {
   color: #7bcc2e; }
 
 li {
-  list-style-type: square;
-  vertical-align: middle; }
+  list-style-type: square; }
 
 #top a {
   text-align: center; }
@@ -73,6 +94,14 @@ a {
 a:hover {
   color: #7bcc2e;
   text-decoration: underline; }
+
+.applyGradient {
+  color: white; }
+
+.applyGradient:hover {
+  text-decoration: underline;
+  color: white;
+  opacity: 0.6; }
 
 .flex-container {
   display: -webkit-inline-flex;
