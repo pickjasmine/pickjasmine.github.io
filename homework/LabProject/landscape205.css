@@ -12,11 +12,8 @@ body {
   background-blend-mode: overlay; }
 
 .main {
-  width: 65%;
-  margin: 0 auto;
-  display: -webkit-inline-flex;
-  /*Safari*/
-  display: inline-flex; }
+  width: 75%;
+  margin: 0 auto; }
 
 nav {
   text-align: center; }
@@ -25,12 +22,12 @@ nav {
     text-align: center; }
     nav li a {
       /*font-weight: lighter;*/
-      color: #61bad2;
+      color: #f5bfc5;
       text-decoration: none;
       padding-left: 5px;
       padding-right: 5px; }
     nav li a:hover {
-      color: white;
+      color: #61bad2;
       text-decoration: underline; }
 
 h1 {
@@ -77,16 +74,19 @@ a:hover {
   color: #7bcc2e;
   text-decoration: underline; }
 
-.left {
-  width: 60%;
+.flex-container {
+  display: -webkit-inline-flex;
+  /*Safari*/
   display: inline-flex;
-  -webkit-flex: 2;
-  flex: 2; }
+  flex-flow: row wrap;
+  justify-content: space-around; }
 
-.right {
-  display: inline-flex;
-  -webkit-flex: 1;
-  /* Safari */
-  flex: 1; }
+.flex1 {
+  width: 55%;
+  align-items: center; }
+
+.flex3 {
+  padding: 5px;
+  width: 40%; }
 
 /*# sourceMappingURL=landscape205.css.map */

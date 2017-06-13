@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+$blue: rgb(97, 186, 210);
+$pink: rgb(245, 191, 197);
+$green: rgb(123, 204, 46);
+
 body {
     background: url("Images/owen-williams-89776.jpg") no-repeat fixed;
     background-size: cover;
@@ -14,10 +18,8 @@ body {
 }
 
 .main {
-    width: 65%;
+    width: 75%;
     margin: 0 auto;
-    display: -webkit-inline-flex; /*Safari*/
-    display: inline-flex;
 }
 
 
@@ -30,27 +32,27 @@ nav {
 
         a {
             /*font-weight: lighter;*/
-            color: rgb(97, 186, 210);
+            color: $pink;
             text-decoration: none;
             padding-left: 5px;
             padding-right: 5px;
         }
 
         a:hover {
-            color: white;
+            color: $blue;
             text-decoration: underline;
         }
     }
 }
 
 h1 {
-    color: #7bcc2e;
+    color: $green;
     text-align: center;
 }
 
 h2 {
     padding: 5px;
-    color: rgb(245, 191, 197);
+    color: $pink;
     //font-weight: lighter;
 }
 
@@ -78,7 +80,7 @@ footer {
 }
 
 footer h2 {
-    color: #7bcc2e;
+    color: $green;
 }
 
 
@@ -92,24 +94,31 @@ li {
 }
 
 a {
-    color: rgb(97, 186, 210);
+    color: $blue;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(123, 204, 46);
+    color: $green;
     text-decoration: underline;
 }
 
-.left {
-    width: 60%;
+.flex-container {
+    display: -webkit-inline-flex; /*Safari*/
     display: inline-flex;
-    -webkit-flex: 2;
-    flex: 2;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    //align-content: center;
 }
 
-.right {
-    display: inline-flex;
-    -webkit-flex: 1; /* Safari */
-    flex: 1;
+
+.flex1 {
+    width: 55%;
+    align-items: center;
+}
+
+
+.flex3{
+    padding: 5px;
+    width: 40%;
 }
