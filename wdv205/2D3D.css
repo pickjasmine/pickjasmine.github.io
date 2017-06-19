@@ -10,6 +10,17 @@ h1 {
   font-size: 50px;
   text-align: center; }
 
+a {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #ff1f49; }
+
+a:last-of-type {
+  border-bottom: 2px black ridge; }
+
 p {
   margin: 10px 0; }
 
@@ -49,11 +60,11 @@ p {
   -ms-transform: rotateX(955deg);
   -webkit-transform: rotateX(955deg);
   transform: rotateX(955deg);
-  -moz-transform: rotateY(925deg);
-  -o-transform: rotateY(925deg);
-  -ms-transform: rotateY(925deg);
-  -webkit-transform: rotateY(925deg);
-  transform: rotateY(925deg); }
+  -moz-transform: rotateY(965deg);
+  -o-transform: rotateY(965deg);
+  -ms-transform: rotateY(965deg);
+  -webkit-transform: rotateY(965deg);
+  transform: rotateY(965deg); }
 
 .flexbox {
   display: -webkit-inline-flex;
