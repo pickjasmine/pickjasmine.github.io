@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.main {
+  width: 75%;
+  margin: 0 auto 20px; }
+
+h1 {
+  font-size: 50px;
+  text-align: center; }
+
+p {
+  margin: 10px 0; }
+
+.twoD {
+  transition: transform 4s;
+  transition-timing-function: ease-in-out; }
+
+.twoD:hover {
+  -moz-transform: rotate(1080deg);
+  -o-transform: rotate(1080deg);
+  -ms-transform: rotate(1080deg);
+  -webkit-transform: rotate(1080deg);
+  transform: rotate(1080deg); }
+
+.contain3D {
+  -webkit-perspective: 450px; }
+  .contain3D p {
+    font-size: 36px;
+    text-align: center; }
+
+.threeD {
+  transition: transform 4s; }
+
+.threeD:hover {
+  -moz-transform: skewY(15deg);
+  -o-transform: skewY(15deg);
+  -ms-transform: skewY(15deg);
+  -webkit-transform: skewY(15deg);
+  transform: skewY(15deg);
+  -moz-transform: rotateZ(780deg);
+  -o-transform: rotateZ(780deg);
+  -ms-transform: rotateZ(780deg);
+  -webkit-transform: rotateZ(780deg);
+  transform: rotateZ(780deg);
+  -moz-transform: rotateX(955deg);
+  -o-transform: rotateX(955deg);
+  -ms-transform: rotateX(955deg);
+  -webkit-transform: rotateX(955deg);
+  transform: rotateX(955deg);
+  -moz-transform: rotateY(925deg);
+  -o-transform: rotateY(925deg);
+  -ms-transform: rotateY(925deg);
+  -webkit-transform: rotateY(925deg);
+  transform: rotateY(925deg); }
+
+.flexbox {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.flex1 {
+  width: 70%;
+  padding-right: 25px; }
+
+.flex2 {
+  width: 200px;
+  padding: 5px;
+  border: 2px black ridge; }
+  .flex2 p {
+    font-size: 36px;
+    text-align: center; }
+
+/*# sourceMappingURL=2D3D.css.map */

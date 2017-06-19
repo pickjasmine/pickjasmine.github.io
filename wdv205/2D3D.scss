@@ -1,0 +1,87 @@
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin display() {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 75%;
+  margin: 0 auto 20px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.twoD {
+  transition: transform 4s;
+  transition-timing-function: ease-in-out;
+}
+
+.twoD:hover {
+  @include transform(rotate(1080deg));
+}
+
+.contain3D {
+  -webkit-perspective: 450px;
+  //@include transform(perspective(400px));
+
+  p {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+.threeD {
+  transition: transform 4s;
+}
+
+.threeD:hover {
+  //transform: rotate3d(0, 100, 55, 45deg);
+  @include transform(skewY(15deg));
+  @include transform(rotateZ(780deg));
+  @include transform(rotateX(955deg));
+  @include transform(rotateY(965deg));
+
+  //@include transform(translate(350px));
+  //@include transform(scale(2));
+  //@include transform(scale3d(0.5, 0.5, 2));
+}
+
+.flexbox {
+  @include display();
+}
+
+.flex1 {
+  width: 70%;
+  padding-right: 25px;
+}
+
+.flex2 {
+  width: 200px;
+  padding: 5px;
+  border: 2px black ridge;
+
+  p {
+    font-size: 36px;
+    text-align: center;
+  }
+}
