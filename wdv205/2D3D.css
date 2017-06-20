@@ -25,26 +25,15 @@ p {
   margin: 10px 0; }
 
 .twoD {
-  transition: transform 2s;
-  transition-timing-function: ease-in-out; }
-
-.twoD:hover {
-  -moz-transform: matrix(0.5, 0, 0, 0.5, 50, 0);
-  -o-transform: matrix(0.5, 0, 0, 0.5, 50, 0);
-  -ms-transform: matrix(0.5, 0, 0, 0.5, 50, 0);
-  -webkit-transform: matrix(0.5, 0, 0, 0.5, 50, 0);
-  transform: matrix(0.5, 0, 0, 0.5, 50, 0); }
-
-.twoDD {
   transition: transform 4s;
   transition-timing-function: ease-in-out; }
 
-.twoDD:hover {
-  -moz-transform: rotate(1080deg);
-  -o-transform: rotate(1080deg);
-  -ms-transform: rotate(1080deg);
-  -webkit-transform: rotate(1080deg);
-  transform: rotate(1080deg); }
+.twoD:hover {
+  -moz-transform: rotate(1080deg) scale(0.5);
+  -o-transform: rotate(1080deg) scale(0.5);
+  -ms-transform: rotate(1080deg) scale(0.5);
+  -webkit-transform: rotate(1080deg) scale(0.5);
+  transform: rotate(1080deg) scale(0.5); }
 
 .contain3D {
   -moz-transform: perspective(400px);
@@ -61,6 +50,10 @@ p {
   transition: transform 4s; }
 
 .threeD:hover {
+  -moz-transform: rotate3d(80, 120, 80, 760deg);
+  -o-transform: rotate3d(80, 120, 80, 760deg);
+  -ms-transform: rotate3d(80, 120, 80, 760deg);
+  -webkit-transform: rotate3d(80, 120, 80, 760deg);
   transform: rotate3d(80, 120, 80, 760deg); }
 
 .flexbox {

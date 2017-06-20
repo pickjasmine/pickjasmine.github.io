@@ -1,4 +1,12 @@
-@mixin transform($transforms) {
+@mixin transform2($transform0, $transform1) {
+  -moz-transform: $transform0 $transform1;
+  -o-transform: $transform0 $transform1;
+  -ms-transform: $transform0 $transform1;
+  -webkit-transform: $transform0 $transform1;
+  transform: $transform0 $transform1;
+}
+
+@mixin transform1($transforms) {
   -moz-transform: $transforms;
   -o-transform: $transforms;
   -ms-transform: $transforms;
@@ -45,25 +53,18 @@ p {
 }
 
 .twoD {
-  transition: transform 2s;
-  transition-timing-function: ease-in-out;
-}
-
-.twoD:hover {
-  @include transform(matrix(0.5, 0, 0, 0.5, 50, 0));
-}
-
-.twoDD {
   transition: transform 4s;
   transition-timing-function: ease-in-out;
 }
 
-.twoDD:hover {
-  @include transform(rotate(1080deg));
+.twoD:hover {
+  @include transform2(rotate(1080deg), scale(0.5));
+  //@include transform(matrix(0.5, 0, 0, 0.5, 50, 0));
 }
 
+
 .contain3D {
-  @include transform(perspective(400px));
+  @include transform1(perspective(400px));
 
   p {
     font-size: 36px;
@@ -77,7 +78,7 @@ p {
 }
 
 .threeD:hover {
-  transform: rotate3d(80, 120, 80, 760deg);
+  @include transform1(rotate3d(80, 120, 80, 760deg));
 
 }
 
