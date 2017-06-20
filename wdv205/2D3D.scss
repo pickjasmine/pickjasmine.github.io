@@ -45,21 +45,30 @@ p {
 }
 
 .twoD {
-  transition: transform 4s;
+  transition: transform 2s;
   transition-timing-function: ease-in-out;
 }
 
 .twoD:hover {
+  @include transform(matrix(0.5, 0, 0, 0.5, 50, 0));
+}
+
+.twoDD {
+  transition: transform 4s;
+  transition-timing-function: ease-in-out;
+}
+
+.twoDD:hover {
   @include transform(rotate(1080deg));
 }
 
 .contain3D {
-  -webkit-perspective: 450px;
-  //@include transform(perspective(400px));
+  @include transform(perspective(400px));
 
   p {
     font-size: 36px;
     text-align: center;
+    padding-top: 25px;
   }
 }
 
@@ -68,15 +77,8 @@ p {
 }
 
 .threeD:hover {
-  //transform: rotate3d(0, 100, 55, 45deg);
-  @include transform(skewY(15deg));
-  @include transform(rotateZ(780deg));
-  @include transform(rotateX(955deg));
-  @include transform(rotateY(965deg));
+  transform: rotate3d(80, 120, 80, 760deg);
 
-  //@include transform(translate(350px));
-  //@include transform(scale(2));
-  //@include transform(scale3d(0.5, 0.5, 2));
 }
 
 .flexbox {
@@ -84,12 +86,12 @@ p {
 }
 
 .flex1 {
-  width: 70%;
+  width: 55%;
   padding-right: 25px;
 }
 
 .flex2 {
-  width: 200px;
+  width: 40%;
   padding: 5px;
   border: 2px black ridge;
 
