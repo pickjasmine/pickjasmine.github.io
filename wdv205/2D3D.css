@@ -47,14 +47,15 @@ p {
     padding-top: 25px; }
 
 .threeD {
-  transition: transform 4s; }
+  transition: transform 5s;
+  transition-timing-function: ease-out; }
 
 .threeD:hover {
-  -moz-transform: rotate3d(80, 120, 80, 760deg);
-  -o-transform: rotate3d(80, 120, 80, 760deg);
-  -ms-transform: rotate3d(80, 120, 80, 760deg);
-  -webkit-transform: rotate3d(80, 120, 80, 760deg);
-  transform: rotate3d(80, 120, 80, 760deg); }
+  -moz-transform: rotate3d(300, 90, 100, 860deg);
+  -o-transform: rotate3d(300, 90, 100, 860deg);
+  -ms-transform: rotate3d(300, 90, 100, 860deg);
+  -webkit-transform: rotate3d(300, 90, 100, 860deg);
+  transform: rotate3d(300, 90, 100, 860deg); }
 
 .flexbox {
   display: -webkit-inline-flex;
@@ -62,13 +63,18 @@ p {
   display: inline-flex; }
 
 .flex1 {
-  width: 55%;
+  width: 60%;
   padding-right: 25px; }
 
 .flex2 {
-  width: 40%;
+  width: 30%;
   padding: 5px;
-  border: 2px black ridge; }
+  border: 2px black ridge;
+  transition: 3s width 3s;
+  transition-property: width;
+  transition-timing-function: ease-in; }
+  .flex2:hover {
+    width: 45%; }
   .flex2 p {
     font-size: 36px;
     text-align: center; }

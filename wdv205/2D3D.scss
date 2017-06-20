@@ -59,7 +59,6 @@ p {
 
 .twoD:hover {
   @include transform2(rotate(1080deg), scale(0.5));
-  //@include transform(matrix(0.5, 0, 0, 0.5, 50, 0));
 }
 
 
@@ -70,15 +69,17 @@ p {
     font-size: 36px;
     text-align: center;
     padding-top: 25px;
+
   }
 }
 
 .threeD {
-  transition: transform 4s;
+  transition: transform 5s;
+  transition-timing-function: ease-out;
 }
 
 .threeD:hover {
-  @include transform1(rotate3d(80, 120, 80, 760deg));
+  @include transform1(rotate3d(300, 90, 100, 860deg));
 
 }
 
@@ -87,14 +88,21 @@ p {
 }
 
 .flex1 {
-  width: 55%;
+  width: 60%;
   padding-right: 25px;
 }
 
 .flex2 {
-  width: 40%;
+  width: 30%;
   padding: 5px;
   border: 2px black ridge;
+  transition: 3s width 3s;
+  transition-property: width;
+  transition-timing-function: ease-in;
+
+  &:hover {
+    width: 45%;
+  }
 
   p {
     font-size: 36px;
