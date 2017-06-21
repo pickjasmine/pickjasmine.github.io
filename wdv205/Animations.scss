@@ -1,0 +1,96 @@
+$green: rgb(27, 190, 57);
+
+
+@mixin transform1($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin animate($name, $duration, $repeat) {
+  -webkit-animation: $name $duration $repeat;
+  -moz-animation: $name $duration $repeat;
+  -o-animation: $name $duration $repeat;
+  animation: $name $duration $repeat;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  margin: 35px;
+  transform-origin: center bottom;
+  @include animate(bounce, 1s, infinite);
+}
+
+.button {
+  color: white;
+  padding: 10px;
+  width: fit-content;
+  background-color: $green;
+  border-radius: 10px;
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+.button {
+  margin: 25px;
+  overflow: hidden;
+  position: relative;
+  transition-duration: 1s;
+}
+
+.button:hover {
+  @include transform1(scale(2));
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.button:hover::after {
+  @include animate(sheen, 1s, infinite);
+}
