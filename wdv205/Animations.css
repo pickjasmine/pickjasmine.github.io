@@ -4,7 +4,38 @@
 
 .main {
   width: 75%;
+  font-size: 18px;
   margin: 0 auto; }
+
+.flexcontainer {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  justify-content: center; }
+
+.flexleft {
+  justify-content: center;
+  width: 70%; }
+
+.flexright {
+  width: 25%;
+  justify-content: flex-end; }
+
+h1 {
+  text-align: center; }
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #1bbe39;
+  font-size: 36px; }
+
+a:hover {
+  text-decoration: underline; }
+
+.inline {
+  display: inline;
+  font-size: 18px; }
 
 @keyframes bounce {
   from, 20%, 53%, 80%, to {

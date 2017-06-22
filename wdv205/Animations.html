@@ -9,7 +9,8 @@
 
 <div class="main">
     <h1>CSS3 Animations</h1>
-
+    <div class="flexcontainer">
+<div class="flexleft">
     <h2>What are the general recommendations for animations?</h2>
     <p>Animations are used in situations where you want multiple stages/transformations/transitions over a specified
         amount
@@ -22,18 +23,23 @@
     <h2>What issues need to be considered and addressed when using animations?</h2>
     <p>There are several elements which can be element, but there several which cannot. The list of animatable
         properties
-        can be found <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">here.</a> When
+        can be found <a class="inline" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">here.</a> When
         using
         animations, you must always specify an animation-duration, or you will not see the animation. It is also
         important
         to know where to put your animation properties, either in the designated animation div or the @keyframes
         property.
     </p>
+</div>
 
+    <div class="flexright">
+        <a href="2D3D.scss">SCSS file</a>
+        <a href="2D3D.css">CSS file</a>
     <h2 class="bounce">Bounce Animation</h2>
 
     <h2 class="button">Hover!</h2>
-
+    </div>
+    </div>
 </div>
 </body>
 </html>
