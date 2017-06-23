@@ -78,7 +78,9 @@ a:hover {
   -o-transform: scale(2);
   -ms-transform: scale(2);
   -webkit-transform: scale(2);
-  transform: scale(2); }
+  transform: scale(2);
+  text-shadow: 1px 1px black;
+  box-shadow: 1px 1px black; }
 
 .button::after {
   content: '';

@@ -118,6 +118,8 @@ a:hover {
 
 .button:hover {
   @include transform1(scale(2));
+  text-shadow: 1px 1px black;
+  box-shadow: 1px 1px black;
 }
 
 .button::after {
