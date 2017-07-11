@@ -1,0 +1,126 @@
+$blue: rgb(116, 221, 235);
+$green: rgb(131, 235, 144);
+$yellow: rgb(240, 255, 159);
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: $blue;
+    font-size: 1em;
+  }
+  nav {
+    ul {
+      li {
+        display: block;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+
+  footer {
+    border: 1px dotted black;
+  }
+
+}
+
+@media only screen and (min-width: 501px) and (max-width: 850px) {
+  body {
+    background-color: $green;
+    font-size: 1em;
+  }
+
+  nav {
+    ul {
+      li {
+        display: inline;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  footer {
+    border: 2px solid black;
+  }
+
+}
+
+@media only screen and (min-width: 851px) {
+  body {
+    background-color: $yellow;
+    font-size: 1.25em;
+  }
+
+  nav {
+    ul{
+      li{
+        display: inline;
+        font-size: 2em;
+      }
+    }
+  }
+  .flex-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+  }
+
+  .flex-left {
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  .flex-right {
+    width: 40%;
+    padding: 0 10px;
+  }
+
+  footer {
+    border: 2px dotted black;
+  }
+}
+
+
+/*CSS for all pages*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 85%;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: center;
+  ul {
+    li {
+      text-decoration: underline;
+      font-weight: bold;
+      padding: 0 10px;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+.link {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: red;
+
+  }
+}
+
+
+
