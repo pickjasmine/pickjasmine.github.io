@@ -1,0 +1,84 @@
+$green: rgb(27, 190, 57);
+$red-orange: rgb(230, 69, 40);
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body {
+  padding-bottom: 70px;
+  margin-bottom: 0;
+  background: url("../../homework/LabProject/Images/owen-williams-89776.jpg") no-repeat fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+}
+
+.main {
+  padding-bottom: 70px;
+}
+
+nav {
+  margin-bottom: 100px;
+  li {
+    a {
+      font-size: 32px;
+      color: white;
+    }
+    a:hover {
+      color: black;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  color: $green;
+  &:hover {
+    color: $green;
+    text-decoration: overline underline;
+  }
+}
+
+.jumbotron {
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(25, 25, 25, 0.5);
+  border: 2px solid white;
+}
+
+span {
+  color: $red-orange;
+}
+
+.half {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  p {
+    font-size: 14px;
+  }
+}
+
