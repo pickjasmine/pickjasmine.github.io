@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ink</title>
+    <link rel="stylesheet" type="text/css" href="http://fastly.ink.sapo.pt/3.1.10/css/ink.css">
+    <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.10/css/ink-flex.css">
+</head>
+<body>
+<h1>Ink Framework</h1>
+
+<nav class="ink-navigation">
+    <ul class="menu horizontal black">
+        <li class="heading"><a href="#">Home</a></li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a>
+            <ul class="submenu">
+                <li><a href="#">Sub Link 1</a></li>
+                <li><a href="#">Sub Link 2</a></li>
+                <li><a href="#">Sub Link 3</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+
+<div class="ink-grid">
+    <div class="column-group horizontal-gutters">
+        <div class="all-50">
+            <h2 class="align-center">Who wrote or supports the framework?</h2>
+            <p>Ink was made and is maintained by a Portuguese company called Sapo. Ink is an open source initiative, so
+                anyone can add functionality and features to the framework as they see fit.</p>
+
+            <h2 class="align-center">Briefly describe the framework and its primary features.</h2>
+            <p>Ink is based around the idea of easy web development, with an emphasis on layouts. Ink strives to achieve
+                easy to read class and variable names, and produces the most commonly used web elements to be used by
+                developers and hobbyists alike. Ink provides features that most frameworks do, including tables, forms,
+                images with captions, buttons, etc. The ink grid is very easy to use, and using it in combination with
+                the flexbox features of Ink make styling pages very easy.</p>
+            <figure class="ink-image bottom-space">
+                <img src="https://i.imgur.com/75hklbW.jpg" width="200px" height=auto">
+                <figcaption class="over-top align-right">
+                    This a caption over the top of the image.
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="all-50">
+            <h2 class="align-center">What are some of the advantages/disadvantages to using this framework?</h2>
+            <p class="all-50">Advantages: very customizable for someone with specific wants/needs, easy to read and
+                understand at first glance, has a grid/flexbox combo for easy specific location styling of elements,
+                very easy to nest grid elements </p>
+            <p class="all-50">Disadvantages: no pre-built fancy nav bars/footers/etc; you have to add classes to what
+                you have already hardcoded, pre-built examples on their page are for very basic items; it's up to
+                you to add any fanciness to the webpage.</p>
+
+            <h2 class="align-center">What are some of the primary features or pre-built functions of this
+                framework?</h2>
+            <p>The ink grid isn't based on "columns", it is based on a 5% to 100% scale, using 5% increments in between.
+                This adds a lot of customization to your page that other frameworks don't always provide. For those who
+                do not want to mess with the colorization and design aspect, Ink offers colorful themes that you add by
+                just adding a class to the appropriate elements.</p>
+        </div>
+    </div>
+</div>
+
+<!--detects if flexbox is supported on browser-->
+<script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.10/js/modernizr.js"></script>
+<script type="text/javascript">
+    Modernizr.load({
+        test: Modernizr.flexbox,
+        nope: 'http://cdn.ink.sapo.pt/3.1.10/css/ink-legacy.min.css',
+    });
+</script>
+</body>
+</html>
