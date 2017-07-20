@@ -21,7 +21,7 @@ body {
 }
 
 nav {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   li {
     a {
       font-size: 32px;
@@ -60,6 +60,12 @@ a {
   margin: 0 auto;
   background-color: rgba(25, 25, 25, 0.5);
   border: 2px solid white;
+}
+
+.lead {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 span {
