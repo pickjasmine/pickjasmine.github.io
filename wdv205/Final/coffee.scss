@@ -1,0 +1,214 @@
+$grey: rgb(72, 72, 72);
+$blue: rgb(42, 206, 211);
+$yellow: rgb(255, 252, 0);
+
+@mixin animate($name, $duration, $repeat) {
+  -webkit-animation: $name $duration $repeat;
+  -moz-animation: $name $duration $repeat;
+  -o-animation: $name $duration $repeat;
+  animation: $name $duration $repeat;
+}
+
+@mixin box-shadow($top, $left, $blur, $color) {
+  -webkit-box-shadow: $top $left $blur $color;
+  -moz-box-shadow: $top $left $blur $color;
+  box-shadow: $top $left $blur $color;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: url("images/valeri-randalainen-245047.jpg") no-repeat fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  color: $blue;
+}
+
+h2, h5 {
+  text-align: center;
+  display: block;
+  color: $yellow;
+}
+
+h3 {
+  color: $blue;
+}
+
+nav {
+  ul {
+    li {
+      display: inline;
+      padding: 0 5%;
+      font-size: 28px;
+      a:hover {
+        color: $yellow;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+ul {
+  li {
+    list-style-type: none;
+  }
+}
+
+.hours, dd {
+  padding: 0;
+  line-height: 75%;
+}
+
+.LH100 {
+  line-height: 100%;
+}
+
+.standout {
+  height: 75%;
+  margin: 10% auto;
+  text-align: center;
+  h2 {
+    padding: 4px;
+    margin: 5px auto;
+    width: 70%;
+    font-size: 42px;
+    background-color: rgba(255, 255, 255, 0.2);
+    @include animate(blink, 0.3s, infinite);
+    animation-direction: alternate;
+  }
+  p {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 18px;
+  }
+}
+
+//animation
+
+.shake-animation {
+  @include animate(shake, 10s, infinite);
+}
+
+.shake {
+  -webkit-animation: shake 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: shake 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+
+//blink
+@-webkit-keyframes blink {
+  0% {
+    border: 1px solid $grey;
+    @include box-shadow(2px, 2px, 0px, $grey);
+  }
+  100% {
+    border: 1px solid $yellow;
+    @include box-shadow(3px, 4px, 2px, $blue);
+  }
+}
+
+@keyframes blink {
+  0% {
+    border: 1px solid $grey;
+    @include box-shadow(2px, 2px, 0px, $grey);
+  }
+  100% {
+    border: 1px solid $yellow;
+    @include box-shadow(3px, 4px, 2px, $blue);
+  }
+}
+
+//media query
+@media only screen and (max-width: 600px) {
+  nav {
+    ul {
+      li {
+        display: block;
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
