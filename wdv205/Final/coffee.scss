@@ -34,19 +34,18 @@ body {
   margin: 0 auto;
 }
 
+
+
 a {
   color: $blue;
 }
 
-h2, h5 {
+h2, h3, h5 {
   text-align: center;
   display: block;
   color: $yellow;
 }
 
-h3 {
-  color: $blue;
-}
 
 nav {
   ul {
@@ -84,8 +83,8 @@ ul {
   h2 {
     padding: 4px;
     margin: 5px auto;
-    width: 70%;
-    font-size: 42px;
+    width: 80%;
+    font-size: 48px;
     background-color: rgba(255, 255, 255, 0.2);
     @include animate(blink, 0.3s, infinite);
     animation-direction: alternate;
@@ -95,6 +94,14 @@ ul {
     width: 90%;
     font-size: 18px;
   }
+}
+
+.highlight {
+  color: $yellow;
+}
+
+.price {
+  color: $blue;
 }
 
 //animation

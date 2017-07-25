@@ -17,13 +17,10 @@ body {
 a {
   color: #2aced3; }
 
-h2, h5 {
+h2, h3, h5 {
   text-align: center;
   display: block;
   color: #fffc00; }
-
-h3 {
-  color: #2aced3; }
 
 nav ul li {
   display: inline;
@@ -50,8 +47,8 @@ ul li {
   .standout h2 {
     padding: 4px;
     margin: 5px auto;
-    width: 70%;
-    font-size: 42px;
+    width: 80%;
+    font-size: 48px;
     background-color: rgba(255, 255, 255, 0.2);
     -webkit-animation: blink 0.3s infinite;
     -moz-animation: blink 0.3s infinite;
@@ -62,6 +59,12 @@ ul li {
     margin: 0 auto;
     width: 90%;
     font-size: 18px; }
+
+.highlight {
+  color: #fffc00; }
+
+.price {
+  color: #2aced3; }
 
 .shake-animation {
   -webkit-animation: shake 10s infinite;
