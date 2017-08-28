@@ -6,7 +6,7 @@ $primaryColor: rgb(97, 186, 210);
 $secondaryColor: #454545;
 
 
-@import 'gradientMixin';	/* looks for a file call gradient.scss */
+@import 'CSSfiles/gradientMixin';	/* looks for a file call gradient.scss */
 
 
 .applyGradient { @include verticalGradient($primaryColor, $secondaryColor) }

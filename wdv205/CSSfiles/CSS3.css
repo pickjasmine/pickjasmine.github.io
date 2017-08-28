@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("205images/Logomakr_3Jeomc.png"), url("205images/white-wood.jpg");
+    background-image: url("../205images/Logomakr_3Jeomc.png"), url("../205images/white-wood.jpg");
     background-attachment: fixed;
     background-position: right, top left;
     background-repeat: repeat-x, repeat;
