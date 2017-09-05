@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Review</title>
+    <link href="../general.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<a href="../index.html">Back to all assignments</a>
+
+<h1>Document Object Model Review</h1>
+
+<h2>Document Object: </h2>
+<p>The Document Object holds every HTML element on a webpage. The Document Object Model (DOM) is structured like a tree
+    due to HTML element's hierarchical nature. The DOM is an essential part of JavaScript because it allows us to call
+    and act upon any HTML element we desire. </p>
+
+<h2>How does the browser render your HTML and CSS into the document object?</h2>
+<p>The browser starts by going through your code and looking for the HTML, specifically the tags. Your browser takes
+    these tags and converts them into "nodes" (explained below). The browser, after creating all of these nodes,
+    arranges them into the "tree structure", AKA the Document Object Model. The DOM is now it's own entity, which the
+    browser will put aside for now. The browser then goes through the CSS and does the same thing, creating CSS nodes
+    and arranging them into what is known as the CSS Object Model (CSSOM). The structure of the CSSOM isn't identical to
+    the DOM; it is structured according to your CSS style rules. (This is not super important right now, just something
+    to look at in the future.)</p>
+<p>After the DOM and CSSOM are created, they are merged together into something called the "render tree". The render
+    tree takes all the nodes that are to be shown on this web page and computes the exact size and position of each
+    node. Finally, the web page is "painted" to match the render tree, applying the HTML contents and CSS style rules to
+    each node.</p>
+<p>https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction</p>
+
+<h2>Node: </h2>
+<p>Nodes are bits of information within the DOM and CSSOM. When the browser is first going through your code, it is
+    reading raw bytes of information, which it then interprets as characters, like &lt;head&gt;. After interpreting
+    these characters, the browser recognizes these as disinct "tokens", seeing that &lt;head&gt; is a starting head tag.
+    The browser takes these tokens and creates the node, utilizing both start and end tokens to see which elements are
+    children of another element.</p>
+<p>https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model</p>
+
+
+<h2>Tree Structure: </h2>
+<p>The tree structure is made to reflect the hierarchy of your HTML tags. The HTML tag is at the top, as it encompasses
+    all of the tags in a webpage. The HTML tag is the parent to two tags, the head and the body. This will be the same
+    on every webpage, because they are necessary to properly make any webpage. The head and body are considered to be
+    children of the HTML tag. When I imagine the tree structure, I put each tag into a circle and draw a line below to
+    each tag that comes before your closing tag. Every tag within the body will be a child (or grandchild,
+    great-grandchild, etc). of the body, same with the head. The head will likely only contain link nodes, script nodes,
+    meta nodes, and a title node.</p>
+
+<h2>Event model or event handlers: </h2>
+<p>The event model or event handlers are a way to delay the running of a function until a certain action has been
+    performed. The easiest event handler to imagine is "onclick", meaning that when you click on a special element, it
+    will trigger a function. This adds a unique ability that was not possible with HTML and CSS alone. There are a ton
+    of different event handlers that you can use to trigger a function, but there are also many properties you can
+    access regarding events that you can use. One example of a property you might access is timeStamp, giving you the
+    exact time that the event was triggered.</p>
+
+</body>
+</html>
