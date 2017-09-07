@@ -1,0 +1,282 @@
+@import '../../wdv205/main';
+
+@mixin border-radius($corner) {
+  -webkit-border-radius: $corner;
+  -moz-border-radius: $corner;
+  border-radius: $corner;
+}
+
+@mixin transform1($transform) {
+  transform: $transform;
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -o-transform: $transform;
+}
+
+@mixin animate($name, $duration, $repeat) {
+  -webkit-animation: $name $duration $repeat;
+  -moz-animation: $name $duration $repeat;
+  -o-animation: $name $duration $repeat;
+  animation: $name $duration $repeat;
+}
+
+@mixin delayAnimate($name, $duration, $delay, $repeat) {
+  -webkit-animation: $name $duration $delay $repeat;
+  -moz-animation: $name $duration $delay $repeat;
+  -o-animation: $name $duration $delay $repeat;
+  animation: $name $duration $delay $repeat;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+$blue: rgb(97, 186, 210);
+$pink: rgb(245, 191, 197);
+$green: rgb(123, 204, 46);
+
+body {
+  background: url("Images/owen-williams-89776.jpg") no-repeat fixed;
+  background-size: cover;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+}
+
+.main {
+  width: 75%;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: center;
+
+  li {
+    display: inline;
+    text-align: center;
+
+    a {
+      color: $pink;
+      text-decoration: none;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    a:hover {
+      color: $blue;
+      text-decoration: underline;
+    }
+  }
+}
+
+h1 {
+  color: $green;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+h2 {
+  font-size: 36px;
+  padding: 5px;
+  color: $pink;
+  text-shadow: 1px 1px black;
+  //font-weight: lighter;
+}
+
+h4 {
+  font-weight: lighter;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.center {
+  text-align: center;
+  color: white;
+}
+
+p.center {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  font-size: 16px;
+}
+
+footer h2 {
+  color: $green;
+}
+
+li {
+  list-style-type: square;
+}
+
+#top a {
+  text-align: center;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $green;
+  text-decoration: underline;
+}
+
+.applyGradient {
+  color: white;
+}
+
+.applyGradient:hover {
+  text-decoration: underline;
+  color: white;
+  opacity: 0.6;
+}
+
+.flex-container {
+  display: -webkit-inline-flex; /*Safari*/
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  //align-content: center;
+}
+
+.flex1 {
+  width: 55%;
+  align-items: center;
+}
+
+.flex3 {
+  padding: 5px;
+  width: 40%;
+}
+
+@keyframes slide {
+  0% {
+    @include transform1(translateX(1000px));
+    opacity: 0;
+  }
+  100% {
+    @include transform1(translateX(1000px));
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    @include transform1(translateX(1000px));
+    opacity: 0;
+  }
+  100% {
+    @include transform1(translateX(1000px));
+    opacity: 1;
+  }
+}
+
+.slide {
+  -webkit-animation: slide 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.modalDialog {
+  display: block;
+  font-size: 28px;
+  color: black;
+  text-shadow: white 1px 1px;
+  font-weight: bolder;
+  text-align: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  overflow: hidden;
+}
+
+.modalContent::before {
+  content: '';
+  position: absolute;
+  top: -5%;
+  right: -5%;
+  bottom: -5%;
+  left: -5%;
+  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(245, 220, 13, 0.5) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(70deg) translate(-10em, 25em);
+  @include animate(sheen, 2s, infinite);
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  opacity: 0;
+  -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  pointer-events: none;
+
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  background: white;
+  background-image: url("Images/pink-zinnia-daisy-flower-yellow-stamen-center-colorful-garden-plant-isolated-transparent-background-texture-256x256.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+@-webkit-keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    @include transform1(translateX(-1000px));
+    opacity: 0;
+  }
+  100% {
+    @include transform1(translateX(0));
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    @include transform1(translateX(-1000px));
+    opacity: 0;
+  }
+  100% {
+    @include transform1(translateX(0));
+    opacity: 1;
+  }
+}
+

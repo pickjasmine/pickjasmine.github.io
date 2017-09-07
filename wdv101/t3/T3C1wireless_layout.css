@@ -1,0 +1,23 @@
+/*
+Jasmine Francois
+02-07-17
+ */
+
+body {
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+    background-color: #e6e6fa;
+}
+
+em {
+    color: green;
+    font-weight: bold;
+}
+
+h3 {
+    color: maroon;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 1.3em;
+    font-family: Times, "Times New Roman", serif;
+}

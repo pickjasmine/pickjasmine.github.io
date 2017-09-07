@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Zanzibar's Coffee Shop Menu">
+    <meta name="keywords" content="Zanzibar, coffee, coffee shop, roastery, sandwiches, baked goods, soup, food, live music,
+        St. Paul, Minnesota, latte, mocha, macchiato, cake, seasonal, fresh">
+    <title>Our Menu</title>
+    <link href="files/Zanzibar.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Roboto" rel="stylesheet">
+
+    <style type="text/css">
+
+        a:hover {
+            color: rgb(12, 176, 74);
+        }
+        .menu{
+            display: block;
+            padding-left: 25px;
+            color: rgb(54, 102, 149);
+        }
+
+        #food {
+            margin-bottom: 65px;
+        }
+
+        ul.menu, ul.prices {
+            font-size: 32px;
+        }
+
+        ul.menu:before {
+            content: url("images/Logomakr_3GT3c9.png");
+        }
+
+        ul.prices:after {
+            content: url("images/Logomakr_3GT3c9.png")
+        }
+
+        li.menu {
+            text-indent: 3em;
+        }
+
+        .prices {
+            display: block;
+            padding-right: 25px;
+            color: rgb(54, 102, 149);
+        }
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+            border-bottom: dotted 3px rgb(251, 183, 19);
+        }
+
+        h3 {
+            font-size: 36px;
+            font-weight: lighter;
+            text-align: center;
+            color: rgb(12, 176, 74);
+        }
+
+        p {
+            font-size: 16px;
+            padding: 0 50px;
+        }
+
+        #food {
+            padding: 0 25px;
+            margin-bottom: 65px;
+            text-align: center;
+        }
+        dt {
+            font-size: 26px;
+        }
+
+        ul.foodmenu {
+            font-size: 22px;
+        }
+
+        dd {
+            text-indent: 4em;
+            font-style: italic;
+        }
+
+        .foodmenu{
+            display: block;
+            padding: 0 25px;
+            color: rgb(54, 102, 149);
+        }
+
+        .menuleft {
+            width: 55%;
+            float: left;
+        }
+
+        .menuright {
+            width: 43%;
+            float: right;
+            text-align: right;
+        }
+
+        .w3c p {
+            padding: 0;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="container">
+
+    <header id="top">
+        <img src="images/Logomakr_9YWfH1.png" alt="Zanzibar's Coffee Cups" title="Zanzibar's Coffee House" height=90% width=90%/>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+                <div class="dropdownmenu">
+                <a class="dropdown" href="menu.html">Our Menu</a>
+                <ul class="dropcontent">
+                    <li><a href="menu.html#drinks">Drink Menu</a></li>
+                    <li><a href="menu.html#food">Food Menu</a></li>
+                </ul>
+                </div>
+                </li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="main">
+        <br>
+
+        <div id="drinks">
+        <h2>Drinks</h2>
+        <p>At Zanzibar's, we roast our coffee in house to create unique and tantalizing flavors. </p>
+        <p>We typically make our products with organic whole milk, but if you need soy milk, almond milk,
+            or lactose-free milk we are happy to do so!</p>
+
+            <div class="menuleft">
+                <ul class="menu">Coffees</ul>
+                <li class="menu">Sonny (medium roast)</li>
+                <li class="menu">Trumble (dark roast)</li>
+                <li class="menu">Whipper (light roast)</li>
+
+                <ul class="menu">Lattes</ul>
+                <li class="menu">Vanilla</li>
+                <li class="menu">Caramel</li>
+                <li class="menu">Hazelnut</li>
+
+                <ul class="menu">Americano</ul>
+                <li class="menu">Full-Caf</li>
+                <li class="menu">Half-Caf</li>
+                <li class="menu">Decaf</li>
+
+                <ul class="menu">Espresso</ul>
+                <li class="menu">&nbsp;</li>
+
+                <ul class="menu">Mochas</ul>
+                <li class="menu">White Chocolate</li>
+                <li class="menu">Milk Chocolate</li>
+                <li class="menu">Dark Chocolate</li>
+
+                <ul class="menu">Macchiatos: Hot & Iced</ul>
+                <li class="menu">Caramel</li>
+                <li class="menu">Vanilla</li>
+                <li class="menu">Hazelnut</li>
+            </div> <!--menu left-->
+
+        <div class="menuright">
+            <ul class="prices">Coffees</ul>
+            <li class="prices">Large: <span class="highlight">$3.50</span></li>
+            <li class="prices">Medium: <span class="highlight">$2.75</span></li>
+            <li class="prices">Small: <span class="highlight">$2.50</span></li>
+
+            <ul class="prices">Lattes</ul>
+            <li class="prices">Large: <span class="highlight">$4.50</span></li>
+            <li class="prices">Medium: <span class="highlight">$3.50</span></li>
+            <li class="prices">Small: <span class="highlight">$2.50</span></li>
+
+            <ul class="prices">Americano</ul>
+            <li class="prices">Large: <span class="highlight">$5.00</span></li>
+            <li class="prices">Medium: <span class="highlight">$4.00</span></li>
+            <li class="prices">Small: <span class="highlight">$3.00</span></li>
+
+            <ul class="prices">Espresso</ul>
+            <li class="prices"><span class="highlight">$1.25</span> per shot</li>
+
+            <ul class="prices">Mochas</ul>
+            <li class="prices">Large: <span class="highlight">$4.50</span></li>
+            <li class="prices">Medium: <span class="highlight">$4.00</span></li>
+            <li class="prices">Small: <span class="highlight">$3.50</span></li>
+
+            <ul class="prices">Macchiatos</ul>
+            <li class="prices">Large: <span class="highlight">$4.50</span></li>
+            <li class="prices">Medium: <span class="highlight">$4.00</span></li>
+            <li class="prices">Small: <span class="highlight">$3.00</span></li>
+
+
+        </div> <!--menu right-->
+
+        </div> <!--drinks div-->
+        <br>
+        <br>
+
+        <div id="food" class="clear">
+        <h2>Food</h2>
+        <p>Zanzibar's supports local farmers and producers by buying all seasonal ingredients and produce locally.</p>
+        <p>If you have any dietary restrictions or allergies please let our staff know, and we will accomodate your needs.</p>
+
+            <h3>Sandwiches</h3>
+            <dl>
+                <dt class="foodmenu">Turkey Pesto Sandwich <span class="highlight">$5.00</span></dt>
+                    <dd class="foodmenu">Turkey, Swiss Cheese, Spinach, Tomatoes, and Pesto on a Ciabatta Roll</dd>
+                <dt class="foodmenu">Veggie Croissant <span class="highlight">$4.50</span></dt>
+                    <dd class="foodmenu">Mushrooms, Zucchini, Tomatoes, Banana Peppers, Spinach, and Honey Mustard on Sourdough Bread</dd>
+                <dt class="foodmenu">Gourmet Grilled Cheese <span class="highlight">$4.00</span></dt>
+                    <dd class="foodmenu">Extra Sharp Cheddar and Pepperjack Cheese on Sourdough Bread</dd>
+                <dt class="foodmenu">Chicken Bacon Panini <span class="highlight">$4.50</span></dt>
+                    <dd class="foodmenu">Chicken, Bacon Strips, Ranch spread on a Ciabatta Roll, panini-pressed</dd>
+            </dl>
+            <br>
+
+            <h3>Soups</h3>
+            <ul class="foodmenu">
+                <li class="foodmenu">Cup of Soup: <span class="highlight">$2.50</span></li>
+                <li class="foodmenu">Seasonal Soup*</li>
+                <li class="foodmenu">Tomato Bisque</li>
+                <li class="foodmenu">Broccoli Cheese</li>
+                <li class="foodmenu">Vegetable Barley Beef</li>
+                <!-- ************* inline-CSS ***********-->
+                                <li style="color:rgb(12,176,74);font-size:16px;">*Currently Butternut-Squash and Pork Stew</li>
+            </ul>
+            <br>
+
+            <h3>Baked Goods and Sweets</h3>
+            <ul class="foodmenu">
+                <li class="foodmenu">Croissant <span class="highlight">$2.00</span></li>
+                <li class="foodmenu">Bagel (Plain, Onion, or Blueberry) <span class="highlight">$2.00</span></li>
+                <li class="foodmenu">Pound Cake Slice <span class="highlight">$1.50</span></li>
+                <li class="foodmenu">Seasonal Pie Slice** <span class="highlight">$3.75</span></li>
+                <li class="foodmenu">Pie a la Mode <span class="highlight">$4.50</span></li>
+                <li class="foodmenu">Carrot Cake Slice <span class="highlight">$2.50</span></li>
+                <li class="foodmenu">New York Cheesecake Slice <span class="highlight">$3.00</span></li>
+                <li class="foodmenu">Giant Cookie (Choco-Chip and Oatmeal Raisin) <span class="highlight">$2.00</span></li>
+                <li class="foodmenu">Fudge Brownie <span class="highlight">$1.50</span></li>
+                <!-- ************* inline-CSS ***********-->
+                <li style="color:rgb(12,176,74);font-size:16px;">**Currently Cinnamon Apple Peach</li>
+            </ul>
+        </div> <!--food div-->
+
+        <a href="#top">Take me to the top!</a>
+
+    </section>
+
+    <footer>
+        <div class="w3c">
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                         src="https://jigsaw.w3.org/css-validator/images/vcss"
+                         alt="Valid CSS!" />
+                </a>
+            </p>
+        </div>
+
+        <div class="left">
+            <p>Located at 604 24th Street, St. Paul, MN.</p>
+            <p>Call us at(702)971.1154</p>
+
+
+            <div class="credit">
+                All graphics by <a class="credit" href="http://www.flaticon.com/authors/baianat">Baianat</a>
+                from <a class="credit" href="http://www.flaticon.com/">Flaticon</a> are licensed under
+                <a class="credit" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>.
+                Made with <a class="credit" href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
+            </div>
+        </div> <!--left div-->
+
+        <div class="right">
+            <h5 class="hours">Hours</h5>
+            <h5 class="hours">Monday through Friday 6AM to 10PM</h5>
+            <h5 class="hours">Saturday and Sunday 6AM to 12PM</h5>
+        </div> <!--right div-->
+
+    </footer>
+</div> <!--container div-->
+</body>
+</html>

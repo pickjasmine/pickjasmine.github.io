@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-image: url("../images/Logomakr_0kt6JO.png");
+    background-attachment: fixed;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(12, 176, 74);
+}
+
+img {
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+   }
+
+header.img {
+    padding: 0 10px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Megrim, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(12, 176, 74);
+    font: bold 50px Megrim, sans-serif;
+    border-bottom: dotted 3px rgb(251, 183, 19);
+}
+
+h3, h4 {
+    color: rgb(54, 102, 149);
+}
+
+h5 {
+    font-size: 16px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 25px;
+    background-color: rgba(251, 183, 19, 0.8);
+}
+
+li {
+    display: inline;
+    padding: 2px 15px;
+}
+
+li a {
+    color: #c02c23;
+    text-decoration: none;
+    font: bold 24px Roboto, sans-serif;
+}
+
+li a:hover {
+    color: rgb(54, 102, 149);
+    text-decoration: underline;
+}
+
+
+p {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(54, 102, 149);
+    /*padding-top: 15px;*/
+}
+
+footer {
+    border-top: rgb(251, 183, 19) dotted 3px;
+    background-color: rgb(208, 213, 217);
+    position: fixed;
+    bottom: 0;
+    width: 75%;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+footer p {
+    font-size: 18px;
+    color: rgb(54, 102, 149);
+    /*line-height: 80%;*/
+}
+
+form {
+    margin-bottom: 65px;
+    border: dotted 3px rgb(251, 183, 19);
+}
+
+label {
+    color: rgb(54, 102, 149);
+}
+
+.credit {
+    color: rgb(54, 102, 149);
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+a.credit {
+    color: inherit;
+}
+.highlight {
+    color: rgb(192, 44, 35);
+    font-weight: bold;
+}
+
+.front {
+    padding: 0 75px;
+    border: dotted 3px rgb(251, 183, 19);
+}
+
+h3.front {
+    font-weight: lighter;
+    color: rgb(12, 176, 74);
+    border: none;
+    font-size: 40px;
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 12.5%;
+    z-index: -1;
+    width: 75%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    /*overflow: hidden;*/
+}
+
+.container {
+    margin: 0 auto;
+    width: 75%;
+    height: 90%;
+}
+
+.main {
+    /*overflow: hidden;*/
+    margin-bottom: 65px;
+    padding: 0 25px;
+}
+
+.hours {
+    color: rgb(192, 44, 35);
+}
+
+.aboutleft {
+    width: 600px;
+    float: left;
+    text-align: center;
+}
+
+.aboutright {
+    float: right;
+    width: 285px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.w3c {
+    width: 15%;
+    float: left;
+    padding: 0;
+}
+
+.contactleft {
+    width: 63%;
+    float: left;
+    text-align: center;
+}
+
+.left {
+    width: 45%;
+    float: left;
+    text-align: center;
+}
+
+.right {
+    width: 35%;
+    float: right;
+    text-align: center;
+}
+
+.dropdownmenu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropcontent {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropcontent a {
+    color: rgb(192, 44, 35);
+    padding: 3px 5px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdownmenu:hover .dropcontent {
+    display: block;
+}
+
+.rightpic {
+    width: 48%;
+    float: right;
+}
+
+.leftpic {
+    width: 48%;
+    float: left;
+}
+a.rightpic, a.leftpic {
+    margin-bottom: 65px;
+    text-align: center;
+    font-size: 65px;
+}
+
+a.rightpic:hover, a.leftpic:hover {
+    color: rgb(54, 102, 149);
+    text-decoration: underline;
+}
+

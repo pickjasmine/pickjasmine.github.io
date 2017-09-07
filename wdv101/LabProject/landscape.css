@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px; }
+
+body {
+  margin: 0 200px 20px;
+  /*margin-left: 150px;*/
+  /*margin-right: 150px;*/
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  padding: 3px; }
+
+.header {
+  display: block;
+  /*text-align: center;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*font-size: 86px;*/
+  /*font-family: "Abril Fatface", cursive;*/ }
+
+div.header {
+  display: block;
+  vertical-align: middle; }
+
+/*span.header {*/
+/*display: table-cell;*/
+/*vertical-align: middle;*/
+/*}*/
+img {
+  display: block;
+  /*vertical-align: middle;*/
+  margin-left: auto;
+  margin-right: auto; }
+
+nav li {
+  display: inline;
+  background-color: #1b8413;
+  text-align: center; }
+
+li a {
+  font-family: Roboto, sans-serif;
+  /*font-weight: lighter;*/
+  color: white;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+li a:hover {
+  background-color: #6bbad2;
+  color: white;
+  text-decoration: underline; }
+
+nav {
+  text-align: center; }
+
+h1 {
+  color: #6bbad2;
+  text-align: center; }
+
+h2 {
+  color: #631317;
+  font-family: Roboto, sans-serif;
+  /*font-weight: lighter;*/ }
+
+h3 {
+  color: #6bbad2;
+  font-size: 28px;
+  font-family: Roboto, sans-serif;
+  /*font-weight: lighter;*/ }
+
+h4 {
+  font-weight: bold; }
+
+h5 {
+  font-size: 24px;
+  font-weight: light; }
+
+.center {
+  text-align: center;
+  color: #1b8413; }
+
+p.center {
+  color: #1b8413; }
+
+footer {
+  text-align: center;
+  font-size: 16px; }
+
+footer h2 {
+  color: olive; }
+
+.city {
+  color: olive;
+  font-weight: bold; }
+
+.under {
+  text-decoration: underline; }
+
+li {
+  list-style-image: url(Images/leafthumb.png);
+  vertical-align: middle; }
+
+#top a {
+  text-align: center; }
+
+a {
+  color: #6bbad2;
+  text-decoration: none; }
+
+a:hover {
+  color: #631317;
+  text-decoration: underline; }
+
+.nomarg, li {
+  margin-top: 0; }
+
+/*# sourceMappingURL=landscape.css.map */
