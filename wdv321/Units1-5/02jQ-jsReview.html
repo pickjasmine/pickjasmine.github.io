@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery JS Review</title>
+    <link href="../general.css" type="text/css" rel="stylesheet"/>
+    <script src="../jquery-3.2.1.js"></script>
+</head>
+<body>
+
+<h1>jQuery JS Review</h1>
+
+
+<!---------------------------Problem 1-------------------------------->
+<p id="dateAndTime"></p>
+
+<script>
+    $(document).ready(function () {
+
+        function currentDate() {
+            var d = new Date();
+            $("#dateAndTime").html("Today's date: " + d.toString());
+        }
+
+        currentDate();
+    });
+</script>
+
+<!---------------------------Problem 2-------------------------------->
+<form>
+    <p>Please enter a price:</p>
+    <input type="number" name="price" id="price">
+
+    <p>Please enter a quantity: </p>
+    <input type="number" name="quantity" id="quantity">
+
+    <p>Your total price will be: $<span id="total"></span></p>
+    <button type="button" id="calculate">Calculate Price</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#calculate").click(function () {
+                var p = $("input#price").val();
+                var q = $("input#quantity").val();
+                $("#total").html(p * q);
+            });
+        });
+    </script>
+
+
+</form>
+
+<!----------------------------Problem 3------------------------------->
+<p id="teams"></p>
+
+<script>
+
+    $(document).ready(function () {
+        var teamNames = ["Cyclones", "Hawkeyes", "Panthers"];
+        teamNames.forEach(function (teamName) {
+            $("#teams").append(teamName + '<br>');
+        });
+    });
+
+
+
+
+</script>
+
+</body>
+</html>
