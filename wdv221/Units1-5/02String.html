@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WDV221 Intro Javascript - Variables and Data Types Assignment</title>
+
+    <style>
+
+        body {background-color:#FC6;
+        }
+
+        .highlightTitle	{
+            font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+            font-style:italic;
+            font-size:14px;
+            text-decoration:underline;
+            color:#096;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<h2>WDV221 Intro Javascript</h2>
+<h3>Variables and Data Types - String Object Assignment</h3>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment. </p>
+<p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+<p>Using Blackboard submit this  Assignment.</p>
+<h3>For each exercise use a comment line to put the Exercise number within the script. Also place a short description of what the script is doing.</h3>
+<hr />
+<p>1. Define a global  variable called inName. Assign it an initial value of &quot;&quot;.</p>
+<script>
+    // Problem 1: declare and initialize a variable as a string with no content
+    var inName = "";
+</script>
+
+<p>2. Create a function called getName( ). The function will use a prompt to ask the user to enter a name. Store the result in the inName variable. Use an event handler to activate this function.</p>
+
+<script>
+    // Problem 2: create a function that prompts user, store that prompt into the inName variable. Assign that function to an event handler, in this case button onclick()
+    function getName() {
+        inName = prompt("Please enter a name.");
+    }
+</script>
+<button name="nameButton" id="nameButton" onclick="getName();">Name?</button>
+<p>3. Create a function called displayName( ). The function will use alert( ) to display the value stored in the inName variable. It will also display the number of characters in the inName variable. Use and event handler to activate this function.</p>
+<script>
+    // Problem 3: create a function that displays an alert with the name and length of name. Trigger it with a button
+    function displayName() {
+        alert(inName);
+        alert(inName + " is " + inName.length + " characters long.");
+    }
+</script>
+<button name="display" id="display" onclick="displayName();">Display Name</button>
+
+<p>Define a global variable called emailAddress. Assign it an email address. Define a global variable called yourEmailAddress and assign it the value of your DMACC email address.</p>
+<p>Create a function called getEmailName( ). This function will accept one input parameter. When the function is called  display only the name from the email address. For example if the user enters &quot;jLeenan@yahoo.com&quot; your function should display &quot;jLeenan&quot;.  Use an event handler to activate this function.</p>
+<p>4. Use the getEmailName( ) function to process emailAddress.</p>
+<script>
+    // Doing the above problems in this section too, just FYI because they don't have numbers
+    // Problem 4, 5, and above: declare and initialize a variable, create a function that takes in a parameter, display that parameter input
+    var emailAddress = "fake-email@gmail.com";
+    var yourEmailAddress = "jfrancois@dmacc.edu";
+    function getEmailName(email) {
+        var atLocation = email.indexOf("@");
+        alert(email.substr(0, atLocation));
+    }
+</script>
+<button name="yourEmail" id="yourEmail" onclick="getEmailName(yourEmailAddress);">Jasmine's e-mail</button>
+
+<p>5. Use the getEmailName( ) function to process yourEmailAddress.</p>
+<!-- same functionality as above, but passing in a different parameter -->
+<button name="email" id="email" onclick="getEmailName(emailAddress);">Another e-mail</button>
+<p>&nbsp;</p>
+</body>
+</html>
