@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI Form</title>
+    <script src="../jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $("#datepicker").datepicker();
+            });
+
+            $(function () {
+                $("#select").selectmenu();
+            });
+
+            $(function () {
+                $("fieldset").controlgroup();
+                $("input[name='radioButton']").checkboxradio({
+//                    classes: {
+//                        "ui-checkboxradio": "highlight"
+//                    }
+                });
+            });
+
+            $(function () {
+                $(document).tooltip({
+                    track: true
+                });
+            });
+        });
+    </script>
+
+    <style>
+        input {
+            height: 20px;
+            margin: 20px 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>Fun with forms</h1>
+<form name="form1" id="form1" method="post" action="">
+    <label for="name">Enter a name:
+        <input type="text" name="name" id="name" title="This could be the name of the next POTUS.">
+    </label><br>
+
+    <label for="hobby">Enter a hobby:
+        <input type="text" name="hobby" id="hobby" title="This is probably the next POTUS's favorite thing to do.">
+    </label><br>
+
+    <label for="select">Pick the best option:</label>
+    <select id="select" name="select" title="Whatever you pick is true the best option">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+    </select><br>
+
+
+    <fieldset>
+        <legend>Select your preferred radio button:</legend>
+        <label for="button1">
+            <input type="radio" name="radioButton" id="button1">This button
+        </label><br>
+        <label for="button2">
+            <input type="radio" name="radioButton" id="button2">This button
+        </label><br>
+        <label for="button3">
+            <input type="radio" name="radioButton" id="button3">This button
+        </label><br>
+        <label for="button4">
+            <input type="radio" name="radioButton" id="button4">This button
+        </label><br>
+        <label for="button5">
+            <input type="radio" name="radioButton" id="button5">This button
+        </label>
+    </fieldset>
+
+    <br>
+    <label for="datepicker">Select a Date for fun!
+        <input type="text" name="date" id="datepicker" title="what a fun time we're having">
+    </label><br>
+</form>
+
+
+</body>
+</html>
