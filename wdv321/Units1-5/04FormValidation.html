@@ -1,0 +1,84 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WDV321 Advanced Javascript - Form Validation Project</title>
+    <script src="../jquery-3.2.1.js" ></script>
+    <script src="04FormValidation.js" ></script>
+    <script>
+//        $(document).ready(function() {
+//            $("#customerName,#customerPhoneNumber,#customerEmail").blur();
+//        })
+    </script>
+    <style>
+        span {
+            color: red;
+            font-style: italic;
+        }
+        label	{
+            width:150px;
+            display:inline-block;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<h2>WDV321 Advanced Javascript </h2>
+<h3>Form Validation Project - Complaint Form</h3>
+<form id="complaintForm" name="complaintForm" method="post" action="04FormSuccess.html">
+    <p>Please enter the following information in order to process your concerns.</p>
+    <p class="required"><em>*Fields are required.</em></p>
+    <p>
+        <label for="customerName">Name:</label>
+        <input type="text" name="customerName" id="customerName" />*
+        <span id="nameError"></span>
+    </p>
+    <p>
+        <label for="customerPhoneNumber">Phone Number:</label>
+        <input type="text" name="customerPhoneNumber" id="customerPhoneNumber" />
+        <span id="phoneError"></span>
+    </p>
+    <p>
+        <label for="customerEmail">Email Address:</label>
+        <input type="text" name="customerEmail" id="customerEmail" />*
+        <span id="emailError"></span>
+    </p>
+    <p>Please Select Product Group:* <span id="productGroupError"></span></p>
+
+    <p>
+        <label>
+            <input type="radio" name="ProductGroup" value="books" id="productGroupBooks" />
+            Books</label>
+        <br />
+        <label>
+            <input type="radio" name="ProductGroup" value="movies" id="productGroupMovies" />
+            Movies</label>
+        <br />
+        <label>
+            <input type="radio" name="ProductGroup" value="electronics" id="productGroupElectronics" />
+            Consumer Electronics</label>
+        <br />
+        <label>
+            <input type="radio" name="ProductGroup" value="computer" id="productGroupComputer" />
+            Computer</label>
+        <br />
+    </p>
+    <p>Description of problem: <em>(Limit 120 characters)*</em> <span id="complaintError"></span></p>
+
+    <p>
+        <label for="customerComplaint"></label>
+        <textarea name="customerComplaint" id="customerComplaint" cols="45" rows="5"></textarea>
+    </p>
+    <p>
+        <input type="button" name="submitButton" id="submitButton" value="File Complaint" />
+        <input type="reset" name="resetButton" id="resetButton" value="Reset Form"/>
+    </p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
