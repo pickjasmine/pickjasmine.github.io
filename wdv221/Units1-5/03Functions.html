@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+<body>
+<h1>Functions</h1>
+
+<script>
+    var myName = "Jasmine";
+
+    //Problem 1
+    function sayHello() {
+        alert(myName);
+    }
+    sayHello();
+
+    //Problem 2
+    function printHello() {
+        document.write(myName);
+    }
+    printHello();
+    printHello();
+
+</script>
+
+<h1>
+<script>
+    //Problem 3
+    document.getElementById("Problem3").innerHTML = "<h1>" + printHello() + "</h1>";
+</script>
+</h1>
+
+<button id="button" onclick="characterCount()">Click me to run a function!</button>
+
+<script>
+    //Problem 4
+    function characterCount() {
+        var testString;
+        testString = prompt("Please type a string");
+        var charCount = testString.length;
+        alert(charCount);
+    }
+
+</script>
+
+
+</body>
+</html>
