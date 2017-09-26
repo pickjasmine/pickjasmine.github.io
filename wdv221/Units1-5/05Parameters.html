@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+
+<h2 id="uppercaseNameHere"></h2>
+<p>Problem 1: alert with character count of string entered through prompt</p>
+<button type="button" id="charCount" onclick="characterCount(prompt('Problem 1: Please type something'));">Run Problem 1</button>
+<p>Problem 2: document.write my first and last name</p>
+<button type="button" id="printName" onclick="printName('Jasmine','Francois');">Run Problem 2</button>
+<p>Problem 3: return character count of a string entered through prompt</p>
+<button type="button" id="returnCharcount" onclick="returnCharacterCount('test string');">Run Problem 3</button>
+<p>Problem 4: returns name entered through prompt in all capital letters</p>
+<button type="button" id="uppercaseName" onclick="document.getElementById('uppercaseNameHere').innerHTML = uppercaseName();">Run Problem 4</button>
+
+<script>
+    //Problem 1
+    function characterCount(input) {
+        alert("Problem 1: " + input.length + " characters in the string you just entered");
+    }
+
+    //Problem 2
+    function printName(firstName, lastName) {
+        var fullName = firstName + lastName;
+        document.write(fullName);
+    }
+
+    //Problem 3
+    function returnCharacterCount(input) {
+        var string = prompt("Problem 3: Please type something");
+        return string.length;
+    }
+    //runtime call problem 3
+    alert("Problem 3: The string you entered has " + returnCharacterCount("test string") + " characters");
+
+    //Problem 4
+    function uppercaseName() {
+        var name = prompt("Problem 4: Please type your name");
+        return name.toUpperCase();
+    }
+
+</script>
+</body>
+</html>
