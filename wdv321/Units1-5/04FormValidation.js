@@ -95,7 +95,6 @@ $(document).ready(function () {
         if (isFormValid === true) {
             $("span").css("display","none");
             $("#complaintForm").submit();
-            window.location = 'www.google.com';
         }
     });
 
