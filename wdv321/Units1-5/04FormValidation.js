@@ -95,7 +95,7 @@ $(document).ready(function () {
         if (isFormValid === true) {
             $("span").css("display","none");
             $("#complaintForm").submit();
-            window.location = "/wdv321/Units1-4/04FormSuccess.html";
+            window.location = "/wdv321/Units1-5/04FormSuccess.html";
         }
     });
 
