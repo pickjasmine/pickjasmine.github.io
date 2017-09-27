@@ -95,11 +95,12 @@ $(document).ready(function () {
         if (isFormValid === true) {
             $("span").css("display","none");
             $("#complaintForm").submit();
+            window.location = 'www.google.com';
         }
     });
 
     $("#resetButton").click(function () {
         $("span").css("display", "none");
         }
-    )
+    );
 });
