@@ -83,6 +83,10 @@ footer, .main {
   border-top: dashed 2px $yellow;
 }
 
+footer {
+  overflow: hidden;
+}
+
 .center {
   display: block;
   width: fit-content;

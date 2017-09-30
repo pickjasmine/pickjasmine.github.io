@@ -61,6 +61,9 @@ p {
 footer, .main {
   border-top: dashed 2px #f1af0d; }
 
+footer {
+  overflow: hidden; }
+
 .center {
   display: block;
   width: fit-content;
