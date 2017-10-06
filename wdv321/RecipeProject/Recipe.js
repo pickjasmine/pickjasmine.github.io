@@ -9,6 +9,16 @@ $(document).ready(function () {
         var recipeName = getParameterByName("recipeName");
         var recipe = recipes[recipeName];
         recipe.ingredients.forEach(showRecipeIngredients);
+    });
+
+    $("#ingredientTitle").click(function () {
+        $(".ingredients").slideToggle("slow");
+        $("i", this).toggleClass("fa-angle-double-right fa-angle-double-down");
+    });
+
+    $("#instructionTitle").click(function () {
+        $(".instructions").slideToggle("slow");
+        $("i", this).toggleClass("fa-angle-double-right fa-angle-double-down");
     })
 });
 
@@ -82,7 +92,19 @@ var recipes = {
                 unitOfMeasure: "tsp",
                 amount: 4
             }
+        ],
+        instructions: [
+            "Heat cooking oil in 2 quart skillet",
+            "Saute onions and peppers for 5 minutes",
+            "Add spices and stir for 30 seconds",
+            "Add meat and cook until browned (approximately 15 minutes)",
+            "Pour contents of skillet into crock-pot",
+            "Rinse beans and place in crock-pot",
+            "Open and pour tomato puree and tomato sauce into crock-pot",
+            "Cover crock-pot and cook on low for 6 hours",
+            "Serve into individual bowls and top with sour cream and cheese"
         ]
+
     },
 
     filipinoSpaghetti: {
@@ -105,7 +127,7 @@ var recipes = {
                 amount: 1 / 8
             },
             {
-                description: "Filipino-style hotdog",
+                description: "Filipino-style hotdog, sliced",
                 unitOfMeasure: "",
                 amount: 1 / 2
             },
@@ -149,6 +171,15 @@ var recipes = {
                 unitOfMeasure: "tsp",
                 amount: 1 / 8
             }
+        ],
+        instructions: [
+            "Boil salted water and cook spaghetti until firm to bite. Drain well.",
+            "In a saucepan, heat oil. Add onions and garlic to pan. Cook until soft.",
+            "Add ground beef to pan and cook, breaking into small pieces, until lightly browned (approximately 7 to 10 minutes)",
+            "Add tomato sauce, tomato paste, banana catsup, and beef broth. Stir in sugar.",
+            "Bring mixture to boil, then lower heat to simmer and cover. Let cook for one hour, or until meat is fully cooked and sauce is thickened.",
+            "During last 10 minutes of cooking, add hot dog slices.",
+            "Season with salt and pepper as desired."
         ]
     },
 
@@ -211,6 +242,19 @@ var recipes = {
                 unitOfMeasure: "cup",
                 amount: 2 / 3
             }
+        ],
+        instructions: [
+            "Preheat oven to 325 degrees F (165 degrees C)",
+            "Grease cookies sheets or line with parchment paper",
+            "Sift together flour, baking soda and salt. Set aside.",
+            "In a bowl, cream together melted butter, brown sugar, and white sugar until blended well.",
+            "In same bowl, beat in vanilla, egg, and egg yolk until light and creamy.",
+            "Add flour, baking soda, and salt mixture to bowl and lightly blend.",
+            "Finally, stir chocolate chips into bowl by hand.",
+            "Drop cookie dough 1/4 cup at a time onto prepared cookie sheets, approximately 3 inches apart.",
+            "Bake for 15 to 17 minutes in the oven, or until edges are lightly toasted.",
+            "Cool on baking sheets for a few minutes before transferring to wire racks",
+            "Transfer to wire racks and allow to cool for 10 minutes"
         ]
     }
 };
@@ -224,10 +268,12 @@ function showRecipeInfo() {
     $("#servingSizeComments").html(recipe.servingSizeComments);
     $("#prepTimeInMinutes").html(convertMinutesToHours(recipe.prepTimeInMinutes));
     $("#cookTimeInMinutes").html(convertMinutesToHours(recipe.cookTimeInMinutes));
-    $("#difficultyLevel").html(recipe.difficultyLevel);
+    $("#difficultyLevel").html(getDifficultyLevelStars(recipe));
+    //$("#difficultyLevel").html(recipe.difficultyLevel);
     $("#foodPicture").attr('src', recipe.imageSource);
 
     recipe.ingredients.forEach(showRecipeIngredients);
+    recipe.instructions.forEach(showRecipeInstructions);
 }
 
 function showRecipeIngredients(ingredient) {
@@ -257,9 +303,8 @@ function showRecipeIngredients(ingredient) {
     $("#ingredientList").append(" " + ingredient.description + "</li>");
 }
 
-
-function showRecipeInstructions() {
-
+function showRecipeInstructions(step) {
+    $("#instructionList").append("<li>" + step + "</li>");
 }
 
 function getServingSize(recipeName) {
@@ -272,6 +317,15 @@ function getServingSize(recipeName) {
         console.log("serving size: " + servingSize);
     }
     return servingSize;
+}
+
+function getDifficultyLevelStars(recipeName) {
+    difficultyLevel = recipeName.difficultyLevel;
+    stars = "";
+    for (i = 0; i < difficultyLevel; i++) {
+        stars += "<i class='fa fa-star'></i>";
+    }
+    return stars;
 }
 
 function getParameterByName(name, url) {

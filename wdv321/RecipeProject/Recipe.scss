@@ -1,4 +1,5 @@
-$accentColor: #42842b;
+$accentColor: #78dae3;
+$secondaryColor: #ffd95a;
 
 * {
   padding: 0;
@@ -43,7 +44,6 @@ li {
 
 .recipeInfo {
   text-align: center;
-  color: white;
   img {
     width: 100%;
     margin-top: 50px;
@@ -57,7 +57,7 @@ li {
 .row.recipeLink {
   height: fit-content;
   padding: 15px 0;
-  border-bottom: solid 2px white;
+  border-bottom: solid 2px #454545;
   img {
     width: 55%;
   }
@@ -83,10 +83,6 @@ a {
 
 #recipeplz {
   font-size: 36px;
-  &:hover {
-    color: white;
-    text-decoration: underline;
-  }
 }
 
 input {
@@ -95,6 +91,24 @@ input {
   text-align: center;
 }
 
-#recipeInstructions {
-  text-align: center;
+#servingSizeComments, h2 a, .submenu a {
+  color: $secondaryColor
+}
+
+h2, i, .submenu a:hover{
+  color: $accentColor;
+}
+
+#recipeSpecifics {
+  padding-left: 5%;
+  h3 {
+    text-align: center;
+    color: $secondaryColor;
+  }
+  i {
+    padding: 10px;
+  }
+  ol li {
+    list-style-type: decimal;
+  }
 }

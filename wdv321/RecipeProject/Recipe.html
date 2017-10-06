@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
           integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          type="text/css"/>
     <link rel="stylesheet" href="Recipe.css" type="text/css"/>
     <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -51,12 +53,26 @@
             <img id="foodPicture" class="img-fluid" src="">
         </div>
 
-        <div class="col-6" id="recipeInstructions">
-                <h3>Ingredients</h3>
+        <div class="col-6" id="recipeSpecifics">
+
+            <h3 id="ingredientTitle">Ingredients
+                <i class="fa fa-angle-double-right"></i>
+            </h3>
+            <div class="ingredients" style="display: none;">
                 <ul>
                     <span id="ingredientList"></span>
                 </ul>
+            </div>
 
+            <h3 id="instructionTitle">Instructions
+                <i class="fa fa-angle-double-right"></i>
+            </h3>
+            <div class="instructions" style="display: none;">
+                <ol>
+                    <span id="instructionList"></span>
+                </ol>
+
+            </div>
 
         </div>
     </div>
