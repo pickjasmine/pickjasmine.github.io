@@ -99,6 +99,10 @@ h2, i, .submenu a:hover{
   color: $accentColor;
 }
 
+#ingredientTitle, #instructionTitle {
+  cursor: pointer;
+}
+
 #recipeSpecifics {
   padding-left: 5%;
   h3 {
