@@ -4,11 +4,13 @@
 
 $(document).ready(function () {
     $("#servingSize").keyup(function () {
-        $("#ingredientList").html("");
         servingSize = $("#servingSize").val();
-        var recipeName = getParameterByName("recipeName");
-        var recipe = recipes[recipeName];
-        recipe.ingredients.forEach(showRecipeIngredients);
+        if (servingSize !== "") {
+            $("#ingredientList").html("");
+            var recipeName = getParameterByName("recipeName");
+            var recipe = recipes[recipeName];
+            recipe.ingredients.forEach(showRecipeIngredients);
+        }
     });
 
     $("#ingredientTitle").click(function () {
@@ -310,11 +312,9 @@ function showRecipeInstructions(step) {
 function getServingSize(recipeName) {
     if ($("#servingSize").val() === "") {
         servingSize = recipeName.servingSize;
-        console.log("default serving size: " + servingSize);
     }
     else {
         servingSize = $("#servingSize").val();
-        console.log("serving size: " + servingSize);
     }
     return servingSize;
 }
