@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Browse Recipes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="Recipe.css" type="text/css"/>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="Recipe.js"></script>
+</head>
+<body
+">
+
+<div class="container-fluid">
+    <div class="row">
+        <!-------------------------------------------------MENU------------------------------------------------------>
+        <div class="col-2 align-self-center menu">
+            <nav>
+                <ul>
+                    <li id="recipeplz"><a href="Browse.html">Reciplz</a></li>
+                    <li class="submenu"><a href="Browse.html">Browse</a>
+                        <ul class="flyout">
+                            <li><a href="">Appetizers</a></li>
+                            <li><a href="">Breakfast</a></li>
+                            <li><a href="">Desserts</a></li>
+                            <li><a href="">Dinner</a></li>
+                            <li><a href="">Lunch</a></li>
+                            <li><a href="">Salads</a></li>
+                            <li><a href="">Soups</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="search" href="">Search</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!------------------------------------------RECIPE INFO ----------------------------------------------------->
+        <div class="col-10 browseRecipes">
+            <div class="row align-items-center recipeLink">
+                <div class="col-6">
+                    <a href="Recipe.html?recipeName=filipinoSpaghetti">
+                        <img class="img-fluid" src="images/Filipino-Spaghetti-5.jpg"></a>
+                </div>
+                <div class="col-6">
+                    <h2><a href="Recipe.html?recipeName=filipinoSpaghetti">Filipino Spaghetti</a></h2>
+                    <h4>Total Cooking Time: 1 hour 25 minutes</h4>
+                    <h4>Serving Size: 8</h4>
+                    <h4>Difficulty: 4</h4>
+                </div>
+            </div>
+
+            <div class="row align-items-center recipeLink">
+                <div class="col-6">
+                    <a href="Recipe.html?recipeName=crockPotChili">
+                        <img class="img-fluid" src="images/Slow-Cooker-Double-Beef-and-Bean-Chili-144.jpeg"></a>
+                </div>
+                <div class="col-6">
+                    <h2><a href="Recipe.html?recipeName=crockPotChili">Crock-Pot Chili</a></h2>
+                    <h4>Total Cooking Time: 6 hours</h4>
+                    <h4>Serving Size: 6</h4>
+                    <h4>Difficulty: 3</h4>
+                </div>
+            </div>
+
+            <div class="row align-items-center recipeLink">
+                <div class="col-6">
+                    <a href="Recipe.html?recipeName=chocolateChipCookies">
+                        <img class="img-fluid" src="images/best-chocolate-chip-cookies-3.jpg"></a>
+                </div>
+                <div class="col-6">
+                    <h2><a href="Recipe.html?recipeName=chocolateChipCookies">Chocolate Chip Cookies</a></h2>
+                    <h4>Total Cooking Time: 40 minutes</h4>
+                    <h4>Serving Size: 18</h4>
+                    <h4>Difficulty: 2</h4>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+</body>
+</html>

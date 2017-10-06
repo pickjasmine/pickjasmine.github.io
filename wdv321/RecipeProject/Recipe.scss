@@ -1,0 +1,100 @@
+$accentColor: #42842b;
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body {
+  background: url(images/katie-smith-104748.jpg) center;
+  background-size: cover;
+  background-position: center top;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+}
+
+li {
+  list-style-type: none;
+}
+
+.submenu {
+  padding-top: 20%;
+  .flyout {
+    display: none;
+  }
+}
+
+.submenu:hover {
+  .flyout {
+    padding: 5px 0 0 15px;
+    display: block;
+    position: absolute;
+    z-index: 100;
+  }
+}
+
+.container-fluid {
+  .row {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+.recipeInfo {
+  text-align: center;
+  color: white;
+  img {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+.browseRecipes {
+  overflow: scroll;
+}
+
+.row.recipeLink {
+  height: fit-content;
+  padding: 15px 0;
+  border-bottom: solid 2px white;
+  img {
+    width: 55%;
+  }
+}
+
+img {
+  border-radius: 100%;
+  border: double 5px white;
+}
+
+a {
+  color: white;
+  &:hover {
+    color: $accentColor;
+    text-decoration: none;
+  }
+}
+
+#search {
+  position: fixed;
+  bottom: 25px;
+}
+
+#recipeplz {
+  font-size: 36px;
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+input {
+  width: 15%;
+  color: black;
+  text-align: center;
+}
+
+#recipeInstructions {
+  text-align: center;
+}
