@@ -97,6 +97,7 @@ footer {
 .product {
   width: 33%;
   display: inline-block;
+  vertical-align: top;
   img {
     display: block;
     width: 90%;
@@ -114,4 +115,14 @@ footer {
   td {
     padding: 5px 15px;
   }
+}
+
+.monthlySub {
+  border-bottom: dashed 2px $blue;
+  border-top: dashed 2px $yellow;
+}
+
+.monthlySub, .teeShirtSub {
+  margin: 5px;
+  padding: 15px 0;
 }

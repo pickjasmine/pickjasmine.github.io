@@ -72,7 +72,8 @@ footer {
 
 .product {
   width: 33%;
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: top; }
   .product img {
     display: block;
     width: 90%;
@@ -86,5 +87,13 @@ footer {
     font-style: italic; }
   .product td {
     padding: 5px 15px; }
+
+.monthlySub {
+  border-bottom: dashed 2px #6eb2ff;
+  border-top: dashed 2px #f1af0d; }
+
+.monthlySub, .teeShirtSub {
+  margin: 5px;
+  padding: 15px 0; }
 
 /*# sourceMappingURL=FurryFriends.css.map */
