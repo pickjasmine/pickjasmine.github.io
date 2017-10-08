@@ -14,14 +14,20 @@ $(document).ready(function () {
     });
 
     $("#ingredientTitle").click(function () {
-        $(".ingredients").slideToggle("slow");
         $("i", this).toggleClass("fa-angle-double-right fa-angle-double-down");
+        $(".ingredients").slideToggle(1500,"easeOutExpo");
     });
 
     $("#instructionTitle").click(function () {
-        $(".instructions").slideToggle("slow");
         $("i", this).toggleClass("fa-angle-double-right fa-angle-double-down");
-    })
+        $(".instructions").slideToggle(1500,"easeOutExpo");
+    });
+
+    $(".browseMenu").hover(function () {
+        $("i", this).toggleClass("fa-angle-double-right fa-angle-double-down");
+        $(".flyout").slideToggle(1200,"easeOutExpo");
+    });
+
 });
 
 var recipes = {
@@ -96,15 +102,15 @@ var recipes = {
             }
         ],
         instructions: [
-            "Heat cooking oil in 2 quart skillet",
-            "Saute onions and peppers for 5 minutes",
-            "Add spices and stir for 30 seconds",
-            "Add meat and cook until browned (approximately 15 minutes)",
-            "Pour contents of skillet into crock-pot",
-            "Rinse beans and place in crock-pot",
-            "Open and pour tomato puree and tomato sauce into crock-pot",
-            "Cover crock-pot and cook on low for 6 hours",
-            "Serve into individual bowls and top with sour cream and cheese"
+            "1. Heat cooking oil in 2 quart skillet",
+            "2. Saute onions and peppers for 5 minutes",
+            "3. Add spices and stir for 30 seconds",
+            "4. Add meat and cook until browned (approximately 15 minutes)",
+            "5. Pour contents of skillet into crock-pot",
+            "6. Rinse beans and place in crock-pot",
+            "7. Open and pour tomato puree and tomato sauce into crock-pot",
+            "8. Cover crock-pot and cook on low for 6 hours",
+            "9. Serve into individual bowls and top with sour cream and cheese"
         ]
 
     },
@@ -175,13 +181,13 @@ var recipes = {
             }
         ],
         instructions: [
-            "Boil salted water and cook spaghetti until firm to bite. Drain well.",
-            "In a saucepan, heat oil. Add onions and garlic to pan. Cook until soft.",
-            "Add ground beef to pan and cook, breaking into small pieces, until lightly browned (approximately 7 to 10 minutes)",
-            "Add tomato sauce, tomato paste, banana catsup, and beef broth. Stir in sugar.",
-            "Bring mixture to boil, then lower heat to simmer and cover. Let cook for one hour, or until meat is fully cooked and sauce is thickened.",
-            "During last 10 minutes of cooking, add hot dog slices.",
-            "Season with salt and pepper as desired."
+            "1. Boil salted water and cook spaghetti until firm to bite. Drain well.",
+            "2. In a saucepan, heat oil. Add onions and garlic to pan. Cook until soft.",
+            "3. Add ground beef to pan and cook, breaking into small pieces, until lightly browned (approximately 7 to 10 minutes)",
+            "4. Add tomato sauce, tomato paste, banana catsup, and beef broth. Stir in sugar.",
+            "5. Bring mixture to boil, then lower heat to simmer and cover. Let cook for one hour, or until meat is fully cooked and sauce is thickened.",
+            "6. During last 10 minutes of cooking, add hot dog slices.",
+            "7. Season with salt and pepper as desired."
         ]
     },
 
@@ -246,17 +252,17 @@ var recipes = {
             }
         ],
         instructions: [
-            "Preheat oven to 325 degrees F (165 degrees C)",
-            "Grease cookies sheets or line with parchment paper",
-            "Sift together flour, baking soda and salt. Set aside.",
-            "In a bowl, cream together melted butter, brown sugar, and white sugar until blended well.",
-            "In same bowl, beat in vanilla, egg, and egg yolk until light and creamy.",
-            "Add flour, baking soda, and salt mixture to bowl and lightly blend.",
-            "Finally, stir chocolate chips into bowl by hand.",
-            "Drop cookie dough 1/4 cup at a time onto prepared cookie sheets, approximately 3 inches apart.",
-            "Bake for 15 to 17 minutes in the oven, or until edges are lightly toasted.",
-            "Cool on baking sheets for a few minutes before transferring to wire racks",
-            "Transfer to wire racks and allow to cool for 10 minutes"
+            "1. Preheat oven to 325 degrees F (165 degrees C)",
+            "2. Grease cookies sheets or line with parchment paper",
+            "3. Sift together flour, baking soda and salt. Set aside.",
+            "4. In a bowl, cream together melted butter, brown sugar, and white sugar until blended well.",
+            "5. In same bowl, beat in vanilla, egg, and egg yolk until light and creamy.",
+            "6. Add flour, baking soda, and salt mixture to bowl and lightly blend.",
+            "7. Finally, stir chocolate chips into bowl by hand.",
+            "8. Drop cookie dough 1/4 cup at a time onto prepared cookie sheets, approximately 3 inches apart.",
+            "9. Bake for 15 to 17 minutes in the oven, or until edges are lightly toasted.",
+            "10. Cool on baking sheets for a few minutes before transferring to wire racks",
+            "11. Transfer to wire racks and allow to cool for 10 minutes"
         ]
     }
 };

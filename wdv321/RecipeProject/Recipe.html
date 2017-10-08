@@ -13,28 +13,38 @@
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
     <script src="Recipe.js"></script>
 </head>
 <body onload="showRecipeInfo();">
 <div class="container-fluid">
     <div class="row align-items-center">
         <!-------------------------------------------------MENU------------------------------------------------------>
-        <div class="col-2 menu">
+        <div class="col-2 align-self-center menu">
             <nav>
                 <ul>
                     <li id="recipeplz"><a href="Browse.html">Reciplz</a></li>
-                    <li class="submenu"><a href="Browse.html">Browse</a>
-                        <ul class="flyout">
-                            <li><a href="">Appetizers</a></li>
-                            <li><a href="">Breakfast</a></li>
-                            <li><a href="">Desserts</a></li>
-                            <li><a href="">Dinner</a></li>
-                            <li><a href="">Lunch</a></li>
-                            <li><a href="">Salads</a></li>
-                            <li><a href="">Soups</a></li>
-                        </ul>
-                    </li>
-                    <li><a id="search" href="">Search</a></li>
+                    <div class="browseMenu">
+
+                        <li id="submenu" class="submenu">Browse <i class="fa fa-angle-double-right"></i></li>
+                        <div id="flyout" class="flyout" style="display: none;">
+                            <ul>
+                                <li><a href="">Appetizers</a></li>
+                                <li><a href="">Breakfast</a></li>
+                                <li><a href="">Desserts</a></li>
+                                <li><a href="">Dinner</a></li>
+                                <li><a href="">Lunch</a></li>
+                                <li><a href="">Salads</a></li>
+                                <li><a href="">Soups</a></li>
+                                <li><a href="Browse.html">All Recipes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <li><a id="search" href=""><i class="fa fa-search"></i> Search </a></li>
                 </ul>
             </nav>
 
@@ -68,9 +78,9 @@
                 <i class="fa fa-angle-double-right"></i>
             </h3>
             <div class="instructions" style="display: none;">
-                <ol>
+                <ul>
                     <span id="instructionList"></span>
-                </ol>
+                </ul>
 
             </div>
 
