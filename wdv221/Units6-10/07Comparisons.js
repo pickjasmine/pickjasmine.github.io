@@ -12,7 +12,19 @@ function compareNames() {
 }
 
 function compareNumbers() {
-
+    var number1 = parseFloat(document.getElementById('number1').value);
+    var number2 = parseFloat(document.getElementById('number2').value);
+    console.log("Number 1: " + number1);
+    console.log("Number 2: " + number2);
+    if (number1 === number2) {
+        document.getElementById('results').innerHTML = "Equal";
+    }
+    else if (number1 > number2) {
+        document.getElementById('results').innerHTML = number1;
+    }
+    else {
+        document.getElementById('results').innerHTML = number2;
+    }
 }
 
 function resetForm() {

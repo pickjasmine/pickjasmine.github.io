@@ -17,17 +17,17 @@
 <hr />
 <form id="form1" name="form1" method="post" action="">
     <p>Value 1:
-        <input type="text" name="value1" id="value1" />
+        <input type="text" name="number1" id="number1" />
     </p>
     <p>Value 2:
-        <input type="text" name="value2" id="value2" />
+        <input type="text" name="number2" id="number2" />
     </p>
-    <p>Result:   </p>
+    <p>Result:  <span id="results"></span> </p>
     <p>
-        <input type="submit" value="Compare Numbers" />
+        <input type="button" value="Compare Numbers" onclick="compareNumbers();"/>
     </p>
     <p>
-        <input type="reset" name="Reset" id="button" value="Reset" />
+        <input type="reset" name="Reset" id="button" value="Reset" onclick="resetForm();"/>
     </p>
 </form>
 
