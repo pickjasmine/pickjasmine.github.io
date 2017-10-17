@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Sue+Ellen+Francisco" rel="stylesheet">
+    <link href="06Cookies.css" type="text/css" rel="stylesheet"/>
+    <title>Cookie Handling</title>
+    <script src="../jquery-3.2.1.js"></script>
+    <script src="06Cookies.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row header">
+        <div class="col-3">
+            <img src="../../wdv351/images/64480.jpg" height="250px">
+        </div>
+
+        <div class="col-9">
+            <h1>Furry Friends Refuge</h1>
+            <div class="donateHeader">
+                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="7AMMZPWWWFLQ2">
+                    <input type="image" src="http://furryfriendsrefuge.org/wp-content/uploads/2013/04/Donate_Button.jpg"
+                           border="0"
+                           name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1"
+                         height="1">
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="06CookiesHome.html">Home</a></li>
+            <li><a href="06CookiesAbout.html">About</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="main">
+        <p>You have visited the homepage <span id="visitCount"></span> times in the last 3 days.</p>
+        <script>
+            $(document).ready(function () {
+                if (checkForCookie()) {
+                    $("#visitCount").html(readCookieValue());
+                }
+                else {
+                    $("#visitCount").html(0);
+
+                }
+            });
+        </script>
+
+
+        <h2>About Furry Friends Refuge</h2>
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <p>Furry Friends Refuge is a nonprofit humane organization serving the animals of West Des Moines,
+                    Urbandale,
+                    Clive,
+                    and Windsor Heights. Furry Friends is a 501(c)3 tax-deductible organization and has created the
+                    first
+                    no-kill
+                    community in the Des Moines metro area. Our adoption centers are located at 1211 Grand Ave. in West
+                    Des
+                    Moines
+                    and 1723 Grand Ave. in Des Moines.</p>
+
+                <p>Furry Friends seeks to assist all area animals in need through a variety of programs including
+                    adoptions,
+                    spay
+                    and neuter, community outreach, and humane education. Additionally, the organization has partnered
+                    with
+                    WestPet
+                    animal control to provide housing, reunification, and adoption programs for stray animals in West
+                    Des
+                    Moines,
+                    Clive, and Urbandale.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-3">
+
+                <img src="images/GuideStarSeals_2017_gold_LG.png" class="img-fluid"/>
+            </div>
+        </div>
+
+        <p>Furry Friends relies heavily on volunteers, and all donations go directly to the programs that serve the
+            animals.
+        </p>
+
+
+        <h2>Our Mission</h2>
+
+        <p>We are compassionate people who care about animals and promote animal welfare through education and
+            celebration
+            of the human/animal bond. We work to combat animal mistreatment and insist on humane treatment for
+            all
+            animals.</p>
+
+
+        <h2>Our Programs</h2>
+        <div class="row">
+            <div class="col-10 d-flex align-self-center">
+
+                <p><span class="highlight">Adoption program</span>: Place animals brought in to organization in new
+                    homes,
+                    provide assistance to find the best
+                    animal for a family, provide follow-up behavior assistance. Provide excellent customer care to
+                    adopters,
+                    encouraging more families to choose adoption to acquire their new pet.</p>
+            </div>
+            <div class="col-2 d-flex justify-content-center">
+                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="YE2E9JHTQZB8C">
+                    <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+                           name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1"
+                         height="1">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 align-self-center">
+                <img src="http://furryfriendsrefuge.org/wp-content/uploads/2013/03/maya.jpg"
+                     class="img-fluid rounded float-right"/>
+            </div>
+            <div class="col-9 align-self-center">
+                <p><span class="highlight">Animal control</span>: Take in, house, and seek original owners for animals
+                    who were
+                    found by WestPet animal control
+                    officers. Place any unclaimed animals up for adoption.</p>
+
+                <p><span class="highlight">Community outreach program</span>: Provide speakers to organizations,
+                    schools, and
+                    other community outlets about
+                    responsible animal care and other animal-related topics. Use our pet therapy program to visit
+                    hospitals,
+                    hospice
+                    homes, and nursing homes with animals at request. Reach out to schools and provide seminars and
+                    assemblies
+                    promoting compassion. Provide free advice for pet owners struggling with behavior problems.</p>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-9 align-self-center">
+                <br>
+                <p><span class="highlight">Animal cruelty program</span>: Assist in educating community about animal
+                    cruelty
+                    and
+                    provide advice to citizens
+                    witnessing cruelty. Follow local animal cruelty cases and work with prosecutors to ensure tough
+                    penalties
+                    and
+                    psychological treatment. Provide expert advice to law enforcement and prosecutors regarding both
+                    civil
+                    and
+                    criminal components of animal cruelty cases. Work to rehabilitate victims of abuse and neglect and
+                    use
+                    cases
+                    to
+                    bring the issue of animal cruelty to the forefront of the community.</p>
+
+                <p><span class="highlight">Volunteer and junior volunteer program</span>: Train volunteers in the
+                    community
+                    to
+                    assist in making all other
+                    programs
+                    successful. Focus on connecting people with what they like to do and provide a positive social
+                    outlet.
+                    Encourage
+                    children to become active and responsible citizens by providing age-appropriate activities and
+                    tasks.
+                </p>
+
+            </div>
+            <div class="col-3 align-self-center">
+
+                <img src="http://furryfriendsrefuge.org/wp-content/uploads/2013/03/mr-kitty.jpg"
+                     class="img-fluid rounded float-right"/>
+
+            </div>
+        </div>
+        <p><span class="highlight">Spay and neuter program</span>: Provide affordable spay and neuter services
+            to
+            the
+            public otherwise unlikely or
+            unable
+            to utilize private vets to have their pet sterilized. Provide services for other animal lovers to
+            spay
+            and
+            neuter unclaimed strays, barn cats, and alley cats. Ensure that the program is sustainable
+            independent
+            of
+            grant
+            funding to have a long-term impact on the community.</p>
+        <h2>More Information</h2>
+        <p>Click one of these links to find out about
+            <a href="">Animal Control Services</a>,
+            <a href="">Shelter Locations & Hours</a>,
+            <a href="">News & Events</a>, or
+            <a href="">Statistics</a>.</p>
+
+    </div>
+    <footer>
+        <div class="row">
+
+            <div class="col-6 align-self-center">
+
+                <h3 class="center">Get monthly shelter updates!</h3>
+                <input class="center" type="text" id="subscribeEmail" name="subscribeEmail"/>
+                <input class="center" type="button" id="subscribeSubmit" name="subscribeSubmit" value="Subscribe"/>
+            </div>
+            <div class="col-6 align-self-center center">
+                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input class="center" type="hidden" name="cmd" value="_s-xclick">
+                    <input class="center" type="hidden" name="hosted_button_id" value="CRMDVHEBMRS9Q">
+                    <table class="center">
+                        <tr>
+                            <td><input type="hidden" name="on0" value="Recurring Donations">Make a recurring donation!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><select name="os0">
+                                <option value="Option 1">Option 1 : $5.00 USD - monthly</option>
+                                <option value="Option 2">Option 2 : $10.00 USD - monthly</option>
+                                <option value="Option 3">Option 3 : $20.00 USD - monthly</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="image" src="http://furryfriendsrefuge.org/wp-content/uploads/2013/04/Donate_Button.jpg"
+                           border="0"
+                           name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1"
+                         height="1">
+                </form>
+            </div>
+        </div>
+
+        <p class="center">Furry Friends Refuge <strong> | </strong> 1211 Grand Ave West Des Moines IA 50265 <strong>
+            | </strong> 515-222-0009</p>
+    </footer>
+
+
+</div>
+</body>
+</html>
