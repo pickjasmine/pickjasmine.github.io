@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consume JSON with AJAX</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#student1Button").click(function () {
+                $.get("Student1.js", function (data) {
+                    var student1 = JSON.parse(data);
+                    $("#studentId").html(student1.student_id);
+                    $("#studentFirstName").html(student1.student_first_name);
+                    $("#studentLastName").html(student1.student_last_name);
+                    $("#studentMajor").html(student1.student_major);
+                    $("#studentCredits").html(student1.student_credits);
+                    $("#studentGpa").html(student1.student_gpa);
+                    var milliseconds = Date.parse(student1.student_registration_date);
+                    var date = new Date(milliseconds + 5*3600*1000);
+                    var formattedDate = date.toLocaleDateString("en-US");
+                    $("#studentRegistrationDate").html(formattedDate);
+                });
+            });
+            $("#student2Button").click(function () {
+                $.get("Student2.js", function (data) {
+                    var student2 = JSON.parse(data);
+                    $("#studentId").html(student2.student_id);
+                    $("#studentFirstName").html(student2.student_first_name);
+                    $("#studentLastName").html(student2.student_last_name);
+                    $("#studentMajor").html(student2.student_major);
+                    $("#studentCredits").html(student2.student_credits);
+                    $("#studentGpa").html(student2.student_gpa);
+                    var milliseconds = Date.parse(student2.student_registration_date);
+                    var date = new Date(milliseconds + 5*3600*1000);
+                    var formattedDate = date.toLocaleDateString("en-US");
+                    $("#studentRegistrationDate").html(formattedDate);
+                });
+            });
+            $("#student3Button").click(function () {
+                $.get("Student3.js", function (data) {
+                    var student3 = JSON.parse(data);
+                    $("#studentId").html(student3.student_id);
+                    $("#studentFirstName").html(student3.student_first_name);
+                    $("#studentLastName").html(student3.student_last_name);
+                    $("#studentMajor").html(student3.student_major);
+                    $("#studentCredits").html(student3.student_credits);
+                    $("#studentGpa").html(student3.student_gpa);
+                    var milliseconds = Date.parse(student3.student_registration_date);
+                    var date = new Date(milliseconds + 5*3600*1000);
+                    var formattedDate = date.toLocaleDateString("en-US");
+                    $("#studentRegistrationDate").html(formattedDate);
+                });
+            });
+        });
+    </script>
+    <style>
+        h1 {
+            text-align: center;
+            color: #403838;
+        }
+
+        button {
+            display: block;
+            margin: 5px auto;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        table, tr, td {
+            width: 50%;
+            border: solid 2px #403838;
+            border-collapse: collapse
+        }
+
+        td {
+            padding: 5px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffe1e1;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Information</h1>
+<button type="button" id="student1Button">Student 1</button>
+<button type="button" id="student2Button">Student 2</button>
+<button type="button" id="student3Button">Student 3</button>
+<br>
+
+<table>
+    <tr>
+        <td>Student ID</td>
+        <td id="studentId"></td>
+    </tr>
+    <tr>
+        <td>First Name</td>
+        <td id="studentFirstName"></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td id="studentLastName"></td>
+    </tr>
+    <tr>
+        <td>Major</td>
+        <td id="studentMajor"></td>
+    </tr>
+    <tr>
+        <td>Credits</td>
+        <td id="studentCredits"></td>
+    </tr>
+    <tr>
+        <td>GPA</td>
+        <td id="studentGpa"></td>
+    </tr>
+    <tr>
+        <td>Registration Date</td>
+        <td id="studentRegistrationDate"></td>
+    </tr>
+</table>
+
+<!--
+<h2>Student ID:</h2><p id="studentId"></p>
+<h2>Student First Name:</h2><p id="studentFirstName"></p>
+<h2>Student Last Name:</h2><p id="studentLastName"></p>
+<h2>Student Major:</h2><p id="studentMajor"></p>
+<h2>Student Credits:</h2><p id="studentCredits"></p>
+<h2>Student GPA:</h2><p id="studentGpa"></p>
+<h2>Student Registration Date:</h2><p id="studentRegistrationDate"></p>
+-->
+</body>
+</html>
