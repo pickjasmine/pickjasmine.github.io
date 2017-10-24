@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento" rel="stylesheet">
+    <link href="PayPalExpress.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="main"><br>
+    <h1>Candles</h1>
+    <p>Organic, Gluten-Free, Vegan</p>
+    <p>Set in an ethically sourced, copper tin</p>
+    <p>Made from the hands of underprivileged children</p>
+    <br>
+    <p>
+        <img src="images/Scent-Candle-copper1.jpg"/><br>
+        <span class="price">$4.99</span>
+    </p>
+
+    <br>
+    <div id="paypal-button"></div>
+
+    <script>
+        paypal.Button.render({
+
+                env: 'sandbox', // Or 'production',
+
+                style: {
+                    label: 'pay',
+                    size: 'responsive', // small | medium | large | responsive
+                    shape: 'rect',   // pill | rect
+                    color: 'gold'   // gold | blue | silver | black
+                },
+
+                client: {
+                    sandbox: 'AabgJ0tqnI7oUq4REb9_cZcosO4y6VGkL6dDW_gYlYDXzb6nq4M0ECTr5ceOUO3kMsRt2RsefDBwtGJg',
+                    production: ''
+                },
+
+                commit: true,
+
+                payment: function (data, actions) {
+                    return actions.payment.create({
+                        payment: {
+                            transactions: [
+                                {
+                                    amount: {total: '4.99', currency: 'USD'}
+                                }
+                            ]
+                        }
+                    });
+                },
+
+                onAuthorize: function (data, actions) {
+                    return actions.payment.execute().then(function () {
+                        window.location = 'PayPalConfirm.html';
+                    });
+                }
+            },
+            '#paypal-button');
+    </script>
+</div>
+
+</body>
