@@ -2,9 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
     <title>Title</title>
 </head>
 <body>
+
+<div id="paypal-button-container"></div>
+<script>
+    paypal.Button.render({
+
+        env: 'sandbox', // sandbox | production
+
+        style: {
+            label: 'pay',
+            size: 'responsive', // small | medium | large | responsive
+            shape: 'rect',   // pill | rect
+            color: 'gold'   // gold | blue | silver | black
+        },
+
+        // PayPal Client IDs - replace with your own
+        // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+        client: {
+            sandbox:    'AabgJ0tqnI7oUq4REb9_cZcosO4y6VGkL6dDW_gYlYDXzb6nq4M0ECTr5ceOUO3kMsRt2RsefDBwtGJg',
+            production: "" //product API credentials go here
+        },
+
+        // Show the buyer a 'Pay Now' button in the checkout flow
+        commit: true,
+
+        // payment() is called when the button is clicked
+        payment: function(data, actions) {
+
+            // Make a call to the REST api to create the payment
+            return actions.payment.create({
+                payment: {
+                    transactions: [
+                        {
+                            amount: { total: '1.00', currency: 'USD' }
+                        }
+                    ]
+                }
+            });
+        },
+
+        // onAuthorize() is called when the buyer approves the payment
+        onAuthorize: function(data, actions) {
+
+            // Make a call to the REST api to execute the payment
+            return actions.payment.execute().then(function() {
+                //window.alert('Payment Complete!');
+                window.location("https://pickjasmine.github.io/wdv351/PayPal/DigitalGoods/SuccessfulCheckout.html");
+            });
+        },
+
+        onCancel: function(data, actions) {
+            // Show a cancel page or return to cart
+            //window.alert("Payment Cancelled!");
+            window.location("https://pickjasmine.github.io/wdv351/PayPal/DigitalGoods/CancellationPage.html");
+        },
+
+    }, '#paypal-button-container');
+
+</script>
 
 </body>
 </html>
