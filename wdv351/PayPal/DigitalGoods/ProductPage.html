@@ -2,12 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
-    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Spirax" rel="stylesheet">
+    <link href="DigitalGoods.css" type="text/css" rel="stylesheet"/>
+    <title>CCG Company</title>
 </head>
 <body>
+<div class="main">
+
+<header>
+    <h1>CCG Co.</h1>
+    <p class="tagline">Cute Cat Gifs Company</p>
+</header>
+
+<h1 class="name">Pabu</h1>
+<h2>$1.00</h2>
+<p>This gif is a close-up shot of Pabu, while she plays in a laundry basket.</p>
+
+<p><img src="../../images/IMG_20170102_153552.jpg" width="500px" height=auto/></p>
+<p>Pabu is an mixed-breed 2 year old cat.</p>
+<p>Her hobbies include playing with strings and ripping apart paper towels.</p>
+<p>Her favorite food is wet cat food, mixed with warm water or tuna juice.</p>
+    <br><br>
 
 <div id="paypal-button-container"></div>
 <script>
@@ -25,7 +43,7 @@
         // PayPal Client IDs - replace with your own
         // Create a PayPal app: https://developer.paypal.com/developer/applications/create
         client: {
-            sandbox:    'AabgJ0tqnI7oUq4REb9_cZcosO4y6VGkL6dDW_gYlYDXzb6nq4M0ECTr5ceOUO3kMsRt2RsefDBwtGJg',
+            sandbox: 'AabgJ0tqnI7oUq4REb9_cZcosO4y6VGkL6dDW_gYlYDXzb6nq4M0ECTr5ceOUO3kMsRt2RsefDBwtGJg',
             production: "" //product API credentials go here
         },
 
@@ -33,14 +51,14 @@
         commit: true,
 
         // payment() is called when the button is clicked
-        payment: function(data, actions) {
+        payment: function (data, actions) {
 
             // Make a call to the REST api to create the payment
             return actions.payment.create({
                 payment: {
                     transactions: [
                         {
-                            amount: { total: '1.00', currency: 'USD' }
+                            amount: {total: '1.00', currency: 'USD'}
                         }
                     ]
                 }
@@ -48,24 +66,25 @@
         },
 
         // onAuthorize() is called when the buyer approves the payment
-        onAuthorize: function(data, actions) {
+        onAuthorize: function (data, actions) {
 
             // Make a call to the REST api to execute the payment
-            return actions.payment.execute().then(function() {
+            return actions.payment.execute().then(function () {
                 //window.alert('Payment Complete!');
-                window.location("https://pickjasmine.github.io/wdv351/PayPal/DigitalGoods/SuccessfulCheckout.html");
+                window.location = "https://pickjasmine.github.io/wdv351/PayPal/DigitalGoods/SuccessfulCheckout.html";
             });
         },
 
-        onCancel: function(data, actions) {
-            // Show a cancel page or return to cart
+        onCancel: function (data, actions) {
+            // Show a cancel page
             //window.alert("Payment Cancelled!");
-            window.location("https://pickjasmine.github.io/wdv351/PayPal/DigitalGoods/CancellationPage.html");
+            window.location = "https://pickjasmine.github.io/wdv351/PayPal/DigitalGoods/CancellationPage.html";
         },
 
     }, '#paypal-button-container');
 
 </script>
 
+</div>
 </body>
 </html>
