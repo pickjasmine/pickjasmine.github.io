@@ -8,18 +8,16 @@ export default class DropDowns extends React.Component {
 
     render() {
         const options = this.props.items;
-        console.log(options);
+
         return (
             <select onChange={this.props.updateDropDownItems} value={this.props.selected}>
                 <option>{this.props.selected}</option>
                 {
                     options.map( (dropdownItem) => {
-                        //console.log(dropdownItem);
                         return <option>{dropdownItem}</option>
                     })
                 }
             </select>
         )
-
     }
 }

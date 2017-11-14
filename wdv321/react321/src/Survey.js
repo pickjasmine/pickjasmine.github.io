@@ -11,72 +11,9 @@ export default class Survey extends React.Component {
             dropdown3: "--Select an option--",
             dropdown4: "--Select an option--"
         };
-        // this.updateDropdown1 = this.updateDropdown1.bind(this);
-        // this.updateDropdown2 = this.updateDropdown2.bind(this);
-        // this.updateDropdown3 = this.updateDropdown3.bind(this);
-        // this.updateDropdown4 = this.updateDropdown4.bind(this);
         this.updateDropdown = this.updateDropdown.bind(this);
         this.resetForm = this.resetForm.bind(this);
     }
-
-    // updateDropdown1(event) {
-    //     const selectedItem = event.target.value;
-    //     const index = this.state.dropdownItems.indexOf(selectedItem);
-    //     this.setState({
-    //         dropdownItems: [
-    //             ...this.state.dropdownItems.slice(0, index),
-    //             ...this.state.dropdownItems.slice(index + 1)
-    //         ],
-    //         dropdown1: selectedItem
-    //     }, function () {
-    //         console.log(this.state.dropdown1);
-    //     })
-    // }
-    //
-    // updateDropdown2(event) {
-    //     const selectedItem = event.target.value;
-    //     const index = this.state.dropdownItems.indexOf(selectedItem);
-    //     this.setState({
-    //         dropdownItems: [
-    //             ...this.state.dropdownItems.slice(0, index),
-    //             ...this.state.dropdownItems.slice(index + 1)
-    //         ],
-    //         dropdown2: selectedItem
-    //     }, function () {
-    //         console.log(this.state.dropdown2);
-    //         console.log(this.state.dropdownItems);
-    //     })
-    // }
-    //
-    // updateDropdown3(event) {
-    //     const selectedItem = event.target.value;
-    //     const index = this.state.dropdownItems.indexOf(selectedItem);
-    //     this.setState({
-    //         dropdownItems: [
-    //             ...this.state.dropdownItems.slice(0, index),
-    //             ...this.state.dropdownItems.slice(index + 1)
-    //         ],
-    //         dropdown3: selectedItem
-    //     }, function () {
-    //         console.log(this.state.dropdown3);
-    //         console.log(this.state.dropdownItems);
-    //     })
-    // }
-    //
-    // updateDropdown4(event) {
-    //     const selectedItem = event.target.value;
-    //     const index = this.state.dropdownItems.indexOf(selectedItem);
-    //     this.setState({
-    //         dropdownItems: [
-    //             ...this.state.dropdownItems.slice(0, index),
-    //             ...this.state.dropdownItems.slice(index + 1)
-    //         ],
-    //         dropdown4: selectedItem
-    //     }, function () {
-    //         console.log(this.state.dropdown4);
-    //         console.log(this.state.dropdownItems);
-    //     })
-    // }
 
     updateDropdown(index, event) {
         const selectedItem = event.target.value;
@@ -103,7 +40,6 @@ export default class Survey extends React.Component {
             console.log(this.state.dropdownItems);
         })
     }
-
 
     render() {
         return (
