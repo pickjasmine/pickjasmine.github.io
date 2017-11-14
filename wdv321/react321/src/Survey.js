@@ -1,59 +1,94 @@
 import React from 'react';
+import DropDowns from './DropDowns';
 
 export default class Survey extends React.Component {
     constructor() {
         super();
         this.state = {
-            dropdownItems: ["--Select an option--", "1. Best time", "2. Next Best time", "3. Not as good", "4. Worst time"],
-            dropdown1: ["--Select an option--", "1. Best time", "2. Next Best time", "3. Not as good", "4. Worst time"],
-            dropdown2: ["--Select an option--", "1. Best time", "2. Next Best time", "3. Not as good", "4. Worst time"],
-            dropdown3: ["--Select an option--", "1. Best time", "2. Next Best time", "3. Not as good", "4. Worst time"],
-            dropdown4: ["--Select an option--", "1. Best time", "2. Next Best time", "3. Not as good", "4. Worst time"]
+            dropdownItems: ["1. Best time", "2. Next Best time", "3. Not as good", "4. Worst time"],
+            dropdown1: "--Select an option--",
+            dropdown2: "--Select an option--",
+            dropdown3: "--Select an option--",
+            dropdown4: "--Select an option--"
         };
-        this.handleChangeEvent = this.handleChangeEvent.bind(this);
-        this.deleteDropdownItem = this.deleteDropdownItem.bind(this);
+        // this.updateDropdown1 = this.updateDropdown1.bind(this);
+        // this.updateDropdown2 = this.updateDropdown2.bind(this);
+        // this.updateDropdown3 = this.updateDropdown3.bind(this);
+        // this.updateDropdown4 = this.updateDropdown4.bind(this);
+        this.updateDropdown = this.updateDropdown.bind(this);
     }
 
-    handleChangeEvent(event) {
-        let index = this.state.dropdownItems.indexOf(event);
+    // updateDropdown1(event) {
+    //     const selectedItem = event.target.value;
+    //     const index = this.state.dropdownItems.indexOf(selectedItem);
+    //     this.setState({
+    //         dropdownItems: [
+    //             ...this.state.dropdownItems.slice(0, index),
+    //             ...this.state.dropdownItems.slice(index + 1)
+    //         ],
+    //         dropdown1: selectedItem
+    //     }, function () {
+    //         console.log(this.state.dropdown1);
+    //     })
+    // }
+    //
+    // updateDropdown2(event) {
+    //     const selectedItem = event.target.value;
+    //     const index = this.state.dropdownItems.indexOf(selectedItem);
+    //     this.setState({
+    //         dropdownItems: [
+    //             ...this.state.dropdownItems.slice(0, index),
+    //             ...this.state.dropdownItems.slice(index + 1)
+    //         ],
+    //         dropdown2: selectedItem
+    //     }, function () {
+    //         console.log(this.state.dropdown2);
+    //         console.log(this.state.dropdownItems);
+    //     })
+    // }
+    //
+    // updateDropdown3(event) {
+    //     const selectedItem = event.target.value;
+    //     const index = this.state.dropdownItems.indexOf(selectedItem);
+    //     this.setState({
+    //         dropdownItems: [
+    //             ...this.state.dropdownItems.slice(0, index),
+    //             ...this.state.dropdownItems.slice(index + 1)
+    //         ],
+    //         dropdown3: selectedItem
+    //     }, function () {
+    //         console.log(this.state.dropdown3);
+    //         console.log(this.state.dropdownItems);
+    //     })
+    // }
+    //
+    // updateDropdown4(event) {
+    //     const selectedItem = event.target.value;
+    //     const index = this.state.dropdownItems.indexOf(selectedItem);
+    //     this.setState({
+    //         dropdownItems: [
+    //             ...this.state.dropdownItems.slice(0, index),
+    //             ...this.state.dropdownItems.slice(index + 1)
+    //         ],
+    //         dropdown4: selectedItem
+    //     }, function () {
+    //         console.log(this.state.dropdown4);
+    //         console.log(this.state.dropdownItems);
+    //     })
+    // }
 
+    updateDropdown(index, event) {
+        const selectedItem = event.target.value;
+        const indexOfSelection = this.state.dropdownItems.indexOf(selectedItem);
         this.setState({
             dropdownItems: [
-                ...this.state.dropdownItems.slice(0, index),
-                ...this.state.dropdownItems.slice(index + 1)
+                ...this.state.dropdownItems.slice(0, indexOfSelection),
+                ...this.state.dropdownItems.slice(indexOfSelection + 1)
             ],
-            selected: event.target.value
+            [`dropdown${index}`]: selectedItem
         }, function () {
-            //function to update single dropdown menu
-            console.log(this.state.dropdownItems);
-        });
-    }
-
-    deleteDropdownItem(item) {                  //delete item from this.state.dropdownItems, call back to updateDropDowns
-        let index = this.state.dropdownItems.indexOf(item);
-        this.state = ({
-            dropdownItems: [
-                ...this.state.dropdownItems.slice(0, index),
-                ...this.state.dropdownItems.slice(index + 1)
-            ]
-        }, function() {
-            console.log(this.state.dropdownItems)
-        });
-    }
-    //
-    //update other drop downs to reflect update this.state.dropdownItems, callback to console.log
-    updateDropDowns(dropdownId) {
-
-    }
-
-    //or create functions to update each method and pass as props to each dropdown; will have to change arrays to include option tags so I can declare selected on one
-    updateDropDown1(selectedItem) {
-        this.state = ({
-        dropdown1: [
-            ...this.state.dropdownItems,
-            selectedItem
-        ]
-    })
+            console.log(this.state[`dropdown${index}`]);
+        })
     }
 
 
@@ -71,27 +106,27 @@ export default class Survey extends React.Component {
                         </p>
                         <p>Please rate the following times from best (1) to worst (4)</p>
                         <p>
-                            <select onChange={this.deleteDropdownItem}>
-                                <DropDowns items={this.state.dropdown1} deleteDropdownItem={this.deleteDropdownItem} updateDropDownItems={this.updateDropdown1}/>
-                            </select>
+                            <DropDowns items={this.state.dropdownItems}
+                                       selected={this.state.dropdown1}
+                                       updateDropDownItems={this.updateDropdown.bind(this, 1)}/>
                             Monday/Wednesday 10:10am-Noon
                         </p>
                         <p>
-                            <select onChange={this.deleteDropdownItem}>
-                                <DropDowns items={this.state.dropdown2} deleteDropdownItem={this.deleteDropdownItem} updateDropDownItems={this.updateDropdown2}/>
-                            </select>
+                            <DropDowns items={this.state.dropdownItems}
+                                       selected={this.state.dropdown2}
+                                       updateDropDownItems={this.updateDropdown.bind(this, 2)}/>
                             Tuesday 6:00pm-9:00pm
                         </p>
                         <p>
-                            <select onChange={this.deleteDropdownItem}>
-                                <DropDowns items={this.state.dropdown3} deleteDropdownItem={this.deleteDropdownItem} updateDropDownItems={this.updateDropdown4}/>
-                            </select>
+                            <DropDowns items={this.state.dropdownItems}
+                                       selected={this.state.dropdown3}
+                                       updateDropDownItems={this.updateDropdown.bind(this, 3)}/>
                             Wednesday 6:00pm-9:00pm
                         </p>
                         <p>
-                            <select onChange={this.deleteDropdownItem}>
-                                <DropDowns items={this.state.dropdown4} deleteDropdownItem={this.deleteDropdownItem} updateDropDownItems={this.updateDropdown5}/>
-                            </select>
+                            <DropDowns items={this.state.dropdownItems}
+                                       selected={this.state.dropdown4}
+                                       updateDropDownItems={this.updateDropdown.bind(this, 4)}/>
                             Tuesday/Thursday 10:10am-Noon
                         </p>
                         <p>
