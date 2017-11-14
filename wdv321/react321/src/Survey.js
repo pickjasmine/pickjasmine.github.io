@@ -16,6 +16,7 @@ export default class Survey extends React.Component {
         // this.updateDropdown3 = this.updateDropdown3.bind(this);
         // this.updateDropdown4 = this.updateDropdown4.bind(this);
         this.updateDropdown = this.updateDropdown.bind(this);
+        this.resetForm = this.resetForm.bind(this);
     }
 
     // updateDropdown1(event) {
@@ -91,6 +92,18 @@ export default class Survey extends React.Component {
         })
     }
 
+    resetForm() {
+        this.setState({
+            dropdownItems: ["1. Best time", "2. Next Best time", "3. Not as good", "4. Worst time"],
+            dropdown1: "--Select an option--",
+            dropdown2: "--Select an option--",
+            dropdown3: "--Select an option--",
+            dropdown4: "--Select an option--"
+        }, function() {
+            console.log(this.state.dropdownItems);
+        })
+    }
+
 
     render() {
         return (
@@ -131,7 +144,7 @@ export default class Survey extends React.Component {
                         </p>
                         <p>
                             <input type="submit" name="button" id="button" value="Submit"/>
-                            <input type="reset" name="button2" id="button2" value="Reset"/>
+                            <input type="reset" name="button2" id="button2" value="Reset" onClick={this.resetForm}/>
                         </p>
                     </fieldset>
                 </form>
