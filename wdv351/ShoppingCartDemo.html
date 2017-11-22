@@ -9,7 +9,18 @@
 <body>
 <header>
     <h1>Coffee House</h1>
-<p>Beans and more</p>
+    <p>Beans and more</p>
+
+    <p data-fc-id="minicart">
+        <a href="https://coffeehouse.foxycart.com/cart?cart=view">
+            <span data-fc-id="minicart-quantity">0</span>
+            <span data-fc-id="minicart-singular"> item </span>
+            <span data-fc-id="minicart-plural"> items </span>
+            in cart. <br>
+            Total cost: $
+            <span data-fc-id="minicart-order-total">0</span>
+        </a>
+    </p>
 </header>
 
 <div class="allProducts">
@@ -36,13 +47,6 @@
     </div>
 
     <div class="product">
-        <p><img src="images/coffeeHouse/yellowCoffee.jpg" id="yellowCoffee" class="coffee"/></p>
-        <h2>Yellow Coffee</h2>
-        <p>$6.99</p>
-        <p><a href="https://coffeehouse.foxycart.com/cart?name=yellow%20coffee&price=6.99">Add to Cart</a></p>
-    </div>
-
-    <div class="product">
         <p><img src="images/coffeeHouse/whiteCoffee.jpg" id="whiteCoffee" class="coffee"/></p>
         <h2>White Coffee</h2>
         <p>$7.99</p>
@@ -53,8 +57,14 @@
         <p><img src="images/coffeeHouse/coffeeGuide.jpg" id="coffeeGuide" class="coffee"/></p>
         <h2>Guide to Good Coffee</h2>
         <p>$4.99</p>
-        <p><a href="">Add to Cart</a></p>
+        <p>
+            <a href="https://coffeehouse.foxycart.com/cart?name=GuideToGoodCoffee&price=4.99&category=digitalGood&code=001">Add
+                to Cart</a></p>
     </div>
+
+    <p>
+        <a href="https://coffeehouse.foxycart.com/cart?cart=view">View the Cart</a>
+    </p>
 
 </div>
 <!-- FOXYCART -->

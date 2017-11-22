@@ -1,3 +1,6 @@
+$grey: #7e868d;
+$accentColor: #265580;
+
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +11,21 @@ header {
   text-align: center;
   h1 {
     font-size: 48px;
+    color: $grey;
   }
 }
 
 p {
   font-size: 20px;
+  text-align: center;
+}
+
+a {
+  color: $accentColor;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .coffee {
@@ -20,22 +33,15 @@ p {
   height: auto;
   border-bottom: solid 2px black;
   border-right: solid 2px black;
-  box-shadow: 10px 5px 10px #888888;
+  box-shadow: 10px 5px 10px $grey;
 }
 
 .product {
   display: inline-block;
-  width: 30%;
+  width: 33%;
   margin: 0 auto 5%;
   h2, p {
     text-align: center;
-  }
-  a {
-    color: black;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 
