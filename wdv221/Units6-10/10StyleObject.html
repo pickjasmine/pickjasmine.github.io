@@ -1,0 +1,114 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WDV221 Style Object-CSS Interactions In Class Exercises</title>
+    <style type="text/css">
+        <!--
+        .style1 {color: #FF0000}
+        -->
+    </style>
+    <script>
+        function changeToRed() {
+            document.getElementById('red').style.color = 'red';
+        }
+
+        function centerTitle() {
+            document.getElementById('cssInteractions').style.textAlign = 'center';
+        }
+
+        function leftAlign() {
+            document.getElementById('cssInteractions').style.textAlign = 'left';
+        }
+
+        function newfont() {
+            document.getElementById('font').style.fontFamily = 'Courier New';
+        }
+
+        function originalFont() {
+
+            document.getElementById('font').style.fontFamily = 'Times New Roman';
+        }
+
+        function changeFontSize(size) {
+            document.getElementById('sale').style.fontSize = size;
+        }
+
+        function changeBackgroundColor(id, color) {
+            document.getElementById(id).style.backgroundColor = color;
+        }
+
+        function hideFrog() {
+            document.getElementById('frog').style.display = 'none';
+        }
+
+        function showFrog() {
+            document.getElementById('frog').style.display = 'block';
+        }
+
+        function changeFrogSize(size) {
+            document.getElementById('frog').style.width = size;
+            document.getElementById('frog').style.height = size;
+        }
+
+        function changeBorder(borderStyle) {
+            document.getElementById('border').style.border = borderStyle;
+        }
+
+    </script>
+</head>
+
+<body>
+<h1>WDV221 Intro Javascript</h1>
+<h3 id="cssInteractions">Style Object - CSS Interactions - In Class Exercises</h3>
+<p>Please modify this page to create the following Dynamic HMTL effects. </p>
+
+<p id="red" onclick="changeToRed();">1. Click this paragraph to change the font color to red.</p>
+
+<p onmouseover="centerTitle();">2. Mouseover this paragraph to center the H3 element containing &quot;CSS Interactions&quot;.</p>
+
+<p>3. Click the button to left align the H3 element. </p>
+<p>
+    <label>
+        <input type="submit" name="leftAlign" id="leftAlign" value="Left Align" onclick="leftAlign();"/>
+    </label>
+</p>
+
+<p id="font" onmouseover="newfont();" onclick="originalFont();">4. Mouseover this paragraph to change the font to a font of you choice. 5. Click on this paragraph to return the font to the default font.</p>
+
+<p>6. Click on the button to make the word <span id="sale">SALE</span> font size 24. </p>
+<p>
+    <label>
+        <input type="button" name="bigFont" id="bigFont" value="Make Font 24pt" onclick="changeFontSize('24pt');"/>
+    </label>
+</p>
+
+<p>7. Click on the button to return the word to its original size.</p>
+<p>
+    <label>
+        <input type="button" name="regularFont" id="regularFont" value="Make Font Normal" onclick="changeFontSize('1em');"/>
+    </label>
+</p>
+
+<p id="yellow" onmouseover="changeBackgroundColor('yellow','yellow');">8. Use an eventhandler of your choice on this paragraph to make the paragraph background color yellow. </p>
+
+<p onclick="hideFrog();">9. Use an onclick event to hide the Frog image shown below.</p>
+
+<p>10. Use the following button to make the Frog image shown below reappear.</p>
+<p>
+    <input type="button" name="showFrog" id="showFrog" value="Show Frog" onclick="showFrog();"/>
+</p>
+
+<p>11. Mouseover the Frog image to make its height and width double its original size. </p>
+<p><img src="frog.jpg" width="100px" height="100px" id="frog" onclick="changeFrogSize('100px');" onmouseover="changeFrogSize('200px');"/></p>
+
+<p>12. Use a click event on the Frog image to make it return to original size. </p>
+
+<p id="border" ondblclick="changeBorder('dotted 3px red');">13. Doubleclick on this paragraph to place a border around this paragraph.</p>
+
+<p onclick="changeBorder('none')">14. Use an event handler of your choice to remove the border from the previous paragraph. </p>
+
+<p id="green" onmouseover="changeBackgroundColor('green','limegreen');" onmouseout="changeBackgroundColor('green','white');">15. Mouseover this paragraph to turn its background color to green. When you mouseoff the paragraph return it to its normal color. </p>
+</body>
+</html>
