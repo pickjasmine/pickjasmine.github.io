@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spectral SC', serif; }
+
+header {
+  text-align: center; }
+  header h1 {
+    font-size: 48px;
+    color: #7e868d; }
+
+p {
+  font-size: 20px;
+  text-align: center; }
+
+a {
+  color: #265580;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.coffee {
+  width: 95%;
+  height: auto;
+  border-bottom: solid 2px black;
+  border-right: solid 2px black;
+  box-shadow: 10px 5px 10px #7e868d; }
+
+.product {
+  display: inline-block;
+  width: 33%;
+  margin: 0 auto 5%; }
+  .product h2, .product p {
+    text-align: center; }
+
+.allProducts {
+  width: 90%;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=ShoppingCart.css.map */
