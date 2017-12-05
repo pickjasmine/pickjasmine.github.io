@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WDV221 Intro Javascript Form Processing</title>
+</head>
+<script>
+
+    //Product Number
+    function showNumber() {
+        let value = parseFloat(document.getElementById('productNumber').value);
+        document.getElementById('showNumber').innerHTML = value;
+    }
+
+    function changeNumber() {
+        console.log("in function");
+        document.getElementById('productNumber').value = 6;
+    }
+
+    //Perform
+    function showPerform() {
+        let value = document.getElementById('perform').value;
+        document.getElementById('showPerform').innerHTML = value;
+    }
+
+    function changePerform() {
+        document.getElementById('perform').value = "Best performance ever";
+    }
+
+    //Floors
+    function showFloors(floorLevel) {
+        document.getElementById('floorPreference').innerHTML = floorLevel;
+    }
+
+    function changeSelectedFloor() {
+        console.log("in change floor");
+        let floor = Math.floor((Math.random() * 3) + 1);
+        switch (floor) {
+            case 1:
+                document.getElementById('topFloor').checked = true;
+                break;
+            case 2:
+                document.getElementById('medFloor').checked = true;
+                break;
+            case 3:
+                document.getElementById('groundFloor').checked = true;
+                break;
+        }
+    }
+
+    //Computer
+    function showComputers() {
+        if (document.getElementById('computerCheck').checked) {
+            document.getElementById('computers').innerHTML = "You like working with computers!";
+        }
+        else {
+            document.getElementById('computers').innerHTML = "You don't like working with computers!";
+        }
+    }
+
+    function changeComputer() {
+        if (document.getElementById('computerCheck').checked) {
+            document.getElementById('computerCheck').checked = false;
+            showComputers();
+        }
+        else {
+            document.getElementById('computerCheck').checked = true;
+            showComputers();
+        }
+    }
+
+    //Image
+    function showImageFile() {
+        let value = document.getElementById('image').value;
+        document.getElementById('imageFile').innerHTML = value;
+    }
+
+    //Hidden Field
+
+    function changeHiddenField() {
+        document.getElementById('hiddenField').value = "WDV221 Intro to JavaScript";
+    }
+
+    function showHiddenField() {
+        document.getElementById('showHiddenValue').innerHTML = document.getElementById('hiddenField').value;
+    }
+
+    //Class
+    function showClass() {
+        let selected = document.getElementById("select");
+        let value = selected.options[selected.selectedIndex].value;
+        let text = selected.options[selected.selectedIndex].text;
+        let index = selected.selectedIndex;
+        document.getElementById('classInfo').innerHTML = value + " " +  text + " Index: " + index;
+    }
+
+    //Submit {
+    function submitButtonClicked() {
+        alert("You clicked submit!");
+    }
+</script>
+
+<body>
+<h1>WDV221 Intro Javascript</h1>
+<h2>Form Processing - Homework</h2>
+<h3>Instructions:</h3>
+<p>Use the following form. For each of the following form elements:</p>
+<ol>
+    <li>Create a function that will display the current value of the element. Use the indicated event to run the
+        function.
+    </li>
+    <li>Create a function that will set the element to a different value. Use an event of your choice to run this
+        function.
+    </li>
+    <li>For the hidden field create a function that will set it to a value of &quot;WDV221 Intro Javascript&quot;.</li>
+    <li>For the hidden field create a function that will will display its current value.</li>
+    <li>For the Drop Down list create a function that will display the index, value and text of the selected option.
+    </li>
+</ol>
+<p>&nbsp;</p>
+<form name="form1" method="post" action="http://jhgullion.org/wdv341/displayDate.php">
+    <p>
+        <label>Product Number
+            <input type="text" name="productNumber" id="productNumber">
+        </label></p>
+    <span id="showNumber"></span>
+    <br>
+    <input type="button" id="showProductNumber" name="showProductNumber" value="Show" onclick="showNumber();">
+    <input type="button" id="changeProductNumber" name="changeProductNumber" value="Change Value (mouse over)"
+           onmouseover="changeNumber();">
+    <p>
+        <br>
+
+
+    <p>Please let us know how we performed:<br>
+        <label>
+            <textarea name="perform" id="perform"></textarea>
+        </label>
+        <span id="showPerform"></span>
+        <br>
+        <input type="button" id="showPerformText" name="showPerformText" value="Show" onclick="showPerform();">
+        <input type="button" id="changePerformText" name="changePerformText" value="Change Value (double click)"
+               ondblclick="changePerform();">
+    </p>
+
+
+    <p>Choose Your Floor Preference:
+        <span id="floorPreference"></span>
+        <br>
+    <table width="200">
+        <tr>
+            <td><label>
+                <input type="radio" name="floors" value="topFloor" id="topFloor" onclick="showFloors('high level');">
+                High Level</label></td>
+        </tr>
+        <tr>
+            <td><label>
+                <input type="radio" name="floors" value="medFloor" id="medFloor" onclick="showFloors('med level');">
+                Mid Level</label></td>
+        </tr>
+        <tr>
+            <td><label>
+                <input type="radio" name="floors" value="groundFloor" id="groundFloor"
+                       onclick="showFloors('low level');">
+                Low Level</label></td>
+        </tr>
+    </table>
+    <input type="button" id="changeFloor" name="changeFloor" value="Change Floor Randomly (click)"
+           onclick="changeSelectedFloor();"/>
+
+
+    <p>Please Check All that Apply:
+        <span id="computers"></span><br>
+    <p>
+        <label>
+            <input type="checkbox" name="computerCheck" id="computerCheck" onclick="showComputers();">
+            I like working with computers</label>
+    </p>
+    <input type="button" id="changeComputers" name="changeComputers" value="Change Checkbox(mouse over)" onmouseover="changeComputer();">
+
+
+    <p>
+        <label>Image File to Upload
+            <input type="file" name="image" id="image">
+        </label></p>
+    <br>
+    <span id="imageFile" name="imageFile"></span>
+    <input type="button" id="showImage" name="showImage" value="Show Image" onclick="showImageFile();">
+
+    <p>
+        There is a hidden field right here:
+        <input type="hidden" name="hiddenField" id="hiddenField">
+    <span id="showHiddenValue"></span>
+    <br>
+    <input type="button" id="changeHidden" name="changeHidden" value="Change Hidden" onclick="changeHiddenField();">
+    <input type="button" id="showHidden" name="showHidden" value="Show Hidden" onclick="showHiddenField();">
+    <p>
+        <label>Please Select Your Favorite Class
+            <select name="select" id="select" onchange="showClass();">
+                <option value="WDV101">HTML</option>
+                <option value="WDV205">CSS</option>
+                <option value="WDV151">Web Design</option>
+                <option value="WDV221">Javascript</option>
+            </select>
+        </label>
+        <em>Change Event. 5.</em></p>
+    <span id="classInfo"></span>
+    <br>
+    <p>Submit
+        <input type="button" name="submit" id="submit" value="Submit" onclick="submitButtonClicked();">
+        Click Event</p>
+    <p>Reset
+        <input type="reset" name="reset" id="reset" value="Reset">
+    </p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
