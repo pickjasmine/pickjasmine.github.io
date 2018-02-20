@@ -1,4 +1,6 @@
 .idea
 wdv321/inClass
 wdv221/inClass
-
+node_modules/
+**/.DS_STORE
+.zip
