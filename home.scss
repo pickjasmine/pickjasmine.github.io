@@ -1,0 +1,174 @@
+$hotpink: #da1d8a;
+$yellow: rgba(237, 183, 19, 0.87);
+
+.submenu {
+  .flyout {
+    display: none;
+  }
+}
+
+.submenu:hover {
+  .flyout {
+    display: block;
+    a:before {
+      font-family: FontAwesome;
+      content: "\f0da";
+      color: $hotpink;
+    }
+  }
+}
+
+.sideb {
+  position: sticky;
+  left: 0;
+  top: 30%;
+  padding: 10px;
+  a {
+    color: black;
+    display: block;
+    &:hover {
+      text-decoration: none;
+      color: $yellow;
+    }
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        padding-left: 5%;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.greeting {
+  padding-top: 40%;
+  height: 90vh;
+}
+
+.homework {
+  padding-top: 30%;
+  height: 90vh;
+  a {
+    padding-left: 5%;
+    color: black;
+    &:before {
+      font-family: FontAwesome;
+      content: "\f0da";
+      padding-right: 2px;
+      color: $hotpink;
+    }
+    &:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+}
+
+.italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
+i {
+  text-align: center;
+  color: $hotpink;
+  padding-right: 2px;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p:before {
+  font-family: FontAwesome;
+  content: "\f0da";
+  display: inline-block;
+  padding-right: 2px;
+  color: $hotpink;
+}
+
+dd {
+  padding-left: 5%;
+  &:before {
+    font-family: FontAwesome;
+    content: "\f0da";
+    padding-right: 2px;
+    color: $hotpink;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .greeting, .homework {
+    padding-top: 10%;
+  }
+
+  .fa-envelope-o, .fa-linkedin, .fa-github {
+    font-size: 85px;
+  }
+
+  .sideb {
+    a {
+      display: inline;
+      font-size: 1.5rem;
+    }
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  nav {
+    ul {
+      li {
+        display: inline;
+      }
+    }
+  }
+}
+
+//@media print {
+//  @page {
+//    size: 8.5in 11in;
+//    margin: 0.5in;
+//  }
+//
+//  body {
+//    padding: 0;
+//    margin: 0;
+//    font-size: 12px;
+//    font-family: Roboto, sans-serif;
+//  }
+//
+//  nav, ul, li, a, img, i, h1 {
+//    display: none !important;
+//  }
+//
+//  p {
+//    line-height: 80%;
+//  }
+//
+//  .name {
+//    text-align: center;
+//    font-size: 24px;
+//  }
+//}
+
+
+
+
+
+
