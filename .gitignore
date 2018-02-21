@@ -1,6 +1,11 @@
 .idea
 wdv321/inClass
+wdv321/react321/**
 wdv221/inClass
+wdv351/**
 node_modules/
 **/.DS_STORE
-.zip
+**.zip
+**.map
+dist/**
+**/.sass-cache/**
