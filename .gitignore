@@ -1,4 +1,4 @@
-.idea
-wdv321/inClass
-wdv221/inClass
-
+.DS_Store
+.idea/
+.sass-cache/
+*.css.map
