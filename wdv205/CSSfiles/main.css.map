@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACA,kBAAkB;ACAlB,kBAAkB;ADOO,yCAAyC;AAGlE,cAAe;ECPd,UAAU,EDDI,OAAiB;ECCR,gDAAgD;EACpE,UAAU,EAAE,yCAAgD;EAAG,2BAA2B;EAC1F,UAAU,EAAE,oCAA2C;EAAI,4BAA4B;EACvF,UAAU,EAAE,sCAA6C;EAAI,2BAA2B;EACxF,UAAU,EAAE,iCAAwC;EAAK,oCAAoC;;ADKjG,YAAa;EACZ,KAAK,EAAC,KAAK;EACX,SAAS,EAAC,IAAI",
-"sources": ["main.scss","gradientMixin.scss"],
-"names": [],
-"file": "main.css"
-}
