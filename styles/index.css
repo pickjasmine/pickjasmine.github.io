@@ -2,6 +2,7 @@
   margin: 0;
   text-align: center;
   color: white;
+  font-size: 20px;
   font-weight: 300;
   font-family: 'Bungee Hairline', cursive; }
 
@@ -23,16 +24,16 @@ body {
     flex: 1;
     flex-direction: column; }
     .content .name h1 {
-      font-size: 120px;
+      font-size: 6em;
       font-family: 'Bungee Shade', cursive;
       padding: 10px;
-      text-shadow: 2px 1px 15px #f4f0fa;
-      background: linear-gradient(-8deg, #5020ad 14%, #f60024 55%, #ff7676 84%);
+      text-shadow: 2px 1px 15px #c3c7d9;
+      background: linear-gradient(-170deg, #bcc7dd 13%, #9eb4d3 32%, #d3998d 43%, #ff8a8a 58%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .content .name h2 {
-      font-size: 120px;
-      background: linear-gradient(-8deg, #5020ad 14%, #f60024 55%, #ff7676 84%);
+      font-size: 6em;
+      background: linear-gradient(7deg, #bcc7dd 13%, #9eb4d3 37%, #d3998d 63%, #ff8a8a 88%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
@@ -43,24 +44,23 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #5020ad;
-  background: linear-gradient(-8deg, #5020ad 14%, #f60024 55%, #ff7676 84%);
-  box-shadow: #999999 0 3px 20px; }
+  box-shadow: #bbbbbb 0 -3px 25px;
+  background: #bcc7dd;
+  background: linear-gradient(7deg, #bcc7dd 13%, #9eb4d3 52%, #d3998d 78%, #ff8a8a 90%); }
   .links .icons {
     flex-direction: row; }
     .links .icons h3 {
-      display: inline-flex;
-      font-size: 96px; }
+      display: inline-flex; }
       .links .icons h3 a {
         align-items: center;
         justify-content: center; }
         .links .icons h3 a i {
           padding: 20px;
-          color: white; }
-  .links .resume h3 {
-    font-size: 64px; }
-    .links .resume h3 a {
-      text-decoration: none; }
+          color: white;
+          font-size: 5em; }
+  .links .resume h3 a {
+    text-decoration: none;
+    font-size: 4em; }
 
 .focus {
   -webkit-animation: focus-onload 1s linear both;

@@ -2,6 +2,7 @@
   margin: 0;
   text-align: center;
   color: white;
+  font-size: 20px;
   font-weight: 300;
   font-family: 'Bungee Hairline', cursive;
 }
@@ -27,18 +28,18 @@ body {
     flex-direction: column;
 
     h1 {
-      font-size: 120px;
+      font-size: 6em;
       font-family: 'Bungee Shade', cursive;
       padding: 10px;
-      text-shadow: 2px 1px 15px rgb(244, 240, 250);
-      background: linear-gradient(-8deg, rgb(80, 32, 173) 14%, rgba(246, 0, 36, 1) 55%, rgba(255, 118, 118, 1) 84%);
+      text-shadow: 2px 1px 15px rgb(195, 199, 217);
+      background: linear-gradient(-170deg, rgba(188, 199, 221, 1) 13%, rgb(158, 180, 211) 32%, rgba(211, 153, 141, 1) 43%, rgba(255, 138, 138, 1) 58%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     h2 {
-      font-size: 120px;
-      background: linear-gradient(-8deg, rgb(80, 32, 173) 14%, rgba(246, 0, 36, 1) 55%, rgba(255, 118, 118, 1) 84%);
+      font-size: 6em;
+      background: linear-gradient(7deg, rgba(188, 199, 221, 1) 13%, rgb(158, 180, 211) 37%, rgba(211, 153, 141, 1) 63%, rgba(255, 138, 138, 1) 88%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -52,16 +53,15 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgb(80, 32, 173);
-  background: linear-gradient(-8deg, rgb(80, 32, 173) 14%, rgba(246, 0, 36, 1) 55%, rgba(255, 118, 118, 1) 84%);
-  box-shadow: #999999 0 3px 20px;
+  box-shadow: #bbbbbb 0 -3px 25px;
+  background: rgb(188, 199, 221);
+  background: linear-gradient(7deg, rgba(188, 199, 221, 1) 13%, rgb(158, 180, 211) 52%, rgba(211, 153, 141, 1) 78%, rgba(255, 138, 138, 1) 90%);
 
   .icons {
     flex-direction: row;
 
     h3 {
       display: inline-flex;
-      font-size: 96px;
 
       a {
         align-items: center;
@@ -70,6 +70,7 @@ body {
         i {
           padding: 20px;
           color: rgb(255, 255, 255);
+          font-size: 5em;
         }
       }
     }
@@ -77,10 +78,9 @@ body {
 
   .resume {
     h3 {
-      font-size: 64px;
-
       a {
         text-decoration: none;
+        font-size: 4em;
       }
     }
   }
