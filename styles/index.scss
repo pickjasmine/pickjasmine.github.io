@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   text-align: center;
   color: white;
   font-size: 20px;
@@ -85,6 +86,44 @@ body {
     }
   }
 }
+
+/* Media Queries*/
+@media only screen and (max-width: 700px) {
+  * {
+    font-size: 16px;
+  }
+
+  .content {
+    .name {
+      h1 {
+        font-size: 4em;
+        text-shadow: 2px 1px 15px rgb(192, 192, 203);
+        background: linear-gradient(-170deg, rgba(188, 199, 221, 1) 13%, rgb(158, 180, 211) 38%, rgba(211, 153, 141, 1) 53%, rgba(255, 138, 138, 1) 68%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h2 {
+        font-size: 4em;
+        background: linear-gradient(7deg, rgb(170, 180, 200) 13%, rgb(137, 156, 183) 37%, rgba(211, 153, 141, 1) 63%, rgba(255, 138, 138, 1) 88%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .links {
+    .resume {
+      h3 {
+        a {
+          font-size: 3.75em;
+        }
+      }
+    }
+  }
+}
+
+/* Animations and Hover Effects */
 
 .focus {
   -webkit-animation: focus-onload 1s linear both;

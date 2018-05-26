@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   text-align: center;
   color: white;
   font-size: 20px;
@@ -62,6 +63,26 @@ body {
     text-decoration: none;
     font-size: 4em; }
 
+/* Media Queries*/
+@media only screen and (max-width: 700px) {
+  * {
+    font-size: 16px; }
+
+  .content .name h1 {
+    font-size: 4em;
+    text-shadow: 2px 1px 15px #c0c0cb;
+    background: linear-gradient(-170deg, #bcc7dd 13%, #9eb4d3 38%, #d3998d 53%, #ff8a8a 68%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .content .name h2 {
+    font-size: 4em;
+    background: linear-gradient(7deg, #aab4c8 13%, #899cb7 37%, #d3998d 63%, #ff8a8a 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+  .links .resume h3 a {
+    font-size: 3.75em; } }
+/* Animations and Hover Effects */
 .focus {
   -webkit-animation: focus-onload 1s linear both;
   animation: focus-onload 1s linear both; }
