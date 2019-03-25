@@ -2,10 +2,8 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  color: white;
-  font-size: 20px;
   font-weight: 300;
-  font-family: 'Bungee Hairline', cursive; }
+}
 
 body {
   height: 100vh;
@@ -13,30 +11,36 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .content {
   width: 100%;
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: space-around; }
-  .content .name {
-    flex: 1;
-    flex-direction: column; }
-    .content .name h1 {
-      font-size: 6em;
-      font-family: 'Bungee Shade', cursive;
-      padding: 10px;
-      text-shadow: 2px 1px 15px #c3c7d9;
-      background: linear-gradient(-170deg, #bcc7dd 13%, #9eb4d3 32%, #d3998d 43%, #ff8a8a 58%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-    .content .name h2 {
-      font-size: 6em;
-      background: linear-gradient(7deg, #bcc7dd 13%, #9eb4d3 37%, #d3998d 63%, #ff8a8a 88%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+  justify-content: space-around;
+}
+.content .name {
+  flex: 1;
+  flex-direction: column;
+}
+.content .name h1 {
+  font-size: 6em;
+  font-family: "Bungee Shade", cursive;
+  padding: 10px;
+  text-shadow: 2px 1px 15px #c3c7d9;
+  background: linear-gradient(-170deg, #bcc7dd 13%, #9eb4d3 32%, #d3998d 43%, #ff8a8a 58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content .name h2 {
+  font-family: "Bungee Hairline", cursive;
+  font-size: 6em;
+  background: linear-gradient(7deg, #bcc7dd 13%, #9eb4d3 37%, #d3998d 63%, #ff8a8a 88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .links {
   width: 100%;
@@ -47,123 +51,171 @@ body {
   flex-direction: column;
   box-shadow: #bbbbbb 0 -3px 25px;
   background: #bcc7dd;
-  background: linear-gradient(7deg, #bcc7dd 13%, #9eb4d3 52%, #d3998d 78%, #ff8a8a 90%); }
-  .links .icons {
-    flex-direction: row; }
-    .links .icons h3 {
-      display: inline-flex; }
-      .links .icons h3 a {
-        align-items: center;
-        justify-content: center; }
-        .links .icons h3 a i {
-          padding: 20px;
-          color: white;
-          font-size: 5em; }
-  .links .resume h3 a {
-    text-decoration: none;
-    font-size: 4em; }
+  background: linear-gradient(7deg, #bcc7dd 13%, #9eb4d3 52%, #d3998d 78%, #ff8a8a 90%);
+}
+.links .icons {
+  flex-direction: row;
+}
+.links .icons h3 {
+  display: inline-flex;
+}
+.links .icons h3 a {
+  align-items: center;
+  justify-content: center;
+}
+.links .icons h3 a i {
+  padding: 20px;
+  color: white;
+  font-size: 5em;
+}
+.links .resume h3 a {
+  text-decoration: none;
+  font-size: 4em;
+  color: white;
+  font-family: "Bungee Hairline", cursive;
+}
 
 /* Media Queries*/
 @media only screen and (max-width: 700px) {
   * {
-    font-size: 16px; }
+    font-size: 16px;
+  }
 
   .content .name h1 {
     font-size: 4em;
     text-shadow: 2px 1px 15px #c0c0cb;
     background: linear-gradient(-170deg, #bcc7dd 13%, #9eb4d3 38%, #d3998d 53%, #ff8a8a 68%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+  }
   .content .name h2 {
     font-size: 4em;
     background: linear-gradient(7deg, #aab4c8 13%, #899cb7 37%, #d3998d 63%, #ff8a8a 88%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+  }
 
   .links .resume h3 a {
-    font-size: 3.75em; } }
+    font-size: 3.75em;
+  }
+}
 /* Animations and Hover Effects */
 .focus {
   -webkit-animation: focus-onload 1s linear both;
-  animation: focus-onload 1s linear both; }
+  animation: focus-onload 1s linear both;
+}
 
 .hover-shadow {
   -webkit-animation: hide-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: hide-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  animation: hide-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
 .hover-shadow:hover {
   -webkit-animation: show-shadow 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: show-shadow 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  animation: show-shadow 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
 .hidden {
   -webkit-animation: hideAboutBlurb 0.25s linear both;
-  animation: hideAboutBlurb 0.25s linear both; }
+  animation: hideAboutBlurb 0.25s linear both;
+}
 
 .hidden:hover {
   -webkit-animation: showAboutBlurb 0.25s linear both;
-  animation: showAboutBlurb 0.25s linear both; }
+  animation: showAboutBlurb 0.25s linear both;
+}
 
 @-webkit-keyframes hideAboutBlurb {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 @keyframes hideAboutBlurb {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 @keyframes showAboutBlurb {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 @-webkit-keyframes showAboutBlurb {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 @-webkit-keyframes focus-onload {
   0% {
     -webkit-filter: blur(12px);
     filter: blur(12px);
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 @keyframes focus-onload {
   0% {
     -webkit-filter: blur(12px);
     filter: blur(12px);
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 @-webkit-keyframes show-shadow {
   0% {
-    text-shadow: -2px 1px 8px #7a7a7a; }
+    text-shadow: -2px 1px 8px #7a7a7a;
+  }
   100% {
     text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
-    transform: translateX(3px) translateY(-2px); } }
+    transform: translateX(3px) translateY(-2px);
+  }
+}
 @keyframes show-shadow {
   0% {
-    text-shadow: -2px 1px 8px #7a7a7a; }
+    text-shadow: -2px 1px 8px #7a7a7a;
+  }
   100% {
     text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
-    transform: translateX(3px) translateY(-2px); } }
+    transform: translateX(3px) translateY(-2px);
+  }
+}
 @-webkit-keyframes hide-shadow {
   0% {
     text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
-    transform: translateX(3px) translateY(-2px); }
+    transform: translateX(3px) translateY(-2px);
+  }
   100% {
-    text-shadow: -2px 1px 8px #7a7a7a; } }
+    text-shadow: -2px 1px 8px #7a7a7a;
+  }
+}
 @keyframes hide-shadow {
   0% {
     text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
-    transform: translateX(3px) translateY(-2px); }
+    transform: translateX(3px) translateY(-2px);
+  }
   100% {
-    text-shadow: -2px 1px 8px #7a7a7a; } }
+    text-shadow: -2px 1px 8px #7a7a7a;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
