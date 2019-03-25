@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.teaching {
+  font-size: 32px;
+  color: black;
+  font-family: 'Bungee', cursive;
+
+  p {
+    margin: 15px 50px 50px;
+    font-family: 'Bungee Hairline', cursive;
+  }
+
+  a {
+    color: rgb(211, 153, 141);
+
+    &:hover {
+      color: rgb(158, 180, 211)
+    }
+  }
+}
