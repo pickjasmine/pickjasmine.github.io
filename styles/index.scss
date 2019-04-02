@@ -101,8 +101,8 @@ body {
 /* Animations and Hover Effects */
 
 .focus {
-  -webkit-animation: focus-onload 1s linear both;
-  animation: focus-onload 1s linear both;
+  -webkit-animation: focus-onload 0.5s linear both;
+  animation: focus-onload 0.5s linear both;
 }
 
 .hover-shadow {
