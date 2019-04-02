@@ -29,8 +29,7 @@ body {
       font-size: 6em;
       font-family: 'Bungee Shade', cursive;
       padding: 10px;
-      text-shadow: 2px 1px 15px rgb(195, 199, 217);
-      background: linear-gradient(-170deg, rgba(188, 199, 221, 1) 13%, rgb(158, 180, 211) 32%, rgba(211, 153, 141, 1) 43%, rgba(255, 138, 138, 1) 58%);
+      background: linear-gradient(47deg, rgba(255,192,76,1) 0%, rgba(189,38,38,1) 76%, rgba(173,0,130,1) 87%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -38,7 +37,7 @@ body {
     h2 {
       font-family: 'Bungee Hairline', cursive;
       font-size: 6em;
-      background: linear-gradient(7deg, rgba(188, 199, 221, 1) 13%, rgb(158, 180, 211) 37%, rgba(211, 153, 141, 1) 63%, rgba(255, 138, 138, 1) 88%);
+      background: linear-gradient(47deg, rgba(255,192,76,1) 0%, rgba(189,38,38,1) 56%, rgba(173,0,130,1) 87%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -52,9 +51,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-shadow: #bbbbbb 0 -3px 25px;
-  background: rgb(188, 199, 221);
-  background: linear-gradient(7deg, rgba(188, 199, 221, 1) 13%, rgb(158, 180, 211) 52%, rgba(211, 153, 141, 1) 78%, rgba(255, 138, 138, 1) 90%);
+  background: rgb(255,192,76);
+  background: linear-gradient(47deg, rgba(255,192,76,1) 0%, rgba(189,38,38,1) 56%, rgba(173,0,130,1) 87%);
 
   .icons {
     flex-direction: row;
@@ -90,36 +88,13 @@ body {
 /* Media Queries*/
 @media only screen and (max-width: 700px) {
   * {
-    font-size: 16px;
+    font-size: 12px;
   }
+}
 
-  .content {
-    .name {
-      h1 {
-        font-size: 4em;
-        text-shadow: 2px 1px 15px rgb(192, 192, 203);
-        background: linear-gradient(-170deg, rgba(188, 199, 221, 1) 13%, rgb(158, 180, 211) 38%, rgba(211, 153, 141, 1) 53%, rgba(255, 138, 138, 1) 68%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      h2 {
-        font-size: 4em;
-        background: linear-gradient(7deg, rgb(170, 180, 200) 13%, rgb(137, 156, 183) 37%, rgba(211, 153, 141, 1) 63%, rgba(255, 138, 138, 1) 88%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    }
-  }
-
-  .links {
-    .resume {
-      h3 {
-        a {
-          font-size: 3.75em;
-        }
-      }
-    }
+@media only screen and (max-width: 500px) {
+  * {
+    font-size: 9px;
   }
 }
 
@@ -214,7 +189,7 @@ body {
 
 @-webkit-keyframes show-shadow {
   0% {
-    text-shadow: -2px 1px 8px #7a7a7a;
+    text-shadow: none;
   }
   100% {
     text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
@@ -224,7 +199,7 @@ body {
 
 @keyframes show-shadow {
   0% {
-    text-shadow: -2px 1px 8px #7a7a7a;
+    text-shadow: none;
   }
   100% {
     text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
@@ -238,7 +213,7 @@ body {
     transform: translateX(3px) translateY(-2px);
   }
   100% {
-    text-shadow: -2px 1px 8px #7a7a7a;
+    text-shadow: none;
   }
 }
 
@@ -248,7 +223,7 @@ body {
     transform: translateX(3px) translateY(-2px);
   }
   100% {
-    text-shadow: -2px 1px 8px #7a7a7a;
+    text-shadow: none;
 
   }
 }

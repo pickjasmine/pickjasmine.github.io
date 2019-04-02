@@ -29,15 +29,14 @@ body {
   font-size: 6em;
   font-family: "Bungee Shade", cursive;
   padding: 10px;
-  text-shadow: 2px 1px 15px #c3c7d9;
-  background: linear-gradient(-170deg, #bcc7dd 13%, #9eb4d3 32%, #d3998d 43%, #ff8a8a 58%);
+  background: linear-gradient(47deg, #ffc04c 0%, #bd2626 76%, #ad0082 87%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .content .name h2 {
   font-family: "Bungee Hairline", cursive;
   font-size: 6em;
-  background: linear-gradient(7deg, #bcc7dd 13%, #9eb4d3 37%, #d3998d 63%, #ff8a8a 88%);
+  background: linear-gradient(47deg, #ffc04c 0%, #bd2626 56%, #ad0082 87%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -49,9 +48,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-shadow: #bbbbbb 0 -3px 25px;
-  background: #bcc7dd;
-  background: linear-gradient(7deg, #bcc7dd 13%, #9eb4d3 52%, #d3998d 78%, #ff8a8a 90%);
+  background: #ffc04c;
+  background: linear-gradient(47deg, #ffc04c 0%, #bd2626 56%, #ad0082 87%);
 }
 .links .icons {
   flex-direction: row;
@@ -78,25 +76,12 @@ body {
 /* Media Queries*/
 @media only screen and (max-width: 700px) {
   * {
-    font-size: 16px;
+    font-size: 12px;
   }
-
-  .content .name h1 {
-    font-size: 4em;
-    text-shadow: 2px 1px 15px #c0c0cb;
-    background: linear-gradient(-170deg, #bcc7dd 13%, #9eb4d3 38%, #d3998d 53%, #ff8a8a 68%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .content .name h2 {
-    font-size: 4em;
-    background: linear-gradient(7deg, #aab4c8 13%, #899cb7 37%, #d3998d 63%, #ff8a8a 88%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .links .resume h3 a {
-    font-size: 3.75em;
+}
+@media only screen and (max-width: 500px) {
+  * {
+    font-size: 9px;
   }
 }
 /* Animations and Hover Effects */
@@ -183,7 +168,7 @@ body {
 }
 @-webkit-keyframes show-shadow {
   0% {
-    text-shadow: -2px 1px 8px #7a7a7a;
+    text-shadow: none;
   }
   100% {
     text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
@@ -192,7 +177,7 @@ body {
 }
 @keyframes show-shadow {
   0% {
-    text-shadow: -2px 1px 8px #7a7a7a;
+    text-shadow: none;
   }
   100% {
     text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
@@ -205,7 +190,7 @@ body {
     transform: translateX(3px) translateY(-2px);
   }
   100% {
-    text-shadow: -2px 1px 8px #7a7a7a;
+    text-shadow: none;
   }
 }
 @keyframes hide-shadow {
@@ -214,7 +199,7 @@ body {
     transform: translateX(3px) translateY(-2px);
   }
   100% {
-    text-shadow: -2px 1px 8px #7a7a7a;
+    text-shadow: none;
   }
 }
 
