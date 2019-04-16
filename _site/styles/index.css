@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content .name {
+  flex: 1;
+  flex-direction: column;
+}
+.content .name h1 {
+  font-size: 6em;
+  font-family: "Bungee Shade", cursive;
+  padding: 10px;
+  background: linear-gradient(47deg, #ffc04c 0%, #bd2626 76%, #ad0082 87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content .name h2 {
+  font-family: "Bungee Hairline", cursive;
+  font-size: 6em;
+  background: linear-gradient(47deg, #ffc04c 0%, #bd2626 56%, #ad0082 87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.links {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffc04c;
+  background: linear-gradient(47deg, #ffc04c 0%, #bd2626 56%, #ad0082 87%);
+}
+.links .icons {
+  flex-direction: row;
+}
+.links .icons h3 {
+  display: inline-flex;
+}
+.links .icons h3 a {
+  align-items: center;
+  justify-content: center;
+}
+.links .icons h3 a i {
+  padding: 20px;
+  color: white;
+  font-size: 5em;
+}
+.links .resume h3 a {
+  text-decoration: none;
+  font-size: 4em;
+  color: white;
+  font-family: "Bungee Hairline", cursive;
+}
+
+/* Media Queries*/
+@media only screen and (max-width: 700px) {
+  * {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  * {
+    font-size: 9px;
+  }
+}
+/* Animations and Hover Effects */
+.focus {
+  -webkit-animation: focus-onload 0.5s linear both;
+  animation: focus-onload 0.5s linear both;
+}
+
+.hover-shadow {
+  -webkit-animation: hide-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: hide-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.hover-shadow:hover {
+  -webkit-animation: show-shadow 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: show-shadow 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.hidden {
+  -webkit-animation: hideAboutBlurb 0.25s linear both;
+  animation: hideAboutBlurb 0.25s linear both;
+}
+
+.hidden:hover {
+  -webkit-animation: showAboutBlurb 0.25s linear both;
+  animation: showAboutBlurb 0.25s linear both;
+}
+
+@-webkit-keyframes hideAboutBlurb {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hideAboutBlurb {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showAboutBlurb {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes showAboutBlurb {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes focus-onload {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-onload {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes show-shadow {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(3px) translateY(-2px);
+  }
+}
+@keyframes show-shadow {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(3px) translateY(-2px);
+  }
+}
+@-webkit-keyframes hide-shadow {
+  0% {
+    text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(3px) translateY(-2px);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+@keyframes hide-shadow {
+  0% {
+    text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(3px) translateY(-2px);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

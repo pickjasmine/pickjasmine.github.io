@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .name {
+    flex: 1;
+    flex-direction: column;
+
+    h1 {
+      font-size: 6em;
+      font-family: 'Bungee Shade', cursive;
+      padding: 10px;
+      background: linear-gradient(47deg, rgba(255,192,76,1) 0%, rgba(189,38,38,1) 76%, rgba(173,0,130,1) 87%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      font-family: 'Bungee Hairline', cursive;
+      font-size: 6em;
+      background: linear-gradient(47deg, rgba(255,192,76,1) 0%, rgba(189,38,38,1) 56%, rgba(173,0,130,1) 87%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.links {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(255,192,76);
+  background: linear-gradient(47deg, rgba(255,192,76,1) 0%, rgba(189,38,38,1) 56%, rgba(173,0,130,1) 87%);
+
+  .icons {
+    flex-direction: row;
+
+    h3 {
+      display: inline-flex;
+
+      a {
+        align-items: center;
+        justify-content: center;
+
+        i {
+          padding: 20px;
+          color: rgb(255, 255, 255);
+          font-size: 5em;
+        }
+      }
+    }
+  }
+
+  .resume {
+    h3 {
+      a {
+        text-decoration: none;
+        font-size: 4em;
+        color: rgb(255, 255, 255);
+        font-family: 'Bungee Hairline', cursive;
+      }
+    }
+  }
+}
+
+/* Media Queries*/
+@media only screen and (max-width: 700px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  * {
+    font-size: 9px;
+  }
+}
+
+/* Animations and Hover Effects */
+
+.focus {
+  -webkit-animation: focus-onload 0.5s linear both;
+  animation: focus-onload 0.5s linear both;
+}
+
+.hover-shadow {
+  -webkit-animation: hide-shadow 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: hide-shadow 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.hover-shadow:hover {
+  -webkit-animation: show-shadow 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: show-shadow 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.hidden {
+  -webkit-animation: hideAboutBlurb 0.25s linear both;
+  animation: hideAboutBlurb 0.25s linear both;
+}
+
+.hidden:hover {
+  -webkit-animation: showAboutBlurb 0.25s linear both;
+  animation: showAboutBlurb 0.25s linear both;
+}
+
+@-webkit-keyframes hideAboutBlurb {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hideAboutBlurb {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showAboutBlurb {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showAboutBlurb {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes focus-onload {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-onload {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes show-shadow {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(3px) translateY(-2px);
+  }
+}
+
+@keyframes show-shadow {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(3px) translateY(-2px);
+  }
+}
+
+@-webkit-keyframes hide-shadow {
+  0% {
+    text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(3px) translateY(-2px);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes hide-shadow {
+  0% {
+    text-shadow: -1px 1px 0 #ccc, -2px 2px 0 #ccc, -3px 3px 0 #ccc, -4px 4px 0 #ccc, -10px 15px 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(3px) translateY(-2px);
+  }
+  100% {
+    text-shadow: none;
+
+  }
+}
