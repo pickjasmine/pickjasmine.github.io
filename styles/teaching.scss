@@ -5,16 +5,13 @@
   font-weight: 300;
 }
 
-body {
-  height: 100vh;
+.teaching {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.teaching {
+  height: 100vh;
   font-size: 32px;
   color: black;
   font-family: 'Bungee', cursive;
@@ -25,10 +22,50 @@ body {
   }
 
   a {
-    color: rgb(202, 130, 99);
+    color: rgb(247, 79, 68);
+    font-family: 'Bungee', cursive;
 
     &:hover {
-      color: rgb(158, 180, 211)
+      color: rgb(47, 34, 110)
     }
+  }
+}
+
+.dev-environment {
+  color: black;
+  font-size: 1.2em;
+  width: 80%;
+  margin: 1em auto;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bungee', cursive;
+  }
+
+  h3 {
+    padding-top: 1.5em;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  p {
+    font-size: 1em;
+    margin: 15px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  a {
+    color: rgb(247, 79, 68);
+    font-family: 'Bungee', cursive;
+
+    &:hover {
+      color: rgb(47, 34, 110)
+    }
+  }
+
+  .code {
+    background-color: #f5eae5;
+    font-family: "Courier New", serif;
   }
 }
